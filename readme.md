@@ -1,2 +1,1 @@
 # ESLint Config ClickNow
-
