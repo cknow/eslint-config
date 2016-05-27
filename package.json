@@ -1,0 +1,81 @@
+{
+  "name": "eslint-config-clicknow",
+  "version": "0.0.1",
+  "description": "ESLint shareable config for ClickNow",
+  "main": "src/index.js",
+  "files": [
+    "src/index.js",
+    "src/browser.js",
+    "src/plugins"
+  ],
+  "scripts": {
+    "watch": "nodemon --exec npm run test",
+    "lint": "eslint src/ test/",
+    "pretest": "npm run lint",
+    "test": "nyc ava",
+    "postest": "nyc check-coverage --global 100",
+    "report-coverage": "cat ./coverage/lcov.info | codecov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cknow/eslint-config-clicknow"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "code",
+    "quality",
+    "style",
+    "lint",
+    "linter",
+    "jscs",
+    "jshint",
+    "jslint",
+    "eslint",
+    "validate",
+    "code style",
+    "standard",
+    "strict",
+    "check",
+    "checker",
+    "verify",
+    "enforce",
+    "hint"
+  ],
+  "author": {
+    "name": "Ricardo Gobbo de Souza",
+    "email": "ricardogobbosouza@yahoo.com.br",
+    "role": "Developer"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/cknow/eslint-config-clicknow",
+  "bugs": {
+    "url": "https://github.com/cknow/eslint-config-clicknow/issues",
+    "email": "ricardo@clicknow.com.br"
+  },
+  "preferGlobal": false,
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "devDependencies": {
+    "ava": "^0.15.1",
+    "babel-eslint": "^6.0.4",
+    "codecov": "^1.0.1",
+    "eslint": "^2.10.2",
+    "eslint-plugin-angular": "^1.0.1",
+    "eslint-plugin-ava": "^2.4.0",
+    "eslint-plugin-babel": "^3.2.0",
+    "eslint-plugin-jasmine": "^1.8.1",
+    "eslint-plugin-jquery": "^0.6.0",
+    "eslint-plugin-mocha": "^2.2.0",
+    "eslint-plugin-node": "^1.4.0",
+    "eslint-plugin-protractor": "^1.6.0",
+    "lodash": "^4.13.1",
+    "nodemon": "^1.9.2",
+    "nyc": "^6.4.4",
+    "temp-write": "^2.1.0"
+  },
+  "peerDependencies": {
+    "eslint": "^2.10.2"
+  }
+}
