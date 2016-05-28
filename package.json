@@ -12,7 +12,7 @@
     "watch": "nodemon --exec npm run test",
     "lint": "eslint src/ test/",
     "pretest": "npm run lint",
-    "test": "nyc ava",
+    "test": "nyc --reporter lcov --reporter text ava",
     "postest": "nyc check-coverage --global 100",
     "report-coverage": "cat ./coverage/lcov.info | codecov"
   },
