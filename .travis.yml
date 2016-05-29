@@ -9,7 +9,13 @@ branches:
 notifications:
   email: false
 node_js:
+  - 5
+  - 5.1
   - 4
+  - 4.2
+  - 4.1
+  - 4.0
+  - iojs
 before_install:
   - npm i -g npm
 before_script:
