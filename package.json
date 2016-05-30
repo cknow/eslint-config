@@ -4,9 +4,7 @@
   "description": "ESLint shareable config for ClickNow",
   "main": "src/index.js",
   "files": [
-    "src/index.js",
-    "src/browser.js",
-    "src/plugins"
+    "src"
   ],
   "scripts": {
     "commit": "git-cz",
