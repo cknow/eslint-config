@@ -77,5 +77,10 @@
   },
   "peerDependencies": {
     "eslint": "^2.10.2"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm t"
+    }
   }
 }
