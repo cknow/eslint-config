@@ -40,9 +40,13 @@ module.exports = {
 
 #### Angular
 
+Install
+
 ```
 npm install eslint-plugin-angular --save-dev
 ```
+
+Usage
 
 ```js
 module.exports = {
