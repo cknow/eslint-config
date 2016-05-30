@@ -14,7 +14,7 @@
 ## Install
 
 ```
-npm install eslint-config-clicknow --save-dev
+npm install --save-dev eslint-config-clicknow
 ```
 
 ## Usage
@@ -22,7 +22,6 @@ npm install eslint-config-clicknow --save-dev
 
 Add some ESLint config to your `.eslintrc.js`:
 
-### Node
 ```js
 module.exports = {
     extends: 'clicknow'
@@ -38,12 +37,37 @@ module.exports = {
 
 ### Plugins
 
+__The plugins do not use the default settings!__
+To this extend `clicknow` or `clicknow/browser` first
+
+```js
+module.exports = {
+    extends: ['clicknow', 'clicknow/plugins/PLUGIN']
+};
+```
+
+#### Babel
+
+Install
+
+```
+npm install --save-dev eslint-plugin-babel babel-eslint
+```
+
+Usage
+
+```js
+module.exports = {
+    extends: 'clicknow/plugins/babel'
+};
+```
+
 #### Angular
 
 Install
 
 ```
-npm install eslint-plugin-angular --save-dev
+npm install --save-dev eslint-plugin-angular
 ```
 
 Usage
@@ -51,5 +75,101 @@ Usage
 ```js
 module.exports = {
     extends: 'clicknow/plugins/angular'
+};
+```
+
+#### Jquery
+
+Install
+
+```
+npm install --save-dev eslint-plugin-jquery
+```
+
+Usage
+
+```js
+module.exports = {
+    extends: 'clicknow/plugins/jquery'
+};
+```
+
+#### Node
+
+Install
+
+```
+npm install --save-dev eslint-plugin-node
+```
+
+Usage
+
+```js
+module.exports = {
+    extends: 'clicknow/plugins/node'
+};
+```
+
+#### Mocha
+
+Install
+
+```
+npm install --save-dev eslint-plugin-mocha
+```
+
+Usage
+
+```js
+module.exports = {
+    extends: 'clicknow/plugins/mocha'
+};
+```
+
+#### Jasmine
+
+Install
+
+```
+npm install --save-dev eslint-plugin-jasmine
+```
+
+Usage
+
+```js
+module.exports = {
+    extends: 'clicknow/plugins/jasmine'
+};
+```
+
+#### AVA
+
+Install
+
+```
+npm install --save-dev eslint-plugin-ava
+```
+
+Usage
+
+```js
+module.exports = {
+    extends: 'clicknow/plugins/ava'
+};
+```
+
+#### Protractor
+
+Install
+
+```
+npm install --save-dev eslint-plugin-protractor
+```
+
+Usage
+
+```js
+module.exports = {
+    extends: 'clicknow/plugins/protractor'
 };
 ```
