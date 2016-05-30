@@ -21,4 +21,5 @@ before_install:
 before_script:
   - npm prune
 after_success:
-  - npm run report-coverage
+  - bash <(curl -s https://codecov.io/bash)
+#  - npm run report-coverage
