@@ -46,7 +46,14 @@
     "checker",
     "verify",
     "enforce",
-    "hint"
+    "hint",
+    "babel",
+    "angular",
+    "jquery",
+    "mocha",
+    "jasmine",
+    "ava",
+    "protractor"
   ],
   "author": {
     "name": "Ricardo Gobbo de Souza",
