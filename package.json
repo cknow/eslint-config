@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-clicknow",
-  "version": "0.0.0-semantically-released",
+  "version": "1.0.0",
   "description": "ESLint shareable config for ClickNow",
   "main": "src/index.js",
   "files": [
