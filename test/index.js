@@ -13,7 +13,7 @@ function runESLint(str, conf) {
 }
 
 test('index', t => {
-    const conf = require('../src');
+    const conf = require('../');
     const errors = runESLint('\'use strict\';\nvar foo = \'\';\n', conf);
 
     t.true(_.isPlainObject(conf));
@@ -21,7 +21,7 @@ test('index', t => {
 });
 
 test('browser', t => {
-    const conf = require('../src/browser');
+    const conf = require('../browser');
     const errors = runESLint('\'use strict\';\nprocess.exit();\n', conf);
 
     t.true(_.isPlainObject(conf));
@@ -29,7 +29,7 @@ test('browser', t => {
 });
 
 test('plugin babel', t => {
-    const conf = require('../src/plugins/babel');
+    const conf = require('../plugins/babel');
     const errors = runESLint('\'use strict\';\nvar foo = true;\n', conf);
 
     t.true(_.isPlainObject(conf));
@@ -37,7 +37,7 @@ test('plugin babel', t => {
 });
 
 test('plugin angular', t => {
-    const conf = require('../src/plugins/angular');
+    const conf = require('../plugins/angular');
     const errors = runESLint('\'use strict\';\n$(\'.foo\');\n', conf);
 
     t.true(_.isPlainObject(conf));
@@ -45,7 +45,7 @@ test('plugin angular', t => {
 });
 
 test('plugin jquery', t => {
-    const conf = require('../src/plugins/jquery');
+    const conf = require('../plugins/jquery');
     const errors = runESLint('\'use strict\';\n$.ajax();\n', conf);
 
     t.true(_.isPlainObject(conf));
@@ -53,7 +53,7 @@ test('plugin jquery', t => {
 });
 
 test('plugin node', t => {
-    const conf = _.extend(require('../src'), require('../src/plugins/node'));
+    const conf = _.extend(require('../'), require('../plugins/node'));
     const errors = runESLint('\'use strict\';\nimport foo from \'foo\';\nfoo();\n', conf);
 
     t.true(_.isPlainObject(conf));
@@ -61,7 +61,7 @@ test('plugin node', t => {
 });
 
 test('plugin ava', t => {
-    const conf = _.extend(require('../src'), require('../src/plugins/ava'));
+    const conf = _.extend(require('../'), require('../plugins/ava'));
     const errors = runESLint(
         '\'use strict\';\nimport test from \'ava\';\n' +
         'test(t => {\n    t.pass();\n});\n' +
@@ -72,7 +72,7 @@ test('plugin ava', t => {
 });
 
 test('plugin mocha', t => {
-    const conf = require('../src/plugins/mocha');
+    const conf = require('../plugins/mocha');
     const errors = runESLint('\'use strict\';\ndescribe.only(\'foo\', function() {});\n', conf);
 
     t.true(_.isPlainObject(conf));
@@ -80,7 +80,7 @@ test('plugin mocha', t => {
 });
 
 test('plugin jasmine', t => {
-    const conf = require('../src/plugins/jasmine');
+    const conf = require('../plugins/jasmine');
     const errors = runESLint('\'use strict\';\nvar spy = jasmine.createSpy();\n', conf);
 
     t.true(_.isPlainObject(conf));
@@ -88,7 +88,7 @@ test('plugin jasmine', t => {
 });
 
 test('plugin protractor', t => {
-    const conf = require('../src/plugins/protractor');
+    const conf = require('../plugins/protractor');
     const errors = runESLint('\'use strict\';\nelement(by.css(\'.class\'));\n', conf);
 
     t.true(_.isPlainObject(conf));

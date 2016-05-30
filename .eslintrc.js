@@ -1,5 +1,5 @@
 'use strict';
 
 module.exports = {
-    extends: './src/index.js'
+    extends: './index.js'
 };
