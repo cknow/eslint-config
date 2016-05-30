@@ -28,7 +28,8 @@ module.exports = {
 };
 ```
 
-### Browser
+Browser
+
 ```js
 module.exports = {
     extends: 'clicknow/browser'
@@ -37,8 +38,9 @@ module.exports = {
 
 ### Plugins
 
-__The plugins do not use the default settings!__
-To this extend `clicknow` or `clicknow/browser` first
+__The plugins do not use the default settings.__
+
+To this extend `clicknow` or `clicknow/browser` first.
 
 ```js
 module.exports = {
