@@ -22,8 +22,30 @@ npm install eslint-config-clicknow --save-dev
 
 Add some ESLint config to your `.eslintrc.js`:
 
+### Node
 ```js
 module.exports = {
     extends: 'clicknow'
+};
+```
+
+### Browser
+```js
+module.exports = {
+    extends: 'clicknow/browser'
+};
+```
+
+### Plugins
+
+#### Angular
+
+```
+npm install eslint-plugin-angular --save-dev
+```
+
+```js
+module.exports = {
+    extends: 'clicknow/plugins/angular'
 };
 ```
