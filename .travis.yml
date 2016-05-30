@@ -22,3 +22,4 @@ before_script:
   - npm prune
 after_success:
   - npm run report-coverage
+  - npm run semantic-release

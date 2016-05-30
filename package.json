@@ -9,11 +9,13 @@
   ],
   "scripts": {
     "commit": "git-cz",
-    "watch": "nodemon --exec npm run test",
+    "watch": "nodemon --exec npm t",
     "lint": "eslint src/ test/",
     "pretest": "npm run lint",
-    "test": "nyc --reporter lcov --reporter text ava",
-    "postest": "nyc check-coverage --global 100",
+    "test": "npm run cover",
+    "postest": "npm run check-coverage",
+    "cover": "nyc --reporter lcov --reporter text ava",
+    "check-coverage": "nyc check-coverage --global 100",
     "report-coverage": "cat ./coverage/lcov.info | codecov",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
