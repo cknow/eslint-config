@@ -5,7 +5,7 @@ module.exports = {
     // http://eslint.org/docs/rules/#possible-errors
     rules: {
         'comma-dangle': [2, 'never'],
-        'no-cond-assign': [2, 'always'],
+        'no-cond-assign': [2, 'except-parens'],
         'no-console': 0,
         'no-constant-condition': 2,
         'no-control-regex': 2,
@@ -18,8 +18,8 @@ module.exports = {
         'no-ex-assign': 2,
         'no-extra-boolean-cast': 2,
         'no-extra-parens': [2, 'all', {
-            conditionalAssign: true,
-            returnAssign: true,
+            conditionalAssign: false,
+            returnAssign: false,
             nestedBinaryExpressions: false
         }],
         'no-extra-semi': 2,
