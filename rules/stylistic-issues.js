@@ -14,7 +14,7 @@ module.exports = {
         }],
         'comma-style': [2, 'last'],
         'computed-property-spacing': [2, 'never'],
-        'consistent-this': [2, 'that', 'self', 'me'],
+        'consistent-this': 0,
         'eol-last': [2, 'unix'],
         'func-names': 0,
         'func-style': 0,
