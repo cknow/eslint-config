@@ -10,7 +10,9 @@ module.exports = {
         }],
         'array-callback-return': 2,
         'block-scoped-var': 2,
-        'complexity': 0,
+        'complexity': [2, {
+            max: 4
+        }],
         'consistent-return': 0,
         'curly': [2, 'all'],
         'default-case': [2, {
