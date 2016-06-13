@@ -13,7 +13,9 @@ module.exports = {
         'no-dupe-args': 2,
         'no-dupe-keys': 2,
         'no-duplicate-case': 2,
-        'no-empty': [2, {allowEmptyCatch: true}],
+        'no-empty': [2, {
+            allowEmptyCatch: true
+        }],
         'no-empty-character-class': 2,
         'no-ex-assign': 2,
         'no-extra-boolean-cast': 2,
@@ -25,7 +27,9 @@ module.exports = {
         'no-extra-semi': 2,
         'no-func-assign': 2,
         'no-inner-declarations': [2, 'functions'],
-        'no-invalid-regexp': [2, {allowConstructorFlags: []}],
+        'no-invalid-regexp': [2, {
+            allowConstructorFlags: []
+        }],
         'no-irregular-whitespace': [2, {
             skipStrings: true,
             skipComments: true,

@@ -13,9 +13,13 @@ module.exports = {
         'complexity': 0,
         'consistent-return': 0,
         'curly': [2, 'all'],
-        'default-case': [2, {commentPattern: ''}],
+        'default-case': [2, {
+            commentPattern: ''
+        }],
         'dot-location': [2, 'property'],
-        'dot-notation': [2, {allowKeywords: true}],
+        'dot-notation': [2, {
+            allowKeywords: true
+        }],
         'eqeqeq': 2,
         'guard-for-in': 2,
         'no-alert': 2,
@@ -26,11 +30,17 @@ module.exports = {
         'no-empty-function': 0,
         'no-empty-pattern': 2,
         'no-eq-null': 2,
-        'no-eval': [2, {allowIndirect: false}],
-        'no-extend-native': [2, {exceptions: []}],
+        'no-eval': [2, {
+            allowIndirect: false
+        }],
+        'no-extend-native': [2, {
+            exceptions: []
+        }],
         'no-extra-bind': 2,
         'no-extra-label': 2,
-        'no-fallthrough': [2, {commentPattern: ''}],
+        'no-fallthrough': [2, {
+            commentPattern: ''
+        }],
         'no-floating-decimal': 2,
         'no-implicit-coercion': [2, {
             boolean: true,
@@ -58,7 +68,9 @@ module.exports = {
             }
         }],
         'no-multi-str': 2,
-        'no-native-reassign': [2, {exceptions: []}],
+        'no-native-reassign': [2, {
+            exceptions: []
+        }],
         'no-new': 2,
         'no-new-func': 2,
         'no-new-wrappers': 2,
@@ -66,7 +78,9 @@ module.exports = {
         'no-octal-escape': 2,
         'no-param-reassign': 0,
         'no-proto': 2,
-        'no-redeclare': [2, {builtinGlobals: false}],
+        'no-redeclare': [2, {
+            builtinGlobals: false
+        }],
         'no-return-assign': [2, 'always'],
         'no-script-url': 2,
         'no-self-assign': 2,

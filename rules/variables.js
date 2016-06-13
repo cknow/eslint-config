@@ -15,7 +15,9 @@ module.exports = {
             allow: []
         }],
         'no-shadow-restricted-names': 2,
-        'no-undef': [2, {typeof: true}],
+        'no-undef': [2, {
+            typeof: true
+        }],
         'no-undef-init': 2,
         'no-undefined': 0,
         'no-unused-vars': [2, {

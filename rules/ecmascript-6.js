@@ -19,7 +19,9 @@ module.exports = {
         'no-confusing-arrow': 0,
         'no-const-assign': 2,
         'no-dupe-class-members': 2,
-        'no-duplicate-imports': [2, {includeExports: true}],
+        'no-duplicate-imports': [2, {
+            includeExports: true
+        }],
         'no-new-symbol': 2,
         'no-restricted-imports': 0,
         'no-this-before-super': 2,

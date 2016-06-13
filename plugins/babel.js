@@ -11,7 +11,9 @@ module.exports = {
             allowNamedFunctions: false,
             allowUnboundThis: true
         }],
-        'prefer-const': [2, {destructuring: 'all'}],
+        'prefer-const': [2, {
+            destructuring: 'all'
+        }],
         'prefer-rest-params': 2,
         'prefer-template': 2,
 
