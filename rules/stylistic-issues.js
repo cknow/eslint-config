@@ -72,6 +72,7 @@ module.exports = {
         'no-continue': 0,
         'no-inline-comments': 0,
         'no-lonely-if': 2,
+        'no-mixed-operators': 2,
         'no-mixed-spaces-and-tabs': 2,
         'no-multiple-empty-lines': [2, {
             max: 1
