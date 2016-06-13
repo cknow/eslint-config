@@ -48,6 +48,9 @@ module.exports = {
             ignoreTrailingComments: false,
             ignoreUrls: true
         }],
+        'max-lines': [2, {
+            max: 300
+        }],
         'max-nested-callbacks': [2, 4],
         'max-params': 0,
         'max-statements': 0,
