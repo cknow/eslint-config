@@ -41,7 +41,9 @@ module.exports = {
         }],
         'linebreak-style': [2, 'unix'],
         'lines-around-comment': 0,
-        'max-depth': [2, 4],
+        'max-depth': [2, {
+            max: 4
+        }],
         'max-len': [2, 120, 4, {
             ignorePattern: '',
             ignoreComments: true,
@@ -51,8 +53,12 @@ module.exports = {
         'max-lines': [2, {
             max: 300
         }],
-        'max-nested-callbacks': [2, 4],
-        'max-params': 0,
+        'max-nested-callbacks': [2, {
+            max: 4
+        }],
+        'max-params': [2, {
+            max: 4
+        }],
         'max-statements': 0,
         'max-statements-per-line': [2, {
             max: 1
