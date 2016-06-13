@@ -121,6 +121,7 @@ module.exports = {
                 markers: ['!']
             }
         }],
+        'unicode-bom': [2, 'never'],
         'wrap-regex': 0
     }
 };
