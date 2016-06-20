@@ -22,6 +22,14 @@ test('index', t => {
     t.is(result.messages[0].ruleId, 'no-unused-vars');
 });
 
+test('esnext', t => {
+    const conf = require('../esnext');
+    const result = runESLint('\'use strict\';\nvar foo = true;\n\nconsole.log(foo);\n', conf);
+
+    t.is(1, result.errorCount);
+    t.is(result.messages[0].ruleId, 'no-var');
+});
+
 test('browser', t => {
     const conf = require('../browser');
     const result = runESLint('\'use strict\';\nprocess.exit();\n', conf);

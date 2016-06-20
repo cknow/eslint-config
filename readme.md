@@ -29,6 +29,14 @@ module.exports = {
 };
 ```
 
+ESNext
+
+```js
+module.exports = {
+    extends: 'clicknow/esnext'
+};
+```
+
 Browser
 
 ```js
