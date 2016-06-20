@@ -8,11 +8,11 @@ module.exports = {
         'mocha'
     ],
     rules: {
-        'mocha/no-exclusive-tests': 2,
-        'mocha/no-skipped-tests': 2,
-        'mocha/no-pending-tests': 2,
-        'mocha/handle-done-callback': 2,
-        'mocha/no-synchronous-tests': 2,
-        'mocha/no-global-tests': 2
+        'mocha/no-exclusive-tests': 'error',
+        'mocha/no-skipped-tests': 'error',
+        'mocha/no-pending-tests': 'error',
+        'mocha/handle-done-callback': 'error',
+        'mocha/no-synchronous-tests': 'error',
+        'mocha/no-global-tests': 'error'
     }
 };

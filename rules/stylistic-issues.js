@@ -4,150 +4,150 @@ module.exports = {
 
     // http://eslint.org/docs/rules/#stylistic-issues
     rules: {
-        'array-bracket-spacing': [2, 'never'],
-        'block-spacing': [2, 'always'],
-        'brace-style': [2, '1tbs', {
+        'array-bracket-spacing': ['error', 'never'],
+        'block-spacing': ['error', 'always'],
+        'brace-style': ['error', '1tbs', {
             allowSingleLine: false
         }],
-        'camelcase': [2, {
+        'camelcase': ['error', {
             properties: 'always'
         }],
-        'comma-spacing': [2, {
+        'comma-spacing': ['error', {
             before: false,
             after: true
         }],
-        'comma-style': [2, 'last'],
-        'computed-property-spacing': [2, 'never'],
-        'consistent-this': 0,
-        'eol-last': [2, 'unix'],
-        'func-names': 0,
-        'func-style': 0,
-        'id-blacklist': 0,
-        'id-length': 0,
-        'id-match': 0,
-        'indent': [2, 4, {
+        'comma-style': ['error', 'last'],
+        'computed-property-spacing': ['error', 'never'],
+        'consistent-this': 'off',
+        'eol-last': ['error', 'unix'],
+        'func-names': 'off',
+        'func-style': 'off',
+        'id-blacklist': 'off',
+        'id-length': 'off',
+        'id-match': 'off',
+        'indent': ['error', 4, {
             SwitchCase: 1,
             VariableDeclarator: 1
         }],
-        'jsx-quotes': [2, 'prefer-double'],
-        'key-spacing': [2, {
+        'jsx-quotes': ['error', 'prefer-double'],
+        'key-spacing': ['error', {
             beforeColon: false,
             afterColon: true
         }],
-        'keyword-spacing': [2, {
+        'keyword-spacing': ['error', {
             before: true,
             after: true,
             overrides: {}
         }],
-        'linebreak-style': [2, 'unix'],
-        'lines-around-comment': 0,
-        'max-depth': [2, {
+        'linebreak-style': ['error', 'unix'],
+        'lines-around-comment': 'off',
+        'max-depth': ['error', {
             max: 4
         }],
-        'max-len': [2, 120, 4, {
+        'max-len': ['error', 120, 4, {
             ignorePattern: '',
             ignoreComments: true,
             ignoreTrailingComments: false,
             ignoreUrls: true
         }],
-        'max-lines': [2, {
+        'max-lines': ['error', {
             max: 300
         }],
-        'max-nested-callbacks': [2, {
+        'max-nested-callbacks': ['error', {
             max: 4
         }],
-        'max-params': [2, {
+        'max-params': ['error', {
             max: 4
         }],
-        'max-statements': 0,
-        'max-statements-per-line': [2, {
+        'max-statements': 'off',
+        'max-statements-per-line': ['error', {
             max: 1
         }],
-        'new-cap': [2, {
+        'new-cap': ['error', {
             newIsCap: true,
             capIsNew: true,
             newIsCapExceptions: [],
             capIsNewExceptions: [],
             properties: true
         }],
-        'new-parens': 2,
-        'newline-after-var': [2, 'always'],
-        'newline-before-return': 2,
-        'newline-per-chained-call': [2, {
+        'new-parens': 'error',
+        'newline-after-var': ['error', 'always'],
+        'newline-before-return': 'error',
+        'newline-per-chained-call': ['error', {
             ignoreChainWithDepth: 2
         }],
-        'no-array-constructor': 2,
-        'no-bitwise': 0,
-        'no-continue': 0,
-        'no-inline-comments': 0,
-        'no-lonely-if': 2,
-        'no-mixed-operators': 2,
-        'no-mixed-spaces-and-tabs': 2,
-        'no-multiple-empty-lines': [2, {
+        'no-array-constructor': 'error',
+        'no-bitwise': 'off',
+        'no-continue': 'off',
+        'no-inline-comments': 'off',
+        'no-lonely-if': 'error',
+        'no-mixed-operators': 'error',
+        'no-mixed-spaces-and-tabs': 'error',
+        'no-multiple-empty-lines': ['error', {
             max: 1
         }],
-        'no-negated-condition': 2,
-        'no-nested-ternary': 2,
-        'no-new-object': 2,
-        'no-plusplus': 0,
-        'no-restricted-syntax': [2, 'WithStatement'],
-        'no-spaced-func': 2,
-        'no-ternary': 0,
-        'no-trailing-spaces': 2,
-        'no-underscore-dangle': [2, {
+        'no-negated-condition': 'error',
+        'no-nested-ternary': 'error',
+        'no-new-object': 'error',
+        'no-plusplus': 'off',
+        'no-restricted-syntax': ['error', 'WithStatement'],
+        'no-spaced-func': 'error',
+        'no-ternary': 'off',
+        'no-trailing-spaces': 'error',
+        'no-underscore-dangle': ['error', {
             allow: [],
             allowAfterThis: false
         }],
-        'no-unneeded-ternary': 2,
-        'no-whitespace-before-property': 2,
-        'object-curly-newline': [2, {
+        'no-unneeded-ternary': 'error',
+        'no-whitespace-before-property': 'error',
+        'object-curly-newline': ['error', {
             multiline: true,
             minProperties: 1
         }],
-        'object-curly-spacing': [2, 'never'],
-        'object-property-newline': [2, {
+        'object-curly-spacing': ['error', 'never'],
+        'object-property-newline': ['error', {
             allowMultiplePropertiesPerLine: false
         }],
-        'one-var': [2, 'never'],
-        'one-var-declaration-per-line': 2,
-        'operator-assignment': [2, 'always'],
-        'operator-linebreak': [2, 'after', {
+        'one-var': ['error', 'never'],
+        'one-var-declaration-per-line': 'error',
+        'operator-assignment': ['error', 'always'],
+        'operator-linebreak': ['error', 'after', {
             overrides: {}
         }],
-        'padded-blocks': [2, 'never'],
-        'quote-props': [2, 'consistent-as-needed'],
-        'quotes': [2, 'single', {
+        'padded-blocks': ['error', 'never'],
+        'quote-props': ['error', 'consistent-as-needed'],
+        'quotes': ['error', 'single', {
             avoidEscape: false,
             allowTemplateLiterals: true
         }],
-        'require-jsdoc': [2, {
+        'require-jsdoc': ['error', {
             require: {
                 FunctionDeclaration: true,
                 MethodDefinition: true,
                 ClassDeclaration: true
             }
         }],
-        'semi': [2, 'always', {
+        'semi': ['error', 'always', {
             omitLastInOneLineBlock: false
         }],
-        'semi-spacing': [2, {
+        'semi-spacing': ['error', {
             before: false,
             after: true
         }],
-        'sort-vars': 0,
-        'space-before-blocks': [2, 'always'],
-        'space-before-function-paren': [2, {
+        'sort-vars': 'off',
+        'space-before-blocks': ['error', 'always'],
+        'space-before-function-paren': ['error', {
             anonymous: 'never',
             named: 'never'
         }],
-        'space-in-parens': [2, 'never', {
+        'space-in-parens': ['error', 'never', {
             exceptions: []
         }],
-        'space-infix-ops': [2, {
+        'space-infix-ops': ['error', {
             int32Hint: false
         }],
-        'space-unary-ops': 2,
-        'spaced-comment': [2, 'always', {
+        'space-unary-ops': 'error',
+        'spaced-comment': ['error', 'always', {
             line: {
                 exceptions: ['-']
             },
@@ -155,7 +155,7 @@ module.exports = {
                 markers: ['!']
             }
         }],
-        'unicode-bom': [2, 'never'],
-        'wrap-regex': 0
+        'unicode-bom': ['error', 'never'],
+        'wrap-regex': 'off'
     }
 };

@@ -4,64 +4,64 @@ module.exports = {
 
     // http://eslint.org/docs/rules/#best-practices
     rules: {
-        'accessor-pairs': [2, {
+        'accessor-pairs': ['error', {
             setWithoutGet: true,
             getWithoutSet: false
         }],
-        'array-callback-return': 2,
-        'block-scoped-var': 2,
-        'complexity': [2, {
+        'array-callback-return': 'error',
+        'block-scoped-var': 'error',
+        'complexity': ['error', {
             max: 4
         }],
-        'consistent-return': 0,
-        'curly': [2, 'all'],
-        'default-case': [2, {
+        'consistent-return': 'off',
+        'curly': ['error', 'all'],
+        'default-case': ['error', {
             commentPattern: ''
         }],
-        'dot-location': [2, 'property'],
-        'dot-notation': [2, {
+        'dot-location': ['error', 'property'],
+        'dot-notation': ['error', {
             allowKeywords: true
         }],
-        'eqeqeq': 2,
-        'guard-for-in': 2,
-        'no-alert': 2,
-        'no-caller': 2,
-        'no-case-declarations': 2,
-        'no-div-regex': 2,
-        'no-else-return': 2,
-        'no-empty-function': 0,
-        'no-empty-pattern': 2,
-        'no-eq-null': 2,
-        'no-eval': [2, {
+        'eqeqeq': 'error',
+        'guard-for-in': 'error',
+        'no-alert': 'error',
+        'no-caller': 'error',
+        'no-case-declarations': 'error',
+        'no-div-regex': 'error',
+        'no-else-return': 'error',
+        'no-empty-function': 'off',
+        'no-empty-pattern': 'error',
+        'no-eq-null': 'error',
+        'no-eval': ['error', {
             allowIndirect: false
         }],
-        'no-extend-native': [2, {
+        'no-extend-native': ['error', {
             exceptions: []
         }],
-        'no-extra-bind': 2,
-        'no-extra-label': 2,
-        'no-fallthrough': [2, {
+        'no-extra-bind': 'error',
+        'no-extra-label': 'error',
+        'no-fallthrough': ['error', {
             commentPattern: ''
         }],
-        'no-floating-decimal': 2,
-        'no-implicit-coercion': [2, {
+        'no-floating-decimal': 'error',
+        'no-implicit-coercion': ['error', {
             boolean: true,
             number: true,
             string: true,
             allow: []
         }],
-        'no-implicit-globals': 2,
-        'no-implied-eval': 2,
-        'no-invalid-this': 0,
-        'no-iterator': 2,
-        'no-labels': [2, {
+        'no-implicit-globals': 'error',
+        'no-implied-eval': 'error',
+        'no-invalid-this': 'off',
+        'no-iterator': 'error',
+        'no-labels': ['error', {
             allowLoop: false,
             allowSwitch: false
         }],
-        'no-lone-blocks': 2,
-        'no-loop-func': 2,
-        'no-magic-numbers': 0,
-        'no-multi-spaces': [2, {
+        'no-lone-blocks': 'error',
+        'no-loop-func': 'error',
+        'no-magic-numbers': 'off',
+        'no-multi-spaces': ['error', {
             exceptions: {
                 Property: true,
                 BinaryExpression: false,
@@ -69,42 +69,42 @@ module.exports = {
                 ImportDeclaration: true
             }
         }],
-        'no-multi-str': 2,
-        'no-native-reassign': [2, {
+        'no-multi-str': 'error',
+        'no-native-reassign': ['error', {
             exceptions: []
         }],
-        'no-new': 2,
-        'no-new-func': 2,
-        'no-new-wrappers': 2,
-        'no-octal': 2,
-        'no-octal-escape': 2,
-        'no-param-reassign': 0,
-        'no-proto': 2,
-        'no-redeclare': [2, {
+        'no-new': 'error',
+        'no-new-func': 'error',
+        'no-new-wrappers': 'error',
+        'no-octal': 'error',
+        'no-octal-escape': 'error',
+        'no-param-reassign': 'off',
+        'no-proto': 'error',
+        'no-redeclare': ['error', {
             builtinGlobals: false
         }],
-        'no-return-assign': [2, 'always'],
-        'no-script-url': 2,
-        'no-self-assign': 2,
-        'no-self-compare': 2,
-        'no-sequences': 2,
-        'no-throw-literal': 2,
-        'no-unmodified-loop-condition': 2,
-        'no-unused-expressions': [2, {
+        'no-return-assign': ['error', 'always'],
+        'no-script-url': 'error',
+        'no-self-assign': 'error',
+        'no-self-compare': 'error',
+        'no-sequences': 'error',
+        'no-throw-literal': 'error',
+        'no-unmodified-loop-condition': 'error',
+        'no-unused-expressions': ['error', {
             allowShortCircuit: false,
             allowTernary: false
         }],
-        'no-unused-labels': 2,
-        'no-useless-call': 2,
-        'no-useless-concat': 2,
-        'no-useless-escape': 2,
-        'no-void': 2,
-        'no-warning-comments': 0,
-        'no-with': 2,
-        'radix': [2, 'always'],
-        'vars-on-top': 0,
-        'wrap-iife': [2, 'inside'],
-        'yoda': [2, 'never', {
+        'no-unused-labels': 'error',
+        'no-useless-call': 'error',
+        'no-useless-concat': 'error',
+        'no-useless-escape': 'error',
+        'no-void': 'error',
+        'no-warning-comments': 'off',
+        'no-with': 'error',
+        'radix': ['error', 'always'],
+        'vars-on-top': 'off',
+        'wrap-iife': ['error', 'inside'],
+        'yoda': ['error', 'never', {
             exceptRange: false,
             onlyEquality: false
         }]

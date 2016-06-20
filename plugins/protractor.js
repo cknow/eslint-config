@@ -8,12 +8,12 @@ module.exports = {
         'protractor'
     ],
     rules: {
-        'protractor/missing-perform': 2,
-        'protractor/no-browser-pause': 2,
-        'protractor/missing-wait-message': 2,
-        'protractor/no-browser-sleep': 2,
-        'protractor/no-by-xpath': 2,
-        'protractor/no-describe-selectors': 2,
-        'protractor/by-css-shortcut': 2
+        'protractor/missing-perform': 'error',
+        'protractor/no-browser-pause': 'error',
+        'protractor/missing-wait-message': 'error',
+        'protractor/no-browser-sleep': 'error',
+        'protractor/no-by-xpath': 'error',
+        'protractor/no-describe-selectors': 'error',
+        'protractor/by-css-shortcut': 'error'
     }
 };

@@ -4,50 +4,50 @@ module.exports = {
 
     // http://eslint.org/docs/rules/#ecmascript-6
     rules: {
-        'arrow-body-style': [2, 'as-needed'],
-        'arrow-parens': [2, 'as-needed'],
-        'arrow-spacing': [2, {
+        'arrow-body-style': ['error', 'as-needed'],
+        'arrow-parens': ['error', 'as-needed'],
+        'arrow-spacing': ['error', {
             before: true,
             after: true
         }],
-        'constructor-super': 2,
-        'generator-star-spacing': [2, {
+        'constructor-super': 'error',
+        'generator-star-spacing': ['error', {
             before: true,
             after: true
         }],
-        'no-class-assign': 2,
-        'no-confusing-arrow': 0,
-        'no-const-assign': 2,
-        'no-dupe-class-members': 2,
-        'no-duplicate-imports': [2, {
+        'no-class-assign': 'error',
+        'no-confusing-arrow': 'off',
+        'no-const-assign': 'error',
+        'no-dupe-class-members': 'error',
+        'no-duplicate-imports': ['error', {
             includeExports: true
         }],
-        'no-new-symbol': 2,
-        'no-restricted-imports': 0,
-        'no-this-before-super': 2,
-        'no-useless-computed-key': 2,
-        'no-useless-constructor': 2,
-        'no-useless-rename': [2, {
+        'no-new-symbol': 'error',
+        'no-restricted-imports': 'off',
+        'no-this-before-super': 'error',
+        'no-useless-computed-key': 'error',
+        'no-useless-constructor': 'error',
+        'no-useless-rename': ['error', {
             ignoreDestructuring: false,
             ignoreImport: false,
             ignoreExport: false
         }],
-        'no-var': 0,
-        'object-shorthand': [2, 'always', {
+        'no-var': 'off',
+        'object-shorthand': ['error', 'always', {
             avoidQuotes: false,
             ignoreConstructors: false
         }],
-        'prefer-arrow-callback': 0,
-        'prefer-const': 0,
-        'prefer-reflect': 0,
-        'prefer-rest-params': 0,
-        'prefer-spread': 0,
-        'prefer-template': 0,
-        'require-yield': 2,
-        'rest-spread-spacing': [2, 'never'],
-        'sort-imports': 0,
-        'template-curly-spacing': [2, 'never'],
-        'yield-star-spacing': [2, {
+        'prefer-arrow-callback': 'off',
+        'prefer-const': 'off',
+        'prefer-reflect': 'off',
+        'prefer-rest-params': 'off',
+        'prefer-spread': 'off',
+        'prefer-template': 'off',
+        'require-yield': 'error',
+        'rest-spread-spacing': ['error', 'never'],
+        'sort-imports': 'off',
+        'template-curly-spacing': ['error', 'never'],
+        'yield-star-spacing': ['error', {
             before: true,
             after: true
         }]

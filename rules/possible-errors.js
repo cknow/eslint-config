@@ -4,48 +4,48 @@ module.exports = {
 
     // http://eslint.org/docs/rules/#possible-errors
     rules: {
-        'comma-dangle': [2, 'never'],
-        'no-cond-assign': [2, 'except-parens'],
-        'no-console': 0,
-        'no-constant-condition': 2,
-        'no-control-regex': 2,
-        'no-debugger': 2,
-        'no-dupe-args': 2,
-        'no-dupe-keys': 2,
-        'no-duplicate-case': 2,
-        'no-empty': [2, {
+        'comma-dangle': ['error', 'never'],
+        'no-cond-assign': ['error', 'except-parens'],
+        'no-console': 'off',
+        'no-constant-condition': 'error',
+        'no-control-regex': 'error',
+        'no-debugger': 'error',
+        'no-dupe-args': 'error',
+        'no-dupe-keys': 'error',
+        'no-duplicate-case': 'error',
+        'no-empty': ['error', {
             allowEmptyCatch: true
         }],
-        'no-empty-character-class': 2,
-        'no-ex-assign': 2,
-        'no-extra-boolean-cast': 2,
-        'no-extra-parens': [2, 'all', {
+        'no-empty-character-class': 'error',
+        'no-ex-assign': 'error',
+        'no-extra-boolean-cast': 'error',
+        'no-extra-parens': ['error', 'all', {
             conditionalAssign: false,
             returnAssign: false,
             nestedBinaryExpressions: false
         }],
-        'no-extra-semi': 2,
-        'no-func-assign': 2,
-        'no-inner-declarations': [2, 'functions'],
-        'no-invalid-regexp': [2, {
+        'no-extra-semi': 'error',
+        'no-func-assign': 'error',
+        'no-inner-declarations': ['error', 'functions'],
+        'no-invalid-regexp': ['error', {
             allowConstructorFlags: []
         }],
-        'no-irregular-whitespace': [2, {
+        'no-irregular-whitespace': ['error', {
             skipStrings: true,
             skipComments: true,
             skipRegExps: true,
             skipTemplates: true
         }],
-        'no-negated-in-lhs': 2,
-        'no-obj-calls': 2,
-        'no-prototype-builtins': 2,
-        'no-regex-spaces': 2,
-        'no-sparse-arrays': 2,
-        'no-unexpected-multiline': 2,
-        'no-unreachable': 2,
-        'no-unsafe-finally': 2,
-        'use-isnan': 2,
-        'valid-jsdoc': [2, {
+        'no-negated-in-lhs': 'error',
+        'no-obj-calls': 'error',
+        'no-prototype-builtins': 'error',
+        'no-regex-spaces': 'error',
+        'no-sparse-arrays': 'error',
+        'no-unexpected-multiline': 'error',
+        'no-unreachable': 'error',
+        'no-unsafe-finally': 'error',
+        'use-isnan': 'error',
+        'valid-jsdoc': ['error', {
             requireReturn: true,
             requireParamDescription: true,
             requireReturnDescription: true,
@@ -53,6 +53,6 @@ module.exports = {
                 returns: 'return'
             }
         }],
-        'valid-typeof': 2
+        'valid-typeof': 'error'
     }
 };

@@ -6,41 +6,41 @@ module.exports = {
         'babel'
     ],
     rules: {
-        'no-var': 2,
-        'prefer-arrow-callback': [2, {
+        'no-var': 'error',
+        'prefer-arrow-callback': ['error', {
             allowNamedFunctions: false,
             allowUnboundThis: true
         }],
-        'prefer-const': [2, {
+        'prefer-const': ['error', {
             destructuring: 'all'
         }],
-        'prefer-rest-params': 2,
-        'prefer-template': 2,
+        'prefer-rest-params': 'error',
+        'prefer-template': 'error',
 
         // disable builtin rules that are incompatible with Babel plugin ones
-        'generator-star-spacing': 0,
-        'new-cap': 0,
-        'array-bracket-spacing': 0,
-        'object-curly-spacing': 0,
-        'object-shorthand': 0,
-        'arrow-parens': 0,
+        'generator-star-spacing': 'off',
+        'new-cap': 'off',
+        'array-bracket-spacing': 'off',
+        'object-curly-spacing': 'off',
+        'object-shorthand': 'off',
+        'arrow-parens': 'off',
 
         // Babel plugin
-        'babel/generator-star-spacing': [2, {
+        'babel/generator-star-spacing': ['error', {
             before: true,
             after: true
         }],
-        'babel/new-cap': [2, {
+        'babel/new-cap': ['error', {
             newIsCap: true,
             capIsNew: true,
             newIsCapExceptions: [],
             capIsNewExceptions: []
         }],
-        'babel/array-bracket-spacing': [2, 'never'],
-        'babel/object-curly-spacing': [2, 'never'],
-        'babel/object-shorthand': [2, 'always'],
-        'babel/arrow-parens': [2, 'as-needed'],
-        'babel/no-await-in-loop': 2,
-        'babel/flow-object-type': [2, 'comma']
+        'babel/array-bracket-spacing': ['error', 'never'],
+        'babel/object-curly-spacing': ['error', 'never'],
+        'babel/object-shorthand': ['error', 'always'],
+        'babel/arrow-parens': ['error', 'as-needed'],
+        'babel/no-await-in-loop': 'error',
+        'babel/flow-object-type': ['error', 'comma']
     }
 };

@@ -8,14 +8,14 @@ module.exports = {
         'jasmine'
     ],
     rules: {
-        'jasmine/named-spy': 2,
-        'jasmine/no-focused-tests': 2,
-        'jasmine/no-disabled-tests': 2,
-        'jasmine/no-suite-dupes': [2, 'block'],
-        'jasmine/no-spec-dupes': [2, 'block'],
-        'jasmine/missing-expect': 0,
-        'jasmine/no-suite-callback-args': 2,
-        'jasmine/valid-expect': 2,
-        'jasmine/no-assign-spyon': 2
+        'jasmine/named-spy': 'error',
+        'jasmine/no-focused-tests': 'error',
+        'jasmine/no-disabled-tests': 'error',
+        'jasmine/no-suite-dupes': ['error', 'block'],
+        'jasmine/no-spec-dupes': ['error', 'block'],
+        'jasmine/missing-expect': 'off',
+        'jasmine/no-suite-callback-args': 'error',
+        'jasmine/valid-expect': 'error',
+        'jasmine/no-assign-spyon': 'error'
     }
 };
