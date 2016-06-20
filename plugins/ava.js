@@ -6,8 +6,8 @@ module.exports = {
     ],
     rules: {
         'ava/assertion-arguments': 'error',
-        'ava/assertion-message': 'off',
-        'ava/max-asserts': 'off',
+        'ava/assertion-message': ['off', 'always'],
+        'ava/max-asserts': ['off', 5],
         'ava/no-cb-test': 'off',
         'ava/no-identical-title': 'error',
         'ava/no-ignored-test-files': 'error',

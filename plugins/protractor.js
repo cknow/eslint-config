@@ -14,6 +14,9 @@ module.exports = {
         'protractor/no-browser-sleep': 'error',
         'protractor/no-by-xpath': 'error',
         'protractor/no-describe-selectors': 'error',
+        'protractor/no-angular-classes': 'error',
+        'protractor/use-angular-locators': 'error',
+        'protractor/use-simple-repeaters': 'error',
         'protractor/by-css-shortcut': 'error'
     }
 };
