@@ -20,7 +20,7 @@ module.exports = {
         'computed-property-spacing': ['error', 'never'],
         'consistent-this': 'off',
         'eol-last': ['error', 'unix'],
-        'func-names': 'off',
+        'func-names': ['error', 'never'],
         'func-style': 'off',
         'id-blacklist': 'off',
         'id-length': 'off',
