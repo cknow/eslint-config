@@ -67,7 +67,7 @@
   },
   "preferGlobal": false,
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4"
   },
   "devDependencies": {
     "ava": "^0.15.2",
