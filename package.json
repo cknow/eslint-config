@@ -13,7 +13,7 @@
   "scripts": {
     "commit": "git-cz",
     "watch": "nodemon --exec npm t",
-    "lint": "eslint index.js browser.js config/ plugins/ rules/ test/",
+    "lint": "eslint index.js browser.js esnext.js config/ plugins/ rules/ test/",
     "test": "npm run cover",
     "postest": "npm run check-coverage",
     "cover": "nyc --reporter lcov --reporter text ava",
