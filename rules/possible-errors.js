@@ -4,7 +4,6 @@ module.exports = {
 
     // http://eslint.org/docs/rules/#possible-errors
     rules: {
-        'comma-dangle': ['error', 'never'],
         'no-cond-assign': ['error', 'except-parens'],
         'no-console': 'off',
         'no-constant-condition': 'error',
