@@ -2,6 +2,9 @@
 
 module.exports = {
     parser: 'babel-eslint',
+    parserOptions: {
+        allowImportExportEverywhere: false
+    },
     plugins: [
         'babel'
     ],
@@ -18,14 +21,18 @@ module.exports = {
         'prefer-template': 'error',
 
         // disable builtin rules that are incompatible with Babel plugin ones
+        'array-bracket-spacing': 'off',
+        'arrow-parens': 'off',
         'generator-star-spacing': 'off',
         'new-cap': 'off',
-        'array-bracket-spacing': 'off',
         'object-curly-spacing': 'off',
         'object-shorthand': 'off',
-        'arrow-parens': 'off',
 
         // Babel plugin
+        'babel/array-bracket-spacing': ['error', 'never'],
+        'babel/arrow-parens': ['error', 'as-needed'],
+        'babel/flow-object-type': ['error', 'comma'],
+        'babel/func-params-comma-dangle': ['error', 'never'],
         'babel/generator-star-spacing': ['error', {
             before: true,
             after: true
@@ -36,11 +43,8 @@ module.exports = {
             newIsCapExceptions: [],
             capIsNewExceptions: []
         }],
-        'babel/array-bracket-spacing': ['error', 'never'],
-        'babel/object-curly-spacing': ['error', 'never'],
-        'babel/object-shorthand': ['error', 'always'],
-        'babel/arrow-parens': ['error', 'as-needed'],
         'babel/no-await-in-loop': 'error',
-        'babel/flow-object-type': ['error', 'comma']
+        'babel/object-curly-spacing': ['error', 'never'],
+        'babel/object-shorthand': ['error', 'always']
     }
 };
