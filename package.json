@@ -14,7 +14,6 @@
     "commit": "git-cz",
     "watch": "nodemon --exec npm t",
     "lint": "eslint index.js browser.js config/ plugins/ rules/ test/",
-    "pretest": "npm run lint",
     "test": "npm run cover",
     "postest": "npm run check-coverage",
     "cover": "nyc --reporter lcov --reporter text ava",
@@ -97,7 +96,8 @@
   },
   "config": {
     "ghooks": {
-      "pre-commit": "npm t"
+      "pre-commit": "npm run lint",
+      "pre-push": "npm t"
     },
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
