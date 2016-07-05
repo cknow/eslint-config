@@ -2,29 +2,6 @@
   "name": "eslint-config-clicknow",
   "version": "0.0.0-semantically-released",
   "description": "ESLint shareable config for ClickNow",
-  "main": "index.js",
-  "files": [
-    "index.js",
-    "browser.js",
-    "config",
-    "plugins",
-    "rules"
-  ],
-  "scripts": {
-    "commit": "git-cz",
-    "watch": "nodemon --exec npm t",
-    "lint": "eslint index.js browser.js esnext.js config/ plugins/ rules/ test/",
-    "test": "npm run cover",
-    "postest": "npm run check-coverage",
-    "cover": "nyc --reporter lcov --reporter text ava",
-    "check-coverage": "nyc check-coverage --global 100",
-    "report-coverage": "cat ./coverage/lcov.info | codecov",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/cknow/eslint-config-clicknow"
-  },
   "keywords": [
     "eslint",
     "eslintconfig",
@@ -54,20 +31,48 @@
     "ava",
     "protractor"
   ],
-  "author": {
-    "name": "Ricardo Gobbo de Souza",
-    "email": "ricardogobbosouza@yahoo.com.br",
-    "role": "Developer"
-  },
-  "license": "MIT",
   "homepage": "https://github.com/cknow/eslint-config-clicknow",
   "bugs": {
     "url": "https://github.com/cknow/eslint-config-clicknow/issues",
     "email": "ricardo@clicknow.com.br"
   },
-  "preferGlobal": false,
-  "engines": {
-    "node": ">=4"
+  "license": "MIT",
+  "author": {
+    "name": "Ricardo Gobbo de Souza",
+    "email": "ricardogobbosouza@yahoo.com.br",
+    "role": "Developer"
+  },
+  "files": [
+    "index.js",
+    "browser.js",
+    "config",
+    "plugins",
+    "rules"
+  ],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cknow/eslint-config-clicknow"
+  },
+  "scripts": {
+    "commit": "git-cz",
+    "watch": "nodemon --exec npm t",
+    "lint": "eslint index.js browser.js esnext.js config/ plugins/ rules/ test/",
+    "test": "npm run cover",
+    "postest": "npm run check-coverage",
+    "cover": "nyc --reporter lcov --reporter text ava",
+    "check-coverage": "nyc check-coverage --global 100",
+    "report-coverage": "cat ./coverage/lcov.info | codecov",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm t"
+    },
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
   },
   "devDependencies": {
     "ava": "^0.15.2",
@@ -94,13 +99,9 @@
   "peerDependencies": {
     "eslint": ">=2"
   },
-  "config": {
-    "ghooks": {
-      "pre-commit": "npm run lint",
-      "pre-push": "npm t"
-    },
-    "commitizen": {
-      "path": "node_modules/cz-conventional-changelog"
-    }
-  }
+  "engines": {
+    "node": ">=4"
+  },
+  "preferGlobal": false,
+  "private": false
 }
