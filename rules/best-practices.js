@@ -11,7 +11,7 @@ module.exports = {
         'array-callback-return': 'error',
         'block-scoped-var': 'error',
         'complexity': ['error', {
-            max: 4
+            max: 10
         }],
         'consistent-return': 'off',
         'curly': ['error', 'all'],
