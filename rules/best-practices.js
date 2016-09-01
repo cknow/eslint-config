@@ -58,7 +58,7 @@ module.exports = {
         }],
         'no-implicit-globals': 'error',
         'no-implied-eval': 'error',
-        'no-invalid-this': 'error',
+        'no-invalid-this': 'off',
         'no-iterator': 'error',
         'no-labels': ['error', {
             allowLoop: false,
