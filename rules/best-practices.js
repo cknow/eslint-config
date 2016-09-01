@@ -47,6 +47,9 @@ module.exports = {
             commentPattern: ''
         }],
         'no-floating-decimal': 'error',
+        'no-global-assign': ['error', {
+            exceptions: []
+        }],
         'no-implicit-coercion': ['error', {
             boolean: true,
             number: true,
@@ -73,9 +76,6 @@ module.exports = {
             }
         }],
         'no-multi-str': 'error',
-        'no-native-reassign': ['error', {
-            exceptions: []
-        }],
         'no-new': 'error',
         'no-new-func': 'error',
         'no-new-wrappers': 'error',
