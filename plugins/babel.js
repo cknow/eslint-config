@@ -18,6 +18,7 @@ module.exports = {
             destructuring: 'all'
         }],
         'prefer-rest-params': 'error',
+        'prefer-spread': 'error',
         'prefer-template': 'error',
 
         // disable builtin rules that are incompatible with Babel plugin ones

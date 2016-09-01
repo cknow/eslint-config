@@ -12,6 +12,7 @@ module.exports = {
             destructuring: 'all'
         }],
         'prefer-rest-params': 'error',
+        'prefer-spread': 'error',
         'prefer-template': 'error'
     }
 };
