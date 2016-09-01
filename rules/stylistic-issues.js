@@ -146,7 +146,11 @@ module.exports = {
         'object-property-newline': ['error', {
             allowMultiplePropertiesPerLine: false
         }],
-        'one-var': ['error', 'never'],
+        'one-var': ['error', {
+            var: 'never',
+            let: 'never',
+            const: 'never'
+        }],
         'one-var-declaration-per-line': 'error',
         'operator-assignment': ['error', 'always'],
         'operator-linebreak': ['error', 'after', {
@@ -157,7 +161,9 @@ module.exports = {
             classes: 'never',
             switches: 'never'
         }],
-        'quote-props': ['error', 'consistent-as-needed'],
+        'quote-props': ['error', 'consistent-as-needed', {
+            keywords: false
+        }],
         'quotes': ['error', 'single', {
             avoidEscape: false,
             allowTemplateLiterals: true
@@ -176,7 +182,13 @@ module.exports = {
             before: false,
             after: true
         }],
-        'sort-vars': 'off',
+        'sort-keys': ['off', 'asc', {
+            caseSensitive: true,
+            natural: true
+        }],
+        'sort-vars': ['off', {
+            ignoreCase: false
+        }],
         'space-before-blocks': ['error', 'always'],
         'space-before-function-paren': ['error', {
             anonymous: 'never',
