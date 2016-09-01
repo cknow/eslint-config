@@ -69,7 +69,9 @@ module.exports = {
             ignoreUrls: true
         }],
         'max-lines': ['error', {
-            max: 300
+            max: 300,
+            skipBlankLines: true,
+            skipComments: true
         }],
         'max-nested-callbacks': ['error', {
             max: 4
