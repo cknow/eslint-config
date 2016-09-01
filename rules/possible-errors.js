@@ -35,7 +35,6 @@ module.exports = {
             skipRegExps: true,
             skipTemplates: true
         }],
-        'no-negated-in-lhs': 'error',
         'no-obj-calls': 'error',
         'no-prototype-builtins': 'error',
         'no-regex-spaces': 'error',
@@ -43,6 +42,7 @@ module.exports = {
         'no-unexpected-multiline': 'error',
         'no-unreachable': 'error',
         'no-unsafe-finally': 'error',
+        'no-unsafe-negation': 'error',
         'use-isnan': 'error',
         'valid-jsdoc': ['error', {
             requireReturn: true,
