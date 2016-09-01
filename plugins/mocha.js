@@ -13,6 +13,7 @@ module.exports = {
         'mocha/no-global-tests': 'error',
         'mocha/no-pending-tests': 'error',
         'mocha/no-return-and-callback': 'error',
+        'mocha/no-sibling-hooks': 'error',
         'mocha/no-skipped-tests': 'error',
         'mocha/no-synchronous-tests': 'error',
         'mocha/valid-suite-description': 'off',
