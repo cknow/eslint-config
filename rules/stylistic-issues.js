@@ -34,7 +34,13 @@ module.exports = {
         'id-match': 'off',
         'indent': ['error', 4, {
             SwitchCase: 1,
-            VariableDeclarator: 1
+            VariableDeclarator: {
+                var: 1,
+                let: 1,
+                const: 1
+            },
+            outerIIFEBody: 1,
+            MemberExpression: 1
         }],
         'jsx-quotes': ['error', 'prefer-double'],
         'key-spacing': ['error', {
