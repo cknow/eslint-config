@@ -17,6 +17,7 @@ module.exports = {
         'ava/no-skip-assert': 'error',
         'ava/no-skip-test': 'error',
         'ava/no-statement-after-end': 'error',
+        'ava/no-todo-implementation': 'error',
         'ava/no-todo-test': 'error',
         'ava/no-unknown-modifiers': 'error',
         'ava/prefer-power-assert': 'off',
