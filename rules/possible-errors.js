@@ -53,6 +53,8 @@ module.exports = {
                 returns: 'return'
             }
         }],
-        'valid-typeof': 'error'
+        'valid-typeof': ['error', {
+            requireStringLiterals: true
+        }]
     }
 };
