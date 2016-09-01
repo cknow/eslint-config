@@ -121,7 +121,8 @@ module.exports = {
         }],
         'no-underscore-dangle': ['error', {
             allow: [],
-            allowAfterThis: false
+            allowAfterThis: false,
+            allowAfterSuper: false
         }],
         'no-unneeded-ternary': 'error',
         'no-whitespace-before-property': 'error',
