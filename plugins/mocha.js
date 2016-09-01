@@ -19,6 +19,7 @@ module.exports = {
         'mocha/no-sibling-hooks': 'error',
         'mocha/no-skipped-tests': 'error',
         'mocha/no-synchronous-tests': 'error',
+        'mocha/no-top-level-hooks': 'off',
         'mocha/valid-suite-description': 'off',
         'mocha/valid-test-description': 'off'
     }
