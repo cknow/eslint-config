@@ -191,7 +191,8 @@ module.exports = {
                 exceptions: ['-']
             },
             block: {
-                markers: ['!']
+                markers: ['!'],
+                balanced: true
             }
         }],
         'unicode-bom': ['error', 'never'],
