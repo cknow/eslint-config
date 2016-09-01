@@ -151,7 +151,7 @@ module.exports = {
             let: 'never',
             const: 'never'
         }],
-        'one-var-declaration-per-line': 'error',
+        'one-var-declaration-per-line': ['error', 'always'],
         'operator-assignment': ['error', 'always'],
         'operator-linebreak': ['error', 'after', {
             overrides: {}
