@@ -145,7 +145,11 @@ module.exports = {
         'operator-linebreak': ['error', 'after', {
             overrides: {}
         }],
-        'padded-blocks': ['error', 'never'],
+        'padded-blocks': ['error', {
+            blocks: 'never',
+            classes: 'never',
+            switches: 'never'
+        }],
         'quote-props': ['error', 'consistent-as-needed'],
         'quotes': ['error', 'single', {
             avoidEscape: false,
