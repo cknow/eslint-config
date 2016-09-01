@@ -66,7 +66,12 @@ module.exports = {
         }],
         'no-lone-blocks': 'error',
         'no-loop-func': 'error',
-        'no-magic-numbers': 'off',
+        'no-magic-numbers': ['off', {
+            ignore: [],
+            ignoreArrayIndexes: false,
+            enforceConst: false,
+            detectObjects: false
+        }],
         'no-multi-spaces': ['error', {
             exceptions: {
                 Property: true,
