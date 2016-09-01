@@ -47,7 +47,18 @@ module.exports = {
             overrides: {}
         }],
         'linebreak-style': ['error', 'unix'],
-        'lines-around-comment': 'off',
+        'lines-around-comment': ['error', {
+            afterBlockComment: false,
+            afterLineComment: false,
+            allowArrayEnd: false,
+            allowArrayStart: false,
+            allowBlockEnd: false,
+            allowBlockStart: false,
+            allowObjectEnd: false,
+            allowObjectStart: false,
+            beforeBlockComment: true,
+            beforeLineComment: true
+        }],
         'max-depth': ['error', {
             max: 4
         }],
