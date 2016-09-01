@@ -124,7 +124,9 @@ module.exports = {
             allowAfterThis: false,
             allowAfterSuper: false
         }],
-        'no-unneeded-ternary': 'error',
+        'no-unneeded-ternary': ['error', {
+            defaultAssignment: false
+        }],
         'no-whitespace-before-property': 'error',
         'object-curly-newline': ['error', {
             multiline: true,
