@@ -132,7 +132,10 @@ module.exports = {
             multiline: true,
             minProperties: 1
         }],
-        'object-curly-spacing': ['error', 'never'],
+        'object-curly-spacing': ['error', 'never', {
+            arraysInObjects: true,
+            objectsInObjects: true
+        }],
         'object-property-newline': ['error', {
             allowMultiplePropertiesPerLine: false
         }],
