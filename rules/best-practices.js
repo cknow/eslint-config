@@ -86,7 +86,9 @@ module.exports = {
         'no-new-wrappers': 'error',
         'no-octal': 'error',
         'no-octal-escape': 'error',
-        'no-param-reassign': 'off',
+        'no-param-reassign': ['off', {
+            props: false
+        }],
         'no-proto': 'error',
         'no-redeclare': ['error', {
             builtinGlobals: false
