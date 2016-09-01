@@ -163,7 +163,7 @@ module.exports = {
             }
         }],
         'semi': ['error', 'always', {
-            omitLastInOneLineBlock: false
+            omitLastInOneLineBlock: true
         }],
         'semi-spacing': ['error', {
             before: false,
