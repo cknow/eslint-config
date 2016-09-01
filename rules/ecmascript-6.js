@@ -5,7 +5,9 @@ module.exports = {
     // http://eslint.org/docs/rules/#ecmascript-6
     rules: {
         'arrow-body-style': ['error', 'as-needed'],
-        'arrow-parens': ['error', 'as-needed'],
+        'arrow-parens': ['error', 'as-needed', {
+            requireForBlockBody: false
+        }],
         'arrow-spacing': ['error', {
             before: true,
             after: true
