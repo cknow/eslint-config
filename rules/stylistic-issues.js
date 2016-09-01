@@ -181,7 +181,11 @@ module.exports = {
         'space-infix-ops': ['error', {
             int32Hint: false
         }],
-        'space-unary-ops': 'error',
+        'space-unary-ops': ['error', {
+            words: true,
+            nonwords: false,
+            overrides: {}
+        }],
         'spaced-comment': ['error', 'always', {
             line: {
                 exceptions: ['-']
