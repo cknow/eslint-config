@@ -17,7 +17,13 @@ module.exports = {
             before: false,
             after: true
         }],
-        'comma-style': ['error', 'last'],
+        'comma-style': ['error', 'last', {
+            exceptions: {
+                ArrayExpression: false,
+                ObjectExpression: false,
+                VariableDeclaration: false
+            }
+        }],
         'computed-property-spacing': ['error', 'never'],
         'consistent-this': 'off',
         'eol-last': ['error', 'unix'],
