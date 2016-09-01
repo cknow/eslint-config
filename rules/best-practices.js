@@ -30,7 +30,9 @@ module.exports = {
         'no-case-declarations': 'error',
         'no-div-regex': 'error',
         'no-else-return': 'error',
-        'no-empty-function': 'off',
+        'no-empty-function': ['error', {
+            allow: []
+        }],
         'no-empty-pattern': 'error',
         'no-eq-null': 'error',
         'no-eval': ['error', {
