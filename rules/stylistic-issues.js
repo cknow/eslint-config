@@ -27,6 +27,7 @@ module.exports = {
         'computed-property-spacing': ['error', 'never'],
         'consistent-this': 'off',
         'eol-last': ['error', 'unix'],
+        'func-call-spacing': ['error', 'never'],
         'func-names': ['error', 'never'],
         'func-style': 'off',
         'id-blacklist': 'off',
