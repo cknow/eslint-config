@@ -48,16 +48,16 @@ module.exports = {
         }],
         'linebreak-style': ['error', 'unix'],
         'lines-around-comment': ['error', {
-            afterBlockComment: false,
-            afterLineComment: false,
-            allowArrayEnd: false,
-            allowArrayStart: false,
-            allowBlockEnd: false,
-            allowBlockStart: false,
-            allowObjectEnd: false,
-            allowObjectStart: false,
             beforeBlockComment: true,
-            beforeLineComment: true
+            afterBlockComment: false,
+            beforeLineComment: true,
+            afterLineComment: false,
+            allowBlockStart: false,
+            allowBlockEnd: false,
+            allowObjectStart: false,
+            allowObjectEnd: false,
+            allowArrayStart: false,
+            allowArrayEnd: false
         }],
         'max-depth': ['error', {
             max: 4
