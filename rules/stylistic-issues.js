@@ -116,7 +116,9 @@ module.exports = {
         'no-restricted-syntax': ['error', 'WithStatement'],
         'no-spaced-func': 'error',
         'no-ternary': 'off',
-        'no-trailing-spaces': 'error',
+        'no-trailing-spaces': ['error', {
+            skipBlankLines: false
+        }],
         'no-underscore-dangle': ['error', {
             allow: [],
             allowAfterThis: false
