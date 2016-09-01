@@ -110,7 +110,9 @@ module.exports = {
         'no-negated-condition': 'error',
         'no-nested-ternary': 'error',
         'no-new-object': 'error',
-        'no-plusplus': 'off',
+        'no-plusplus': ['off', {
+            allowForLoopAfterthoughts: true
+        }],
         'no-restricted-syntax': ['error', 'WithStatement'],
         'no-spaced-func': 'error',
         'no-ternary': 'off',
