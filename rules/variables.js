@@ -22,7 +22,7 @@ module.exports = {
         'no-undefined': 'off',
         'no-unused-vars': ['error', {
             vars: 'all',
-            varsIgnorePattern: '',
+            varsIgnorePattern: '^_$',
             args: 'none',
             argsIgnorePattern: '',
             caughtErrors: 'none',
