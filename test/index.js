@@ -38,14 +38,6 @@ test('browser', t => {
     t.is(result.messages[0].ruleId, 'no-undef');
 });
 
-test('plugin babel', t => {
-    const conf = require('../plugins/babel');
-    const result = runESLint('\'use strict\';\nvar foo = true;\n', conf);
-
-    t.is(1, result.errorCount);
-    t.is(result.messages[0].ruleId, 'no-var');
-});
-
 test('plugin angular', t => {
     const conf = require('../plugins/angular');
     const result = runESLint('\'use strict\';\n$(\'.foo\');\n', conf);

@@ -57,22 +57,6 @@ module.exports = {
 };
 ```
 
-#### Babel
-
-Install
-
-```
-npm install --save-dev eslint-plugin-babel babel-eslint
-```
-
-Usage
-
-```js
-module.exports = {
-    extends: 'clicknow/plugins/babel'
-};
-```
-
 #### Angular
 
 Install
