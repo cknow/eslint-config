@@ -11,6 +11,7 @@ module.exports = {
         'prefer-const': ['error', {
             destructuring: 'all'
         }],
+        'prefer-numeric-literals': 'error',
         'prefer-rest-params': 'error',
         'prefer-spread': 'error',
         'prefer-template': 'error'
