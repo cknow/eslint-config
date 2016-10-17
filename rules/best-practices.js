@@ -115,7 +115,9 @@ module.exports = {
         'no-with': 'error',
         'radix': ['error', 'always'],
         'vars-on-top': 'off',
-        'wrap-iife': ['error', 'inside'],
+        'wrap-iife': ['error', 'inside', {
+            functionPrototypeMethods: true
+        }],
         'yoda': ['error', 'never', {
             exceptRange: false,
             onlyEquality: false
