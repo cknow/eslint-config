@@ -193,7 +193,8 @@ module.exports = {
         'space-before-blocks': ['error', 'always'],
         'space-before-function-paren': ['error', {
             anonymous: 'never',
-            named: 'never'
+            named: 'never',
+            asyncArrow: 'always'
         }],
         'space-in-parens': ['error', 'never', {
             exceptions: []
