@@ -16,6 +16,7 @@ module.exports = {
         'protractor/no-absolute-url': 'error',
         'protractor/no-angular-attributes': 'error',
         'protractor/no-angular-classes': 'error',
+        'protractor/no-array-finder-methods': 'error',
         'protractor/no-bootstrap-classes': 'error',
         'protractor/no-browser-pause': 'error',
         'protractor/no-browser-sleep': 'error',
