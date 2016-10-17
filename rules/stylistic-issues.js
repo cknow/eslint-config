@@ -28,6 +28,7 @@ module.exports = {
         'consistent-this': 'off',
         'eol-last': ['error', 'unix'],
         'func-call-spacing': ['error', 'never'],
+        'func-name-matching': 'error',
         'func-names': ['error', 'never'],
         'func-style': 'off',
         'id-blacklist': 'off',
