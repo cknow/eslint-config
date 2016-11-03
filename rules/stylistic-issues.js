@@ -73,8 +73,11 @@ module.exports = {
         'max-len': ['error', 120, 4, {
             ignorePattern: '',
             ignoreComments: true,
-            ignoreTrailingComments: false,
-            ignoreUrls: true
+            ignoreTrailingComments: true,
+            ignoreUrls: true,
+            ignoreStrings: true,
+            ignoreTemplateLiterals: true,
+            ignoreRegExpLiterals: true
         }],
         'max-lines': ['error', {
             max: 300,
