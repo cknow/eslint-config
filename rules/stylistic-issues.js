@@ -42,7 +42,18 @@ module.exports = {
                 const: 1
             },
             outerIIFEBody: 1,
-            MemberExpression: 1
+            MemberExpression: 1,
+            FunctionDeclaration: {
+                parameters: 1,
+                body: 1
+            },
+            FunctionExpression: {
+                parameters: 1,
+                body: 1
+            },
+            CallExpression: {
+                arguments: 1
+            }
         }],
         'jsx-quotes': ['error', 'prefer-double'],
         'key-spacing': ['error', {
