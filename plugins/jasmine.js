@@ -16,6 +16,7 @@ module.exports = {
         'jasmine/no-spec-dupes': ['error', 'block'],
         'jasmine/no-suite-callback-args': 'error',
         'jasmine/no-suite-dupes': ['error', 'block'],
+        'jasmine/no-unsafe-spy': 'error',
         'jasmine/valid-expect': 'error'
     }
 };
