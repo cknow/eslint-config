@@ -58,9 +58,16 @@ test('plugin node', t => {
     const conf = _.extend(require('../'), require('../plugins/node'));
     const result = runESLint('\'use strict\';\nimport foo from \'foo\';\nfoo();\n', conf);
 
-    t.is(2, result.errorCount);
-    t.is(result.messages[0].ruleId, 'node/no-missing-import');
-    t.is(result.messages[1].ruleId, 'node/no-unpublished-import');
+    if (Number(process.version.match(/^v(\d+\.\d+)/)[1]) < 6) {
+        t.is(3, result.errorCount);
+        t.is(result.messages[0].ruleId, 'node/no-unsupported-features');
+        t.is(result.messages[1].ruleId, 'node/no-missing-import');
+        t.is(result.messages[2].ruleId, 'node/no-unpublished-import');
+    } else {
+        t.is(2, result.errorCount);
+        t.is(result.messages[0].ruleId, 'node/no-missing-import');
+        t.is(result.messages[1].ruleId, 'node/no-unpublished-import');
+    }
 });
 
 test('plugin ava', t => {
@@ -86,8 +93,9 @@ test('plugin jasmine', t => {
     const conf = require('../plugins/jasmine');
     const result = runESLint('\'use strict\';\nvar spy = jasmine.createSpy();\n', conf);
 
-    t.is(1, result.errorCount);
+    t.is(2, result.errorCount);
     t.is(result.messages[0].ruleId, 'jasmine/named-spy');
+    t.is(result.messages[1].ruleId, 'jasmine/no-unsafe-spy');
 });
 
 test('plugin protractor', t => {
