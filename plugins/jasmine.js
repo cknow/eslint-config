@@ -13,6 +13,7 @@ module.exports = {
         'jasmine/no-assign-spyon': 'error',
         'jasmine/no-disabled-tests': 'error',
         'jasmine/no-focused-tests': 'error',
+        'jasmine/no-global-setup': 'error',
         'jasmine/no-spec-dupes': ['error', 'block'],
         'jasmine/no-suite-callback-args': 'error',
         'jasmine/no-suite-dupes': ['error', 'block'],
