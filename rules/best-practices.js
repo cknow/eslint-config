@@ -94,6 +94,7 @@ module.exports = {
             builtinGlobals: false
         }],
         'no-return-assign': ['error', 'always'],
+        'no-return-await': 'error',
         'no-script-url': 'error',
         'no-self-assign': ['error', {
             props: true
