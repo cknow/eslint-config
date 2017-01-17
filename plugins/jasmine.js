@@ -12,6 +12,7 @@ module.exports = {
         'jasmine/named-spy': 'error',
         'jasmine/no-assign-spyon': 'error',
         'jasmine/no-disabled-tests': 'error',
+        'jasmine/no-expect-in-setup-teardown': ['error', 'expect()'],
         'jasmine/no-focused-tests': 'error',
         'jasmine/no-global-setup': 'error',
         'jasmine/no-spec-dupes': ['error', 'block'],
