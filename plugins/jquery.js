@@ -42,6 +42,7 @@ module.exports = {
         'jquery/no-size': 'error',
         'jquery/no-sizzle': 'error',
         'jquery/no-slide': 'error',
+        'jquery/no-submit': 'error',
         'jquery/no-text': 'error',
         'jquery/no-toggle': 'error',
         'jquery/no-trigger': 'error',
