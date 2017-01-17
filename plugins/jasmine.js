@@ -8,7 +8,7 @@ module.exports = {
         'jasmine'
     ],
     rules: {
-        'jasmine/missing-expect': 'off',
+        'jasmine/missing-expect': 'error',
         'jasmine/named-spy': 'error',
         'jasmine/no-assign-spyon': 'error',
         'jasmine/no-disabled-tests': 'error',
