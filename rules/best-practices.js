@@ -116,6 +116,7 @@ module.exports = {
         'no-warning-comments': 'off',
         'no-with': 'error',
         'radix': ['error', 'always'],
+        'require-await': 'error',
         'vars-on-top': 'off',
         'wrap-iife': ['error', 'inside', {
             functionPrototypeMethods: true
