@@ -22,6 +22,7 @@ module.exports = {
         'protractor/no-browser-pause': 'error',
         'protractor/no-browser-sleep': 'error',
         'protractor/no-by-xpath': 'error',
+        'protractor/no-compound-classes': 'error',
         'protractor/no-describe-selectors': 'error',
         'protractor/no-execute-script': 'error',
         'protractor/no-expect-in-po': 'error',
