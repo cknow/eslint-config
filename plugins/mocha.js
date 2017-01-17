@@ -24,6 +24,6 @@ module.exports = {
         'mocha/no-synchronous-tests': 'error',
         'mocha/no-top-level-hooks': 'off',
         'mocha/valid-suite-description': 'off',
-        'mocha/valid-test-description': 'off'
+        'mocha/valid-test-description': ['error', '^[A-Z]', ['it', 'specify', 'test']]
     }
 };
