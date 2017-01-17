@@ -12,6 +12,11 @@ module.exports = {
         'camelcase': ['error', {
             properties: 'always'
         }],
+        'capitalized-comments': ['error', 'always', {
+            ignorePattern: 'pragma|ignore',
+            ignoreInlineComments: true,
+            ignoreConsecutiveComments: true
+        }],
         'comma-dangle': ['error', 'never'],
         'comma-spacing': ['error', {
             before: false,
