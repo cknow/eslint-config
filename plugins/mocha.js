@@ -22,7 +22,7 @@ module.exports = {
         'mocha/no-sibling-hooks': 'error',
         'mocha/no-skipped-tests': 'error',
         'mocha/no-synchronous-tests': 'error',
-        'mocha/no-top-level-hooks': 'off',
+        'mocha/no-top-level-hooks': 'error',
         'mocha/valid-suite-description': ['error', '^[A-Z]'],
         'mocha/valid-test-description': ['error', '^[A-Z]', ['it', 'specify', 'test']]
     }
