@@ -34,6 +34,7 @@ module.exports = {
         'protractor/no-repetitive-selectors': 'error',
         'protractor/no-shadowing': 'error',
         'protractor/use-angular-locators': 'error',
+        'protractor/use-count-method': 'error',
         'protractor/use-first-last': 'error',
         'protractor/use-promise-all': 'error',
         'protractor/use-simple-repeaters': 'error',
