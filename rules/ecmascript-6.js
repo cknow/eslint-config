@@ -41,6 +41,7 @@ module.exports = {
         }],
         'prefer-arrow-callback': 'off',
         'prefer-const': 'off',
+        'prefer-destructuring': 'off',
         'prefer-numeric-literals': 'off',
         'prefer-reflect': 'off',
         'prefer-rest-params': 'off',
