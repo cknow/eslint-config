@@ -64,7 +64,7 @@
     "postest": "npm run check-coverage",
     "cover": "nyc --reporter lcov --reporter text ava",
     "check-coverage": "nyc check-coverage --global 100",
-    "report-coverage": "cat ./coverage/lcov.info | codecov",
+    "report-coverage": "cat ./coverage/lcov.info | coveralls",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "config": {
@@ -74,8 +74,8 @@
   },
   "devDependencies": {
     "ava": "^0.18.2",
-    "codecov": "^1.0.1",
     "commitizen": "^2.9.6",
+    "coveralls": "^2.11.16",
     "cz-conventional-changelog": "^2.0.0",
     "eslint": "^3.16.1",
     "eslint-plugin-angular": "^1.6.1",
