@@ -115,6 +115,9 @@ module.exports = {
         'no-void': 'error',
         'no-warning-comments': 'off',
         'no-with': 'error',
+        'prefer-promise-reject-errors': ['error', {
+            allowEmptyReject: true
+        }],
         'radix': ['error', 'always'],
         'require-await': 'error',
         'vars-on-top': 'off',
