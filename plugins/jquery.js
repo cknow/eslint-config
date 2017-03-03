@@ -48,6 +48,7 @@ module.exports = {
         'jquery/no-trigger': 'error',
         'jquery/no-trim': 'error',
         'jquery/no-val': 'error',
+        'jquery/no-when': 'error',
         'jquery/no-wrap': 'error'
     }
 };
