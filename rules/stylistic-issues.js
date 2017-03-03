@@ -237,6 +237,7 @@ module.exports = {
                 balanced: true
             }
         }],
+        'template-tag-spacing': ['error', 'always'],
         'unicode-bom': ['error', 'never'],
         'wrap-regex': 'off'
     }
