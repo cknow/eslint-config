@@ -131,6 +131,7 @@ module.exports = {
         'no-lonely-if': 'error',
         'no-mixed-operators': 'error',
         'no-mixed-spaces-and-tabs': 'error',
+        'no-multi-assign': 'error',
         'no-multiple-empty-lines': ['error', {
             max: 1
         }],
