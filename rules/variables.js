@@ -24,6 +24,7 @@ module.exports = {
             vars: 'all',
             varsIgnorePattern: '^_$',
             args: 'none',
+            ignoreRestSiblings: true,
             argsIgnorePattern: '',
             caughtErrors: 'none',
             caughtErrorsIgnorePattern: ''
