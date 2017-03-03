@@ -22,7 +22,8 @@ module.exports = {
         'no-extra-parens': ['error', 'all', {
             conditionalAssign: false,
             returnAssign: false,
-            nestedBinaryExpressions: false
+            nestedBinaryExpressions: false,
+            ignoreJSX: 'multi-line'
         }],
         'no-extra-semi': 'error',
         'no-func-assign': 'error',
