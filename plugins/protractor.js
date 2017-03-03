@@ -38,6 +38,7 @@ module.exports = {
         'protractor/use-first-last': 'error',
         'protractor/use-promise-all': 'error',
         'protractor/use-simple-repeaters': 'error',
+        'protractor/valid-by-id': 'error',
         'protractor/valid-locator-type': 'error'
     }
 };
