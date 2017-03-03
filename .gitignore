@@ -1,7 +1,4 @@
-.idea/
 .nyc_output/
 coverage/
 node_modules/
 npm-debug.log
-.DS_Store
-Thumbs.db
