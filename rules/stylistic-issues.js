@@ -157,6 +157,7 @@ module.exports = {
             defaultAssignment: false
         }],
         'no-whitespace-before-property': 'error',
+        'nonblock-statement-body-position': 'off',
         'object-curly-newline': ['error', {
             multiline: true,
             minProperties: 1
