@@ -55,9 +55,17 @@ module.exports = {
 };
 ```
 
+## Usage direct on command line
+
+```
+eslint --config ./node_modules/eslint-config-clicknow/index.js
+```
+
+> **Note:** It is not necessary to create the `.eslintrc.js` file.
+
 ### Plugins
 
-__The plugins do not use the default settings.__
+**The plugins do not use the default settings.**
 
 To this extend `clicknow` or `clicknow/browser` first.
 
