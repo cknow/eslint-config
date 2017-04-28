@@ -13,11 +13,6 @@ module.exports = {
             ignoreGlobalItems: [],
             ignoreIndirectDependencies: false
         }],
-        'node/no-hide-core-modules': ['error', {
-            allow: [],
-            ignoreDirectDependencies: false,
-            ignoreIndirectDependencies: false
-        }],
         'node/no-missing-import': ['error', {
             allowModules: [],
             tryExtensions: ['.js', '.json', '.node']
