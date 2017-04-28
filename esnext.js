@@ -4,6 +4,10 @@ module.exports = {
     extends: require.resolve('./index.js'),
     rules: {
         'no-var': 'error',
+        'object-curly-spacing': ['error', 'always', {
+            arraysInObjects: true,
+            objectsInObjects: true
+        }],
         'prefer-arrow-callback': ['error', {
             allowNamedFunctions: false,
             allowUnboundThis: true
