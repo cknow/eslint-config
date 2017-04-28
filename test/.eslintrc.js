@@ -3,6 +3,6 @@
 module.exports = {
     extends: '../plugins/ava.js',
     rules: {
-        'require-jsdoc': 0
+        'require-jsdoc': 'off'
     }
 };
