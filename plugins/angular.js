@@ -9,6 +9,7 @@ module.exports = {
     ],
     rules: {
         'angular/angularelement': 'error',
+        'angular/avoid-scope-typos': 'error',
         'angular/component-limit': ['error', 1],
         'angular/component-name': ['error', '/^[a-z]+(?:[A-Z][a-z]+)*$/'],
         'angular/constant-name': ['error', '/^[A-Z]+(?:_[A-Z]+)*$/'],
