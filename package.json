@@ -5,6 +5,7 @@
   "keywords": [
     "eslint",
     "eslintconfig",
+    "config",
     "code",
     "quality",
     "style",
@@ -54,18 +55,19 @@
     "url": "https://github.com/cknow/eslint-config-clicknow"
   },
   "scripts": {
-    "precommit": "npm run lint",
-    "prepush": "npm t",
-    "commit": "git-cz",
-    "watch": "nodemon --exec npm t",
-    "lint": "eslint index.js browser.js esnext.js config/ plugins/ rules/ test/",
-    "pretest": "npm run lint",
-    "test": "npm run cover",
-    "postest": "npm run check-coverage",
-    "cover": "nyc --reporter lcov --reporter text ava",
     "check-coverage": "nyc check-coverage --global 100",
+    "commit": "git-cz",
+    "cover": "nyc --reporter lcov --reporter text ava",
+    "lint": "eslint index.js browser.js esnext.js config/ plugins/ rules/ test/",
+    "postest": "npm run check-coverage",
+    "precommit": "npm run lint",
+    "precover": "rimraf .nyc_output coverage",
+    "prepush": "npm t",
+    "pretest": "npm run lint",
     "report-coverage": "cat ./coverage/lcov.info | coveralls",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "test": "npm run cover",
+    "watch": "nodemon --exec npm t"
   },
   "config": {
     "commitizen": {
@@ -73,30 +75,32 @@
     }
   },
   "devDependencies": {
-    "ava": "^0.18.2",
+    "ava": "^0.19.1",
     "commitizen": "^2.9.6",
-    "coveralls": "^2.12.0",
+    "coveralls": "^2.13.1",
     "cz-conventional-changelog": "^2.0.0",
     "eslint": "^3.17.0",
-    "eslint-plugin-angular": "^1.6.2",
+    "eslint-plugin-angular": "^2.4.0",
     "eslint-plugin-ava": "^4.2.0",
     "eslint-plugin-jasmine": "^2.2.0",
-    "eslint-plugin-jquery": "^1.1.1",
-    "eslint-plugin-mocha": "^4.8.0",
-    "eslint-plugin-node": "^4.1.0",
+    "eslint-plugin-jquery": "^1.2.0",
+    "eslint-plugin-mocha": "^4.9.0",
+    "eslint-plugin-node": "^4.2.2",
     "eslint-plugin-protractor": "^1.34.2",
-    "husky": "^0.13.2",
+    "husky": "^0.13.3",
     "lodash": "^4.17.4",
     "nodemon": "^1.11.0",
-    "nyc": "^10.1.2",
+    "nyc": "^10.2.0",
+    "rimraf": "^2.6.1",
     "semantic-release": "^6.3.2",
-    "temp-write": "^3.1.0"
+    "temp-write": "^3.2.0"
   },
   "peerDependencies": {
     "eslint": ">=3.17.0"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=4",
+    "npm": ">=3"
   },
   "preferGlobal": false,
   "private": false
