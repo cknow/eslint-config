@@ -79,7 +79,7 @@
     "commitizen": "^2.9.6",
     "coveralls": "^2.13.1",
     "cz-conventional-changelog": "^2.0.0",
-    "eslint": "^3.17.0",
+    "eslint": "^3.19.0",
     "eslint-plugin-angular": "^2.4.0",
     "eslint-plugin-ava": "^4.2.0",
     "eslint-plugin-jasmine": "^2.2.0",
