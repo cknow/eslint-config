@@ -4,7 +4,9 @@
   "description": "ESLint shareable config for ClickNow",
   "keywords": [
     "eslint",
-    "eslintconfig",
+    "eslint-config",
+    "eslint-rules",
+    "javascript",
     "config",
     "code",
     "quality",
