@@ -1,4 +1,6 @@
 # ESLint Config ClickNow
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/cknow/eslint-config-clicknow.svg)](https://greenkeeper.io/)
 > ESLint [shareable config](http://eslint.org/docs/developer-guide/shareable-configs.html) for [ClickNow](https://github.com/cknow/eslint-config-clicknow)
 
 [![NPM Version](https://img.shields.io/npm/v/eslint-config-clicknow.svg)](https://www.npmjs.com/package/eslint-config-clicknow)
