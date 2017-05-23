@@ -94,14 +94,14 @@
     "husky": "^0.13.3",
     "lodash": "^4.17.4",
     "nodemon": "^1.11.0",
-    "nyc": "^10.2.0",
+    "nyc": "^10.3.2",
     "rimraf": "^2.6.1",
-    "semantic-release": "^6.3.2",
-    "temp-write": "^3.2.0",
+    "semantic-release": "^6.3.6",
+    "temp-write": "^3.3.0",
     "validate-commit-msg": "^2.12.1"
   },
   "peerDependencies": {
-    "eslint": ">=3.17.0"
+    "eslint": ">=3.19.0"
   },
   "engines": {
     "node": ">=4",
