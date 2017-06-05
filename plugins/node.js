@@ -13,6 +13,14 @@ module.exports = {
             ignoreGlobalItems: [],
             ignoreIndirectDependencies: false
         }],
+        'node/no-extraneous-import': ['error', {
+            allowModules: [],
+            convertPath: {}
+        }],
+        'node/no-extraneous-require': ['error', {
+            allowModules: [],
+            convertPath: {}
+        }],
         'node/no-missing-import': ['error', {
             allowModules: [],
             tryExtensions: ['.js', '.json', '.node']
