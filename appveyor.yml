@@ -4,7 +4,7 @@ clone_depth: 1
 
 cache:
   - node_modules
-  - '%APPDATA%\npm-cache'
+  - '%LOCALAPPDATA%/Yarn'
 
 environment:
   matrix:
@@ -12,13 +12,14 @@ environment:
     - nodejs_version: 5
     - nodejs_version: 6
     - nodejs_version: 7
+    - nodejs_version: 8
 
 matrix:
   fast_finish: true
 
 install:
   - ps: Install-Product node $env:nodejs_version
-  - npm i -g npm
+  - npm i -g npm@4.6.1
   - npm i -g yarn
   - yarn
 
