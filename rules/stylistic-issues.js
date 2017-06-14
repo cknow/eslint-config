@@ -240,6 +240,10 @@ module.exports = {
                 balanced: true
             }
         }],
+        'switch-colon-spacing': ['error', {
+            after: true,
+            before: false
+        }],
         'template-tag-spacing': ['error', 'always'],
         'unicode-bom': ['error', 'never'],
         'wrap-regex': 'off'
