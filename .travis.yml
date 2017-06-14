@@ -19,8 +19,7 @@ node_js:
 
 before_install:
   - npm i -g npm
-  - npm i -g yarn
-  - npm i color-convert
+  - npm i -g yarn@4.6.1
   - yarn
 
 before_script:
