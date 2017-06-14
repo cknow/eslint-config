@@ -121,8 +121,6 @@ module.exports = {
             properties: true
         }],
         'new-parens': 'error',
-        'newline-after-var': ['error', 'always'],
-        'newline-before-return': 'error',
         'newline-per-chained-call': ['error', {
             ignoreChainWithDepth: 2
         }],
@@ -186,6 +184,53 @@ module.exports = {
             classes: 'never',
             switches: 'never'
         }],
+        'padding-line-between-statements': ['error',
+            {
+                blankLine: 'always',
+                prev: ['const', 'let', 'var'],
+                next: '*'
+            },
+            {
+                blankLine: 'any',
+                prev: ['const', 'let', 'var'],
+                next: ['const', 'let', 'var']
+            },
+            {
+                blankLine: 'always',
+                prev: 'directive',
+                next: '*'
+            },
+            {
+                blankLine: 'any',
+                prev: 'directive',
+                next: 'directive'
+            },
+            {
+                blankLine: 'always',
+                prev: 'import',
+                next: '*'
+            },
+            {
+                blankLine: 'any',
+                prev: 'import',
+                next: 'import'
+            },
+            {
+                blankLine: 'always',
+                prev: 'export',
+                next: '*'
+            },
+            {
+                blankLine: 'any',
+                prev: 'export',
+                next: 'export'
+            },
+            {
+                blankLine: 'always',
+                prev: '*',
+                next: ['do', 'for', 'function', 'if', 'return', 'switch', 'try', 'while']
+            }
+        ],
         'quote-props': ['error', 'consistent-as-needed', {
             keywords: false
         }],
