@@ -207,6 +207,7 @@ module.exports = {
             before: false,
             after: true
         }],
+        'semi-style': ['error', 'last'],
         'sort-keys': ['off', 'asc', {
             caseSensitive: true,
             natural: true
