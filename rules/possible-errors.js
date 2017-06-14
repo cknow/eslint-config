@@ -4,6 +4,7 @@ module.exports = {
 
     // http://eslint.org/docs/rules/#possible-errors
     rules: {
+        'for-direction': 'error',
         'no-await-in-loop': 'error',
         'no-compare-neg-zero': 'error',
         'no-cond-assign': ['error', 'except-parens'],
