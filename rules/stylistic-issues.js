@@ -4,6 +4,7 @@ module.exports = {
 
     // http://eslint.org/docs/rules/#stylistic-issues
     rules: {
+        'array-element-newline': 'off',
         'array-bracket-spacing': ['error', 'never'],
         'block-spacing': ['error', 'always'],
         'brace-style': ['error', '1tbs', {
