@@ -7,6 +7,7 @@ module.exports = {
         'callback-return': ['error', ['cb', 'callback', 'next', 'done']],
         'global-require': 'off',
         'handle-callback-err': ['error', '^.*(e|E)rr'],
+        'no-buffer-constructor': 'error',
         'no-mixed-requires': ['error', {
             grouping: true,
             allowCall: true
