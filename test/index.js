@@ -16,7 +16,7 @@ const runESLint = (text, conf) => {
 
 test('index', t => {
     const conf = require('../');
-    const result = runESLint('\'use strict\';\nvar foo = \'\';\n', conf);
+    const result = runESLint('\'use strict\';\n\nvar foo = \'\';\n', conf);
 
     t.is(1, result.errorCount);
     t.is(result.messages[0].ruleId, 'no-unused-vars');
@@ -24,7 +24,7 @@ test('index', t => {
 
 test('esnext', t => {
     const conf = require('../esnext');
-    const result = runESLint('\'use strict\';\nvar foo = true;\n\nconsole.log(foo);\n', conf);
+    const result = runESLint('\'use strict\';\n\nvar foo = true;\n\nconsole.log(foo);\n', conf);
 
     t.is(1, result.errorCount);
     t.is(result.messages[0].ruleId, 'no-var');
@@ -32,7 +32,7 @@ test('esnext', t => {
 
 test('browser', t => {
     const conf = require('../browser');
-    const result = runESLint('\'use strict\';\nprocess.exit();\n', conf);
+    const result = runESLint('\'use strict\';\n\nprocess.exit();\n', conf);
 
     t.is(1, result.errorCount);
     t.is(result.messages[0].ruleId, 'no-undef');
@@ -56,7 +56,7 @@ test('plugin jquery', t => {
 
 test('plugin node', t => {
     const conf = _.extend(require('../'), require('../plugins/node'));
-    const result = runESLint('\'use strict\';\nimport foo from \'foo\';\nfoo();\n', conf);
+    const result = runESLint('\'use strict\';\n\nimport foo from \'foo\';\n\nfoo();\n', conf);
 
     t.is(2, result.errorCount);
     t.is(result.messages[0].ruleId, 'node/no-unsupported-features');
@@ -66,7 +66,7 @@ test('plugin node', t => {
 test('plugin ava', t => {
     const conf = _.extend(require('../'), require('../plugins/ava'));
     const result = runESLint(
-        '\'use strict\';\nimport test from \'ava\';\n' +
+        '\'use strict\';\n\nimport test from \'ava\';\n\n' +
         'test(t => {\n    t.pass();\n});\n' +
         'test(t => {\n    t.pass();\n});\n', conf);
 
