@@ -19,8 +19,9 @@ matrix:
 
 install:
   - ps: Install-Product node $env:nodejs_version
-  - npm i -g npm@4.6.1
+  - npm i -g npm
   - npm i -g yarn
+  - npm i color-convert
   - yarn
 
 before_test:
