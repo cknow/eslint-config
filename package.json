@@ -63,7 +63,7 @@
     "commitmsg": "validate-commit-msg",
     "cover": "nyc --reporter lcov --reporter text ava",
     "lint": "eslint index.js browser.js esnext.js config/ plugins/ rules/ test/",
-    "postest": "npm run check-coverage",
+    "posttest": "npm run check-coverage",
     "precommit": "npm run lint",
     "precover": "rimraf .nyc_output coverage",
     "prepush": "npm t",
