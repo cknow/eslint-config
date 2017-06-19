@@ -51,6 +51,7 @@ module.exports = {
         'angular/module-setter': 'error',
         'angular/no-angular-mock': 'error',
         'angular/no-controller': 'error',
+        'angular/no-cookiestore': 'error',
         'angular/no-inline-template': ['error', {
             allowSimple: true
         }],
