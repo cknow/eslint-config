@@ -53,6 +53,7 @@ module.exports = {
         'angular/no-controller': 'error',
         'angular/no-cookiestore': 'error',
         'angular/no-directive-replace': 'error',
+        'angular/no-http-callback': 'error',
         'angular/no-inline-template': ['error', {
             allowSimple: true
         }],
