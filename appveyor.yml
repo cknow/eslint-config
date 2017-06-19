@@ -19,11 +19,9 @@ matrix:
 
 install:
   - ps: Install-Product node $env:nodejs_version
-  - npm install npm@latest -g
-  - npm install yarn -g
-  - npm cache verify
+  - npm i npm@4 -g
+  - npm i yarn -g
   - npm prune
-  - npm update
   - yarn
 
 before_test:
