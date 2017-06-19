@@ -18,8 +18,8 @@ node_js:
   - 8
 
 before_install:
-  - npm i -g npm
-  - npm i -g yarn
+  - npm install npm@latest -g
+  - npm install yarn -g
   - npm cache verify
   - npm prune
   - npm update
