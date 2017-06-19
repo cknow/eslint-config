@@ -18,9 +18,8 @@ node_js:
   - 8
 
 before_install:
-  - npm i npm -g
-  - npm i yarn -g
-  - npm prune
+  - npm i -g npm@4
+  - npm i -g yarn
   - yarn
 
 before_script:
