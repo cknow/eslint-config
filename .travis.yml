@@ -29,6 +29,9 @@ before_script:
   - npm prune
 
 script:
+  - node --version
+  - npm --version
+  - yarn --version
   - npm test
 
 after_success:
