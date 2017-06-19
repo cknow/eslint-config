@@ -1551,9 +1551,9 @@ eslint-plugin-ava@^4.2.1:
     multimatch "^2.1.0"
     pkg-up "^2.0.0"
 
-eslint-plugin-jasmine@^2.3.1:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jasmine/-/eslint-plugin-jasmine-2.3.1.tgz#22ba073937cf1b6d9f2cbafeb8cede8c88f21420"
+eslint-plugin-jasmine@^2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jasmine/-/eslint-plugin-jasmine-2.3.2.tgz#203319654472dbdca8723eac848cc045ee37e03c"
 
 eslint-plugin-jquery@^1.2.0:
   version "1.2.0"

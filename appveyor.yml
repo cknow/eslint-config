@@ -19,7 +19,7 @@ matrix:
 
 install:
   - ps: Install-Product node $env:nodejs_version
-  - npm i npm@4 -g
+  - npm i npm -g
   - npm i yarn -g
   - npm prune
   - yarn
