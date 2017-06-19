@@ -52,6 +52,7 @@ module.exports = {
         'angular/no-angular-mock': 'error',
         'angular/no-controller': 'error',
         'angular/no-cookiestore': 'error',
+        'angular/no-directive-replace': 'error',
         'angular/no-inline-template': ['error', {
             allowSimple: true
         }],
