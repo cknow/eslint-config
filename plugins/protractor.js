@@ -28,6 +28,7 @@ module.exports = {
         'protractor/no-expect-in-po': 'error',
         'protractor/no-get-in-it': 'error',
         'protractor/no-get-inner-outer-html': 'error',
+        'protractor/no-get-location-abs-url': 'error',
         'protractor/no-get-raw-id': 'error',
         'protractor/no-invalid-selectors': 'error',
         'protractor/no-promise-in-if': 'error',
