@@ -10,6 +10,7 @@ module.exports = {
     rules: {
         'jasmine/missing-expect': 'error',
         'jasmine/named-spy': 'error',
+        'jasmine/new-line-before-expect': 'error',
         'jasmine/new-line-between-declarations': 'error',
         'jasmine/no-assign-spyon': 'error',
         'jasmine/no-describe-variables': 'error',
