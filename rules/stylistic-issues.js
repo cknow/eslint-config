@@ -146,7 +146,8 @@ module.exports = {
         'no-tabs': 'error',
         'no-ternary': 'off',
         'no-trailing-spaces': ['error', {
-            skipBlankLines: false
+            skipBlankLines: false,
+            ignoreComments: true
         }],
         'no-underscore-dangle': ['error', {
             allow: [],
