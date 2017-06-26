@@ -23,11 +23,13 @@ module.exports = {
         }],
         'node/no-missing-import': ['error', {
             allowModules: [],
-            tryExtensions: ['.js', '.json', '.node']
+            tryExtensions: ['.js', '.json', '.node'],
+            resolvePaths: []
         }],
         'node/no-missing-require': ['error', {
             allowModules: [],
-            tryExtensions: ['.js', '.json', '.node']
+            tryExtensions: ['.js', '.json', '.node'],
+            resolvePaths: []
         }],
         'node/no-unpublished-bin': ['error', {
             convertPath: {}
