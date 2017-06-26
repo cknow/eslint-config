@@ -96,7 +96,7 @@
     "husky": "^0.14.1",
     "lodash": "^4.17.4",
     "nodemon": "^1.11.0",
-    "nyc": "^11.0.2",
+    "nyc": "^11.0.3",
     "rimraf": "^2.6.1",
     "semantic-release": "^6.3.6",
     "temp-write": "^3.3.0",
