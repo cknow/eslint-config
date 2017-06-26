@@ -85,15 +85,15 @@
     "commitizen": "^2.9.6",
     "coveralls": "^2.13.1",
     "cz-conventional-changelog": "^2.0.0",
-    "eslint": "^4.0.0",
+    "eslint": "^4.1.1",
     "eslint-plugin-angular": "^2.5.0",
     "eslint-plugin-ava": "^4.2.1",
-    "eslint-plugin-jasmine": "^2.6.0",
+    "eslint-plugin-jasmine": "^2.6.2",
     "eslint-plugin-jquery": "^1.2.1",
     "eslint-plugin-mocha": "^4.11.0",
-    "eslint-plugin-node": "^5.0.0",
+    "eslint-plugin-node": "^5.1.0",
     "eslint-plugin-protractor": "^1.37.0",
-    "husky": "^0.14.0",
+    "husky": "^0.14.1",
     "lodash": "^4.17.4",
     "nodemon": "^1.11.0",
     "nyc": "^11.0.2",
@@ -103,7 +103,7 @@
     "validate-commit-msg": "^2.12.2"
   },
   "peerDependencies": {
-    "eslint": ">=4.0.0"
+    "eslint": ">=4.1.1"
   },
   "engines": {
     "node": ">=4",
