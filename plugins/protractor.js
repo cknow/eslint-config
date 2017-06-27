@@ -11,6 +11,7 @@ module.exports = {
         'protractor/array-callback-return': 'error',
         'protractor/by-css-shortcut': 'error',
         'protractor/correct-chaining': 'error',
+        'protractor/limit-selector-depth': 'error',
         'protractor/missing-perform': 'error',
         'protractor/missing-wait-message': 'error',
         'protractor/no-absolute-url': 'error',
