@@ -81,7 +81,7 @@
   "devDependencies": {
     "ava": "^0.20.0",
     "babel-core": "^6.25.0",
-    "babel-preset-env": "^1.5.2",
+    "babel-preset-env": "^1.6.0",
     "commitizen": "^2.9.6",
     "coveralls": "^2.13.1",
     "cz-conventional-changelog": "^2.0.0",
@@ -93,7 +93,7 @@
     "eslint-plugin-mocha": "^4.11.0",
     "eslint-plugin-node": "^5.1.0",
     "eslint-plugin-protractor": "^1.38.0",
-    "husky": "^0.14.1",
+    "husky": "^0.14.3",
     "lodash": "^4.17.4",
     "nodemon": "^1.11.0",
     "nyc": "^11.0.3",
