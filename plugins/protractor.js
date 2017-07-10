@@ -9,6 +9,7 @@ module.exports = {
     ],
     rules: {
         'protractor/array-callback-return': 'error',
+        'protractor/bare-element-finders': 'error',
         'protractor/by-css-shortcut': 'error',
         'protractor/correct-chaining': 'error',
         'protractor/limit-selector-depth': 'error',

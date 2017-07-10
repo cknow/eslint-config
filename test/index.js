@@ -93,7 +93,7 @@ test('plugin jasmine', t => {
 
 test('plugin protractor', t => {
     const conf = require('../plugins/protractor');
-    const result = runESLint('\'use strict\';\nelement(by.css(\'.class\'));\n', conf);
+    const result = runESLint('\'use strict\';\nelement(by.css(\'.class\')).click();\n', conf);
 
     t.is(1, result.errorCount);
     t.is(result.messages[0].ruleId, 'protractor/by-css-shortcut');
