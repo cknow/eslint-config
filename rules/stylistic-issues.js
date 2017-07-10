@@ -112,7 +112,7 @@ module.exports = {
         'max-statements-per-line': ['error', {
             max: 1
         }],
-        'multiline-ternary': ['error', 'never'],
+        'multiline-ternary': ['error', 'always-multiline'],
         'new-cap': ['error', {
             newIsCap: true,
             capIsNew: true,
