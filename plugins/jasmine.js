@@ -22,6 +22,7 @@ module.exports = {
         'jasmine/no-suite-callback-args': 'error',
         'jasmine/no-suite-dupes': ['error', 'block'],
         'jasmine/no-unsafe-spy': 'error',
+        'jasmine/prefer-jasmine-matcher': 'error',
         'jasmine/valid-expect': 'error'
     }
 };
