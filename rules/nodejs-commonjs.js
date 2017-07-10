@@ -17,6 +17,8 @@ module.exports = {
         'no-process-env': 'off',
         'no-process-exit': 'off',
         'no-restricted-modules': 'off',
-        'no-sync': 'off'
+        'no-sync': ['off', {
+            allowAtRootLevel: false
+        }]
     }
 };
