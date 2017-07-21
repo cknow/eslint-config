@@ -152,7 +152,8 @@ module.exports = {
         'no-underscore-dangle': ['error', {
             allow: [],
             allowAfterThis: false,
-            allowAfterSuper: false
+            allowAfterSuper: false,
+            enforceInMethodNames: false
         }],
         'no-unneeded-ternary': ['error', {
             defaultAssignment: false
