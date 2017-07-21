@@ -16,8 +16,14 @@ module.exports = {
             destructuring: 'all'
         }],
         'prefer-destructuring': ['error', {
-            array: true,
-            object: true
+            VariableDeclarator: {
+                array: true,
+                object: true
+            },
+            AssignmentExpression: {
+                array: true,
+                object: true
+            }
         }, {
             enforceForRenamedProperties: false
         }],
