@@ -73,11 +73,12 @@ module.exports = {
             detectObjects: false
         }],
         'no-multi-spaces': ['error', {
+            ignoreEOLComments: false,
             exceptions: {
-                Property: true,
+                Property: false,
                 BinaryExpression: false,
-                VariableDeclarator: true,
-                ImportDeclaration: true
+                VariableDeclarator: false,
+                ImportDeclaration: false
             }
         }],
         'no-multi-str': 'error',

@@ -60,7 +60,11 @@ module.exports = {
             },
             CallExpression: {
                 arguments: 1
-            }
+            },
+            ArrayExpression: 1,
+            ObjectExpression: 1,
+            ImportDeclaration: 1,
+            flatTernaryExpressions: false
         }],
         'jsx-quotes': ['error', 'prefer-double'],
         'key-spacing': ['error', {
