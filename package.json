@@ -1,7 +1,7 @@
 {
-  "name": "eslint-config-clicknow",
+  "name": "@cknow/eslint-config",
   "version": "0.0.0-semantically-released",
-  "description": "ESLint shareable config for ClickNow",
+  "description": "ESLint shareable config",
   "keywords": [
     "eslint",
     "eslint-config",
@@ -33,9 +33,9 @@
     "ava",
     "protractor"
   ],
-  "homepage": "https://github.com/cknow/eslint-config-clicknow",
+  "homepage": "https://github.com/cknow/eslint-config",
   "bugs": {
-    "url": "https://github.com/cknow/eslint-config-clicknow/issues",
+    "url": "https://github.com/cknow/eslint-confi/issues",
     "email": "ricardo@clicknow.com.br"
   },
   "license": "MIT",
@@ -55,7 +55,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cknow/eslint-config-clicknow"
+    "url": "https://github.com/cknow/eslint-config"
   },
   "scripts": {
     "check-coverage": "nyc check-coverage --global 100",
@@ -79,16 +79,16 @@
     }
   },
   "devDependencies": {
-    "ava": "^0.21.0",
-    "babel-core": "^6.25.0",
+    "ava": "^0.22.0",
+    "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.0",
     "commitizen": "^2.9.6",
     "coveralls": "^2.13.1",
     "cz-conventional-changelog": "^2.0.0",
-    "eslint": "^4.4.1",
-    "eslint-plugin-angular": "^3.0.0",
-    "eslint-plugin-ava": "^4.2.1",
-    "eslint-plugin-jasmine": "^2.8.3",
+    "eslint": "^4.5.0",
+    "eslint-plugin-angular": "^3.1.1",
+    "eslint-plugin-ava": "^4.2.2",
+    "eslint-plugin-jasmine": "^2.8.4",
     "eslint-plugin-jquery": "^1.2.1",
     "eslint-plugin-mocha": "^4.11.0",
     "eslint-plugin-node": "^5.1.1",
@@ -98,12 +98,12 @@
     "nodemon": "^1.11.0",
     "nyc": "^11.1.0",
     "rimraf": "^2.6.1",
-    "semantic-release": "^6.3.6",
+    "semantic-release": "^7.0.2",
     "temp-write": "^3.3.0",
     "validate-commit-msg": "^2.14.0"
   },
   "peerDependencies": {
-    "eslint": ">=4.4.1"
+    "eslint": ">=4.5.0"
   },
   "engines": {
     "node": ">=4",

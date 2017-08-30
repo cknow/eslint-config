@@ -1,31 +1,29 @@
-# ESLint Config ClickNow
-> ESLint [shareable config](http://eslint.org/docs/developer-guide/shareable-configs.html) for [ClickNow](https://github.com/cknow/eslint-config-clicknow)
+# ESLint Config
+> ESLint [shareable config](http://eslint.org/docs/developer-guide/shareable-configs.html)
 
-[![NPM Version](https://img.shields.io/npm/v/eslint-config-clicknow.svg)](https://www.npmjs.com/package/eslint-config-clicknow)
-[![Downloads](https://img.shields.io/npm/dt/eslint-config-clicknow.svg)](https://www.npmjs.com/package/eslint-config-clicknow)
-[![MIT License](https://img.shields.io/npm/l/eslint-config-clicknow.svg)](LICENSE)
+[![NPM Version](https://img.shields.io/npm/v/@cknow/eslint-config.svg)](https://www.npmjs.com/package/@cknow/eslint-config)
+[![Downloads](https://img.shields.io/npm/dt/@cknow/eslint-config.svg)](https://www.npmjs.com/package/@cknow/eslint-config)
+[![MIT License](https://img.shields.io/npm/l/@cknow/eslint-config.svg)](LICENSE)
 
-[![Build Status](https://travis-ci.org/cknow/eslint-config-clicknow.svg?branch=master)](https://travis-ci.org/cknow/eslint-config-clicknow)
-[![Build status](https://ci.appveyor.com/api/projects/status/ssi4eyj2t72w3e8p/branch/master?svg=true)](https://ci.appveyor.com/project/cknow/eslint-config-clicknow/branch/master)
-[![Coverage Status](https://coveralls.io/repos/github/cknow/eslint-config-clicknow/badge.svg?branch=master)](https://coveralls.io/github/cknow/eslint-config-clicknow?branch=master)
+[![Build Status](https://travis-ci.org/cknow/eslint-config.svg?branch=master)](https://travis-ci.org/cknow/eslint-config)
+[![Build status](https://ci.appveyor.com/api/projects/status/wn7a9c99eep8ydma/branch/master?svg=true)](https://ci.appveyor.com/project/cknow/eslint-config/branch/master)
+[![Coverage Status](https://coveralls.io/repos/github/cknow/eslint-config/badge.svg?branch=master)](https://coveralls.io/github/cknow/eslint-config?branch=master)
 
-[![Dependency Status](https://dependencyci.com/github/cknow/eslint-config-clicknow/badge)](https://dependencyci.com/github/cknow/eslint-config-clicknow)
-[![Dependencies Status](https://david-dm.org/cknow/eslint-config-clicknow/status.svg)](https://david-dm.org/cknow/eslint-config-clicknow)
-[![devDependencies Status](https://david-dm.org/cknow/eslint-config-clicknow/dev-status.svg)](https://david-dm.org/cknow/eslint-config-clicknow?type=dev)
-[![peerDependencies Status](https://david-dm.org/cknow/eslint-config-clicknow/peer-status.svg)](https://david-dm.org/cknow/eslint-config-clicknow?type=peer)
+[![Dependency Status](https://dependencyci.com/github/cknow/eslint-config/badge)](https://dependencyci.com/github/cknow/eslint-config)
+[![Dependencies Status](https://david-dm.org/cknow/eslint-config/status.svg)](https://david-dm.org/cknow/eslint-config)
+[![devDependencies Status](https://david-dm.org/cknow/eslint-config/dev-status.svg)](https://david-dm.org/cknow/eslint-config?type=dev)
+[![peerDependencies Status](https://david-dm.org/cknow/eslint-config/peer-status.svg)](https://david-dm.org/cknow/eslint-config?type=peer)
 
 [![Semantic Release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/cknow/eslint-config-clicknow.svg)](http://isitmaintained.com/project/cknow/eslint-config-clicknow)
-[![Percentage of issues still open](http://isitmaintained.com/badge/open/cknow/eslint-config-clicknow.svg)](http://isitmaintained.com/project/cknow/eslint-config-clicknow)
-[![Gitter](https://badges.gitter.im/cknow/eslint-config-clicknow.svg)](https://gitter.im/cknow/eslint-config-clicknow?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-
-[![NPM](https://nodei.co/npm/eslint-config-clicknow.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/eslint-config-clicknow)
+[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/cknow/eslint-config.svg)](http://isitmaintained.com/project/cknow/eslint-config)
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/cknow/eslint-config.svg)](http://isitmaintained.com/project/cknow/eslint-config)
+[![Gitter](https://badges.gitter.im/cknow/eslint-config.svg)](https://gitter.im/cknow/eslint-config?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 ## Install
 
 ```
-npm install --save-dev eslint-config-clicknow
+npm install --save-dev @cknow/eslint-config
 ```
 
 ## Usage
@@ -35,7 +33,7 @@ Add some ESLint config to your `.eslintrc.js`:
 
 ```js
 module.exports = {
-    extends: 'clicknow'
+    extends: '@cknow/eslint-config'
 };
 ```
 
@@ -43,7 +41,7 @@ ESNext
 
 ```js
 module.exports = {
-    extends: 'clicknow/esnext'
+    extends: '@cknow/eslint-config/esnext'
 };
 ```
 
@@ -51,14 +49,14 @@ Browser
 
 ```js
 module.exports = {
-    extends: 'clicknow/browser'
+    extends: '@cknow/eslint-config/browser'
 };
 ```
 
 ## Usage direct on command line
 
 ```
-eslint --config ./node_modules/eslint-config-clicknow/index.js
+eslint --config ./node_modules/@cknow/eslint-config/index.js
 ```
 
 > **Note:** It is not necessary to create the `.eslintrc.js` file.
@@ -67,11 +65,11 @@ eslint --config ./node_modules/eslint-config-clicknow/index.js
 
 **The plugins do not use the default settings.**
 
-To this extend `clicknow` or `clicknow/browser` first.
+To this extend `@cknow/eslint-config` or `@cknow/eslint-config/browser` first.
 
 ```js
 module.exports = {
-    extends: ['clicknow', 'clicknow/plugins/PLUGIN']
+    extends: ['@cknow/eslint-config', '@cknow/eslint-config/plugins/PLUGIN_NAME']
 };
 ```
 
@@ -87,7 +85,7 @@ Usage
 
 ```js
 module.exports = {
-    extends: 'clicknow/plugins/angular'
+    extends: '@cknow/eslint-config/plugins/angular'
 };
 ```
 
@@ -103,7 +101,7 @@ Usage
 
 ```js
 module.exports = {
-    extends: 'clicknow/plugins/jquery'
+    extends: '@cknow/eslint-config/plugins/jquery'
 };
 ```
 
@@ -119,7 +117,7 @@ Usage
 
 ```js
 module.exports = {
-    extends: 'clicknow/plugins/node'
+    extends: '@cknow/eslint-config/plugins/node'
 };
 ```
 
@@ -135,7 +133,7 @@ Usage
 
 ```js
 module.exports = {
-    extends: 'clicknow/plugins/mocha'
+    extends: '@cknow/eslint-config/plugins/mocha'
 };
 ```
 
@@ -151,7 +149,7 @@ Usage
 
 ```js
 module.exports = {
-    extends: 'clicknow/plugins/jasmine'
+    extends: '@cknow/eslint-config/plugins/jasmine'
 };
 ```
 
@@ -167,7 +165,7 @@ Usage
 
 ```js
 module.exports = {
-    extends: 'clicknow/plugins/ava'
+    extends: '@cknow/eslint-config/plugins/ava'
 };
 ```
 
@@ -183,6 +181,6 @@ Usage
 
 ```js
 module.exports = {
-    extends: 'clicknow/plugins/protractor'
+    extends: '@cknow/eslint-config/plugins/protractor'
 };
 ```
