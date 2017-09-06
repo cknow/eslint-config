@@ -38,6 +38,7 @@ module.exports = {
         'func-name-matching': 'error',
         'func-names': ['error', 'never'],
         'func-style': 'off',
+        'function-paren-newline': ['error', 'multiline'],
         'id-blacklist': 'off',
         'id-length': 'off',
         'id-match': 'off',
