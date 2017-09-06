@@ -68,7 +68,9 @@ test('plugin ava', t => {
     const result = runESLint(
         '\'use strict\';\n\nimport test from \'ava\';\n\n' +
         'test(t => {\n    t.pass();\n});\n' +
-        'test(t => {\n    t.pass();\n});\n', conf);
+        'test(t => {\n    t.pass();\n});\n',
+        conf
+    );
 
     t.is(1, result.errorCount);
     t.is(result.messages[0].ruleId, 'ava/test-title');
