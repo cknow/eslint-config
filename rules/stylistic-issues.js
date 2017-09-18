@@ -286,10 +286,12 @@ module.exports = {
         }],
         'spaced-comment': ['error', 'always', {
             line: {
-                exceptions: ['-']
+                exceptions: ['-', '+', '*'],
+                markers: ['!', '/']
             },
             block: {
-                markers: ['!'],
+                exceptions: ['-', '+', '*'],
+                markers: ['!', '*'],
                 balanced: true
             }
         }],
