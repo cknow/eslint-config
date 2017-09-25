@@ -85,7 +85,7 @@
     "commitizen": "^2.9.6",
     "coveralls": "^2.13.1",
     "cz-conventional-changelog": "^2.0.0",
-    "eslint": "^4.7.1",
+    "eslint": "^4.7.2",
     "eslint-plugin-angular": "^3.1.1",
     "eslint-plugin-ava": "^4.2.2",
     "eslint-plugin-jasmine": "^2.8.4",
@@ -98,12 +98,12 @@
     "nodemon": "^1.12.1",
     "nyc": "^11.2.1",
     "rimraf": "^2.6.2",
-    "semantic-release": "^7.0.2",
+    "semantic-release": "^8.0.3",
     "temp-write": "^3.3.0",
     "validate-commit-msg": "^2.14.0"
   },
   "peerDependencies": {
-    "eslint": ">=4.7.1"
+    "eslint": ">=4.7.2"
   },
   "engines": {
     "node": ">=4",
