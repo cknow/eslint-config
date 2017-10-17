@@ -90,6 +90,9 @@ module.exports = {
             allowArrayStart: false,
             allowArrayEnd: false
         }],
+        'lines-between-class-members': ['error', 'always', {
+            exceptAfterSingleLine: false
+        }],
         'max-depth': ['error', {
             max: 4
         }],
