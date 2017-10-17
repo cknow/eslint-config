@@ -8,6 +8,7 @@ module.exports = {
         'jasmine'
     ],
     rules: {
+        'jasmine/expect-single-argument': 'error',
         'jasmine/missing-expect': 'error',
         'jasmine/named-spy': 'error',
         'jasmine/new-line-before-expect': 'error',
