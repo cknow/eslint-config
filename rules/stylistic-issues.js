@@ -248,8 +248,10 @@ module.exports = {
         'require-jsdoc': ['error', {
             require: {
                 FunctionDeclaration: true,
+                ClassDeclaration: true,
                 MethodDefinition: true,
-                ClassDeclaration: true
+                ArrowFunctionExpression: true,
+                FunctionExpression: true
             }
         }],
         'semi': ['error', 'always', {
