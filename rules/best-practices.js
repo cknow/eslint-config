@@ -29,7 +29,9 @@ module.exports = {
         'no-caller': 'error',
         'no-case-declarations': 'error',
         'no-div-regex': 'error',
-        'no-else-return': 'error',
+        'no-else-return': ['error', {
+            allowElseIf: true
+        }],
         'no-empty-function': ['error', {
             allow: []
         }],
