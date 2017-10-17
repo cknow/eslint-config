@@ -23,7 +23,6 @@ module.exports = {
         'jasmine/no-suite-dupes': ['error', 'block'],
         'jasmine/no-unsafe-spy': 'error',
         'jasmine/prefer-jasmine-matcher': 'error',
-        'jasmine/prefer-toHaveBeenCalledWith': 'error',
-        'jasmine/valid-expect': 'error'
+        'jasmine/prefer-toHaveBeenCalledWith': 'error'
     }
 };
