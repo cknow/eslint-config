@@ -4,7 +4,7 @@ module.exports = {
 
     // http://eslint.org/docs/rules/#stylistic-issues
     rules: {
-        'array-bracket-newline': 'off',
+        'array-bracket-newline': ['error', 'consistent'],
         'array-bracket-spacing': ['error', 'never'],
         'array-element-newline': 'off',
         'block-spacing': ['error', 'always'],
@@ -191,7 +191,8 @@ module.exports = {
             classes: 'never',
             switches: 'never'
         }],
-        'padding-line-between-statements': ['error',
+        'padding-line-between-statements': [
+            'error',
             {
                 blankLine: 'always',
                 prev: ['const', 'let', 'var'],
