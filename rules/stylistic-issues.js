@@ -42,6 +42,7 @@ module.exports = {
         'id-blacklist': 'off',
         'id-length': 'off',
         'id-match': 'off',
+        'implicit-arrow-linebreak': ['error', 'beside'],
         'indent': ['error', 4, {
             SwitchCase: 1,
             VariableDeclarator: {
