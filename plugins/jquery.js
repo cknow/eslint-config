@@ -9,6 +9,7 @@ module.exports = {
     ],
     rules: {
         'jquery/no-ajax': 'error',
+        'jquery/no-ajax-events': 'error',
         'jquery/no-animate': 'error',
         'jquery/no-attr': 'error',
         'jquery/no-bind': 'error',
