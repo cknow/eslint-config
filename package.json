@@ -69,7 +69,7 @@
     "prepush": "npm t",
     "pretest": "npm run lint",
     "report-coverage": "cat ./coverage/lcov.info | coveralls",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "semantic-release": "semantic-release",
     "test": "npm run cover",
     "watch": "nodemon --exec npm t"
   },
