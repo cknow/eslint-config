@@ -66,7 +66,9 @@ module.exports = {
             ArrayExpression: 1,
             ObjectExpression: 1,
             ImportDeclaration: 1,
-            flatTernaryExpressions: false
+            flatTernaryExpressions: false,
+            ignoredNodes: [],
+            ignoreComments: false
         }],
         'jsx-quotes': ['error', 'prefer-double'],
         'key-spacing': ['error', {

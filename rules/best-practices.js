@@ -8,7 +8,9 @@ module.exports = {
             setWithoutGet: true,
             getWithoutSet: false
         }],
-        'array-callback-return': 'error',
+        'array-callback-return': ['error', {
+            allowImplicit: false
+        }],
         'block-scoped-var': 'error',
         'class-methods-use-this': 'off',
         'complexity': ['error', {
