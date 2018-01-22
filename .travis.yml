@@ -35,12 +35,12 @@ script:
   - yarn --version
   - npm test
 
-after_script:
-  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
-
 after_success:
   - npm run report-coverage
   - npm run travis-deploy-once "npm run semantic-release"
+
+after_script:
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 
 branches:
   except:
