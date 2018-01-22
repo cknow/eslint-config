@@ -1,7 +1,3 @@
-env:
-  global:
-    - CC_TEST_REPORTER_ID=54632afea2654c05326d460d2088caf3a7189015fd1cff3e7d73fc899e6286e8
-
 sudo: false
 
 language: node_js
@@ -13,6 +9,10 @@ cache:
 
 notifications:
   email: false
+
+env:
+  global:
+    - CC_TEST_REPORTER_ID=54632afea2654c05326d460d2088caf3a7189015fd1cff3e7d73fc899e6286e8
 
 node_js:
   - 9
