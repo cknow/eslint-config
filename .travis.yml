@@ -36,11 +36,14 @@ script:
   - npm test
 
 after_success:
-  - npm run report-coverage
   - npm run travis-deploy-once "npm run semantic-release"
 
 after_script:
-  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+  - |
+    if [[ "$TRAVIS_NODE_VERSION" == "9" ]]; then
+      - npm run report-coverage
+      - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+    fi
 
 branches:
   except:
