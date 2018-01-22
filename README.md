@@ -9,7 +9,10 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/wn7a9c99eep8ydma/branch/master?svg=true)](https://ci.appveyor.com/project/cknow/eslint-config/branch/master)
 [![Coverage Status](https://coveralls.io/repos/github/cknow/eslint-config/badge.svg?branch=master)](https://coveralls.io/github/cknow/eslint-config?branch=master)
 
-[![Dependency Status](https://dependencyci.com/github/cknow/eslint-config/badge)](https://dependencyci.com/github/cknow/eslint-config)
+[![Code Climate](https://codeclimate.com/github/cknow/eslint-config/badges/gpa.svg)](https://codeclimate.com/github/cknow/eslint-config)
+[![Test Coverage](https://codeclimate.com/github/cknow/eslint-config/badges/coverage.svg)](https://codeclimate.com/github/cknow/eslint-config/coverage)
+[![Issue Count](https://codeclimate.com/github/cknow/eslint-config/badges/issue_count.svg)](https://codeclimate.com/github/cknow/eslint-config)
+
 [![Dependencies Status](https://david-dm.org/cknow/eslint-config/status.svg)](https://david-dm.org/cknow/eslint-config)
 [![devDependencies Status](https://david-dm.org/cknow/eslint-config/dev-status.svg)](https://david-dm.org/cknow/eslint-config?type=dev)
 [![peerDependencies Status](https://david-dm.org/cknow/eslint-config/peer-status.svg)](https://david-dm.org/cknow/eslint-config?type=peer)
