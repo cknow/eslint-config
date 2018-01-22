@@ -41,8 +41,8 @@ after_success:
 after_script:
   - |
     if [[ "$TRAVIS_NODE_VERSION" == "9" ]]; then
-      - npm run report-coverage
-      - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+      npm run report-coverage
+      ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
     fi
 
 branches:
