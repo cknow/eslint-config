@@ -24,13 +24,7 @@ module.exports = {
             before: false,
             after: true
         }],
-        'comma-style': ['error', 'last', {
-            exceptions: {
-                ArrayExpression: false,
-                ObjectExpression: false,
-                VariableDeclaration: false
-            }
-        }],
+        'comma-style': ['error', 'last'],
         'computed-property-spacing': ['error', 'never'],
         'consistent-this': 'off',
         'eol-last': ['error', 'unix'],
@@ -181,7 +175,7 @@ module.exports = {
             objectsInObjects: true
         }],
         'object-property-newline': ['error', {
-            allowMultiplePropertiesPerLine: false
+            allowAllPropertiesOnSameLine: false
         }],
         'one-var': ['error', {
             var: 'never',
