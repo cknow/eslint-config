@@ -17,6 +17,10 @@ env:
 node_js:
   - 9
   - 8
+  - 7
+  - 6
+  - 5
+  - 4
 
 before_install:
   - npm i -g npm
@@ -35,15 +39,14 @@ script:
   - yarn --version
   - npm test
 
-after_success:
-  - npm run travis-deploy-once "npm run semantic-release"
-
 after_script:
-  - |
-    if [[ "$TRAVIS_NODE_VERSION" == "9" ]]; then
-      npm run report-coverage
-      ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
-    fi
+  - npm run travis-deploy-once "npm run report-coverage && ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT"
+
+deploy:
+  provider: script
+  skip_cleanup: true
+  script:
+    - npm install -g semantic-release && npm run travis-deploy-once "semantic-release"
 
 branches:
   except:

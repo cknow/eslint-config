@@ -69,7 +69,6 @@
     "prepush": "npm t",
     "pretest": "npm run lint",
     "report-coverage": "cat ./coverage/lcov.info | coveralls",
-    "semantic-release": "semantic-release",
     "test": "npm run cover",
     "travis-deploy-once": "travis-deploy-once",
     "watch": "nodemon --exec npm t"
@@ -99,7 +98,6 @@
     "nodemon": "^1.14.11",
     "nyc": "^11.4.1",
     "rimraf": "^2.6.2",
-    "semantic-release": "^12.2.4",
     "temp-write": "^3.4.0",
     "travis-deploy-once": "^4.3.2",
     "validate-commit-msg": "^2.14.0"
@@ -108,7 +106,7 @@
     "eslint": ">=4.16.0"
   },
   "engines": {
-    "node": ">=8.3",
+    "node": ">=4",
     "npm": ">=3"
   },
   "preferGlobal": false,
