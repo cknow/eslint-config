@@ -47,7 +47,7 @@ deploy:
   provider: script
   skip_cleanup: true
   script:
-    - npm install -g semantic-release && npm run travis-deploy-once "semantic-release"
+    - npm install -g travis-deploy-once semantic-release && travis-deploy-once "semantic-release"
 
 branches:
   except:
