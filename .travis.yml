@@ -39,6 +39,10 @@ script:
   - yarn --version
   - npm test
 
+after_success:
+  - npm run report-coverage
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+
 deploy:
   provider: script
   skip_cleanup: true
