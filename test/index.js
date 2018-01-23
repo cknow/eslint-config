@@ -5,13 +5,13 @@ import eslint from 'eslint';
 import tempWrite from 'temp-write';
 import _ from 'lodash';
 
-const runESLint = (text, conf) => {
+const runESLint = (text, conf, filename) => {
     const linter = new eslint.CLIEngine({
         useEslintrc: false,
         configFile: tempWrite.sync(JSON.stringify(conf))
     });
 
-    return linter.executeOnText(text).results[0];
+    return linter.executeOnText(text, filename).results[0];
 };
 
 test('index', t => {
@@ -99,4 +99,12 @@ test('plugin protractor', t => {
 
     t.is(1, result.errorCount);
     t.is(result.messages[0].ruleId, 'protractor/by-css-shortcut');
+});
+
+test('plugin vue', t => {
+    const conf = _.extend(require('../browser'), require('../plugins/vue'));
+    const result = runESLint('<template><textarea>{{ message }}</textarea></template>\n', conf, 'foo.vue');
+
+    t.is(1, result.errorCount);
+    t.is(result.messages[0].ruleId, 'vue/no-textarea-mustache');
 });

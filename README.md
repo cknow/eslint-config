@@ -76,6 +76,22 @@ module.exports = {
 };
 ```
 
+#### Vue
+
+Install
+
+```
+npm install --save-dev eslint-plugin-vue
+```
+
+Usage
+
+```js
+module.exports = {
+    extends: '@cknow/eslint-config/plugins/vue'
+};
+```
+
 #### Angular
 
 Install
