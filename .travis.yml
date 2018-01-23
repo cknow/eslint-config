@@ -22,13 +22,10 @@ node_js:
   - 5
   - 4
 
-before_install:
-  - npm i -g npm
-  - npm i -g yarn
-  - yarn
+install:
+  - travis_retry yarn install
 
 before_script:
-  - npm prune
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
   - chmod +x ./cc-test-reporter
   - ./cc-test-reporter before-build

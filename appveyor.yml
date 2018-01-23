@@ -20,12 +20,7 @@ matrix:
 
 install:
   - ps: Install-Product node $env:nodejs_version
-  - npm i -g npm
-  - npm i -g yarn
-  - yarn
-
-before_test:
-  - npm prune
+  - yarn install
 
 test_script:
   - node --version
