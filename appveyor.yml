@@ -2,10 +2,6 @@ build: false
 
 clone_depth: 1
 
-cache:
-  - node_modules
-  - '%LOCALAPPDATA%/Yarn'
-
 environment:
   matrix:
     - nodejs_version: 9
