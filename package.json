@@ -31,7 +31,8 @@
     "mocha",
     "jasmine",
     "ava",
-    "protractor"
+    "protractor",
+    "vue"
   ],
   "homepage": "https://github.com/cknow/eslint-config",
   "bugs": {
