@@ -1,4 +1,5 @@
 # ESLint Config
+
 > ESLint [shareable config](http://eslint.org/docs/developer-guide/shareable-configs.html)
 
 [![NPM Version](https://img.shields.io/npm/v/@cknow/eslint-config.svg)](https://www.npmjs.com/package/@cknow/eslint-config)
@@ -25,11 +26,12 @@
 
 ## Install
 
-```
+```bash
 npm install --save-dev @cknow/eslint-config
 ```
 
 ## Usage
+
 > ESLint [Configuration File Formats](http://eslint.org/docs/user-guide/configuring#configuration-file-formats)
 
 Add some ESLint config to your `.eslintrc.js`:
@@ -58,7 +60,7 @@ module.exports = {
 
 ## Usage direct on command line
 
-```
+```bash
 eslint --config ./node_modules/@cknow/eslint-config/index.js
 ```
 
@@ -80,7 +82,7 @@ module.exports = {
 
 Install
 
-```
+```bash
 npm install --save-dev eslint-plugin-vue
 ```
 
@@ -96,7 +98,7 @@ module.exports = {
 
 Install
 
-```
+```bash
 npm install --save-dev eslint-plugin-angular
 ```
 
@@ -112,7 +114,7 @@ module.exports = {
 
 Install
 
-```
+```bash
 npm install --save-dev eslint-plugin-jquery
 ```
 
@@ -128,7 +130,7 @@ module.exports = {
 
 Install
 
-```
+```bash
 npm install --save-dev eslint-plugin-node
 ```
 
@@ -144,7 +146,7 @@ module.exports = {
 
 Install
 
-```
+```bash
 npm install --save-dev eslint-plugin-mocha
 ```
 
@@ -160,7 +162,7 @@ module.exports = {
 
 Install
 
-```
+```bash
 npm install --save-dev eslint-plugin-jasmine
 ```
 
@@ -176,7 +178,7 @@ module.exports = {
 
 Install
 
-```
+```bash
 npm install --save-dev eslint-plugin-ava
 ```
 
@@ -192,7 +194,7 @@ module.exports = {
 
 Install
 
-```
+```bash
 npm install --save-dev eslint-plugin-protractor
 ```
 
