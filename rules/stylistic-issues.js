@@ -167,8 +167,7 @@ module.exports = {
         'no-whitespace-before-property': 'error',
         'nonblock-statement-body-position': 'off',
         'object-curly-newline': ['error', {
-            multiline: true,
-            minProperties: 1
+            consistent: true
         }],
         'object-curly-spacing': ['error', 'never', {
             arraysInObjects: true,
