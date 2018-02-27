@@ -123,6 +123,7 @@ module.exports = {
                 'renderError'
             ]
         }],
+        'vue/prop-name-casing': ['error', 'camelCase'],
         'vue/require-component-is': 'error',
         'vue/require-default-prop': 'error',
         'vue/require-prop-types': 'error',
