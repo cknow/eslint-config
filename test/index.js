@@ -93,6 +93,14 @@ test('plugin jasmine', t => {
     t.is(result.messages[1].ruleId, 'jasmine/no-unsafe-spy');
 });
 
+test('plugin promise', t => {
+    const conf = require('../plugins/promise');
+    const result = runESLint('Promise()\n', conf);
+
+    t.is(1, result.errorCount);
+    t.is(result.messages[0].ruleId, 'promise/no-new-statics');
+});
+
 test('plugin protractor', t => {
     const conf = require('../plugins/protractor');
     const result = runESLint('\'use strict\';\nelement(by.css(\'.class\')).click();\n', conf);

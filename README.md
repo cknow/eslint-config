@@ -78,22 +78,6 @@ module.exports = {
 };
 ```
 
-#### Vue
-
-Install
-
-```bash
-npm install --save-dev eslint-plugin-vue
-```
-
-Usage
-
-```js
-module.exports = {
-    extends: '@cknow/eslint-config/plugins/vue'
-};
-```
-
 #### Angular
 
 Install
@@ -107,70 +91,6 @@ Usage
 ```js
 module.exports = {
     extends: '@cknow/eslint-config/plugins/angular'
-};
-```
-
-#### Jquery
-
-Install
-
-```bash
-npm install --save-dev eslint-plugin-jquery
-```
-
-Usage
-
-```js
-module.exports = {
-    extends: '@cknow/eslint-config/plugins/jquery'
-};
-```
-
-#### Node
-
-Install
-
-```bash
-npm install --save-dev eslint-plugin-node
-```
-
-Usage
-
-```js
-module.exports = {
-    extends: '@cknow/eslint-config/plugins/node'
-};
-```
-
-#### Mocha
-
-Install
-
-```bash
-npm install --save-dev eslint-plugin-mocha
-```
-
-Usage
-
-```js
-module.exports = {
-    extends: '@cknow/eslint-config/plugins/mocha'
-};
-```
-
-#### Jasmine
-
-Install
-
-```bash
-npm install --save-dev eslint-plugin-jasmine
-```
-
-Usage
-
-```js
-module.exports = {
-    extends: '@cknow/eslint-config/plugins/jasmine'
 };
 ```
 
@@ -190,6 +110,86 @@ module.exports = {
 };
 ```
 
+#### Jasmine
+
+Install
+
+```bash
+npm install --save-dev eslint-plugin-jasmine
+```
+
+Usage
+
+```js
+module.exports = {
+    extends: '@cknow/eslint-config/plugins/jasmine'
+};
+```
+
+#### Jquery
+
+Install
+
+```bash
+npm install --save-dev eslint-plugin-jquery
+```
+
+Usage
+
+```js
+module.exports = {
+    extends: '@cknow/eslint-config/plugins/jquery'
+};
+```
+
+#### Mocha
+
+Install
+
+```bash
+npm install --save-dev eslint-plugin-mocha
+```
+
+Usage
+
+```js
+module.exports = {
+    extends: '@cknow/eslint-config/plugins/mocha'
+};
+```
+
+#### Node
+
+Install
+
+```bash
+npm install --save-dev eslint-plugin-node
+```
+
+Usage
+
+```js
+module.exports = {
+    extends: '@cknow/eslint-config/plugins/node'
+};
+```
+
+#### Promise
+
+Install
+
+```bash
+npm install --save-dev eslint-plugin-promise
+```
+
+Usage
+
+```js
+module.exports = {
+    extends: '@cknow/eslint-config/plugins/promise'
+};
+```
+
 #### Protractor
 
 Install
@@ -203,5 +203,21 @@ Usage
 ```js
 module.exports = {
     extends: '@cknow/eslint-config/plugins/protractor'
+};
+```
+
+#### Vue
+
+Install
+
+```bash
+npm install --save-dev eslint-plugin-vue
+```
+
+Usage
+
+```js
+module.exports = {
+    extends: '@cknow/eslint-config/plugins/vue'
 };
 ```
