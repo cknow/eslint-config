@@ -100,7 +100,8 @@
     "nyc": "^11.4.1",
     "rimraf": "^2.6.2",
     "temp-write": "^3.4.0",
-    "validate-commit-msg": "^2.14.0"
+    "validate-commit-msg": "^2.14.0",
+    "vue-eslint-parser": "^2.0.3"
   },
   "peerDependencies": {
     "eslint": ">=4.18.0"
