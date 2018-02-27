@@ -7,7 +7,7 @@ module.exports = {
     ],
     rules: {
         'vue/attribute-hyphenation': ['error', 'always'],
-        'vue/attribute-order': ['error', {
+        'vue/attributes-order': ['error', {
             order: [
                 'DEFINITION',
                 'LIST_RENDERING',
