@@ -7,6 +7,20 @@ module.exports = {
     ],
     rules: {
         'vue/attribute-hyphenation': ['error', 'always'],
+        'vue/attribute-order': ['error', {
+            order: [
+                'DEFINITION',
+                'LIST_RENDERING',
+                'CONDITIONALS',
+                'RENDER_MODIFIERS',
+                'GLOBAL',
+                'UNIQUE',
+                'BINDING',
+                'OTHER_ATTR',
+                'EVENTS',
+                'CONTENT'
+            ]
+        }],
         'vue/comment-directive': 'error',
         'vue/html-closing-bracket-newline': ['error', {
             singleline: 'never',
