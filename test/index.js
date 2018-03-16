@@ -16,7 +16,7 @@ const runESLint = (text, conf, filename) => {
 
 test('index', t => {
     const conf = require('../');
-    const result = runESLint('\'use strict\';\n\nvar foo = \'\';\n', conf);
+    const result = runESLint('var foo = \'\';\n', conf);
 
     t.is(1, result.errorCount);
     t.is(result.messages[0].ruleId, 'no-unused-vars');
@@ -24,7 +24,7 @@ test('index', t => {
 
 test('esnext', t => {
     const conf = require('../esnext');
-    const result = runESLint('\'use strict\';\n\nvar foo = true;\n\nconsole.log(foo);\n', conf);
+    const result = runESLint('var foo = true;\n\nconsole.log(foo);\n', conf);
 
     t.is(1, result.errorCount);
     t.is(result.messages[0].ruleId, 'no-var');
@@ -32,7 +32,7 @@ test('esnext', t => {
 
 test('browser', t => {
     const conf = require('../browser');
-    const result = runESLint('\'use strict\';\n\nprocess.exit();\n', conf);
+    const result = runESLint('process.exit();\n', conf);
 
     t.is(1, result.errorCount);
     t.is(result.messages[0].ruleId, 'no-undef');
@@ -40,7 +40,7 @@ test('browser', t => {
 
 test('plugin angular', t => {
     const conf = require('../plugins/angular');
-    const result = runESLint('\'use strict\';\n$(\'.foo\');\n', conf);
+    const result = runESLint('$(\'.foo\');', conf);
 
     t.is(1, result.errorCount);
     t.is(result.messages[0].ruleId, 'angular/angularelement');
@@ -48,7 +48,7 @@ test('plugin angular', t => {
 
 test('plugin jquery', t => {
     const conf = require('../plugins/jquery');
-    const result = runESLint('\'use strict\';\n$.ajax();\n', conf);
+    const result = runESLint('$.ajax();', conf);
 
     t.is(1, result.errorCount);
     t.is(result.messages[0].ruleId, 'jquery/no-ajax');
@@ -56,7 +56,7 @@ test('plugin jquery', t => {
 
 test('plugin node', t => {
     const conf = _.extend(require('../'), require('../plugins/node'));
-    const result = runESLint('\'use strict\';\n\nimport foo from \'foo\';\n\nfoo();\n', conf);
+    const result = runESLint('import foo from \'foo\';\n\nfoo();\n', conf);
 
     t.is(2, result.errorCount);
     t.is(result.messages[0].ruleId, 'node/no-unsupported-features');
@@ -66,7 +66,7 @@ test('plugin node', t => {
 test('plugin ava', t => {
     const conf = _.extend(require('../'), require('../plugins/ava'));
     const result = runESLint(
-        '\'use strict\';\n\nimport test from \'ava\';\n\n' +
+        'import test from \'ava\';\n\n' +
         'test(t => {\n    t.pass();\n});\n' +
         'test(t => {\n    t.pass();\n});\n',
         conf
@@ -78,15 +78,15 @@ test('plugin ava', t => {
 
 test('plugin mocha', t => {
     const conf = require('../plugins/mocha');
-    const result = runESLint('\'use strict\';\ndescribe.only(\'foo\', function() {});\n', conf);
+    const result = runESLint('describe(\'foo\', function() {});', conf);
 
     t.is(1, result.errorCount);
-    t.is(result.messages[0].ruleId, 'mocha/no-exclusive-tests');
+    t.is(result.messages[0].ruleId, 'mocha/valid-suite-description');
 });
 
 test('plugin jasmine', t => {
     const conf = require('../plugins/jasmine');
-    const result = runESLint('\'use strict\';\nvar spy = jasmine.createSpy();\n', conf);
+    const result = runESLint('var spy = jasmine.createSpy();', conf);
 
     t.is(2, result.errorCount);
     t.is(result.messages[0].ruleId, 'jasmine/named-spy');
@@ -95,7 +95,7 @@ test('plugin jasmine', t => {
 
 test('plugin promise', t => {
     const conf = require('../plugins/promise');
-    const result = runESLint('Promise()\n', conf);
+    const result = runESLint('new Promise.resolve();', conf);
 
     t.is(1, result.errorCount);
     t.is(result.messages[0].ruleId, 'promise/no-new-statics');
@@ -103,15 +103,15 @@ test('plugin promise', t => {
 
 test('plugin protractor', t => {
     const conf = require('../plugins/protractor');
-    const result = runESLint('\'use strict\';\nelement(by.css(\'.class\')).click();\n', conf);
+    const result = runESLint('element(by.css(\'.class\')).click();', conf);
 
     t.is(1, result.errorCount);
     t.is(result.messages[0].ruleId, 'protractor/by-css-shortcut');
 });
 
 test('plugin vue', t => {
-    const conf = _.extend(require('../browser'), require('../plugins/vue'));
-    const result = runESLint('<template><textarea>{{ message }}</textarea></template>\n', conf, 'foo.vue');
+    const conf = require('../plugins/vue');
+    const result = runESLint('<template><textarea>{{ message }}</textarea></template>', conf, 'foo.vue');
 
     t.is(1, result.errorCount);
     t.is(result.messages[0].ruleId, 'vue/no-textarea-mustache');
