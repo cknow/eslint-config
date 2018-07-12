@@ -8,6 +8,7 @@ module.exports = {
         'mocha'
     ],
     rules: {
+        'prefer-arrow-callback': 'off',
         'mocha/handle-done-callback': 'error',
         'mocha/max-top-level-suites': 'error',
         'mocha/no-exclusive-tests': 'error',
@@ -24,6 +25,7 @@ module.exports = {
         'mocha/no-skipped-tests': 'error',
         'mocha/no-synchronous-tests': 'error',
         'mocha/no-top-level-hooks': 'error',
+        'mocha/prefer-arrow-callback': 'error',
         'mocha/valid-suite-description': ['error', '^[A-Z]'],
         'mocha/valid-test-description': ['error', '^[A-Z]', ['it', 'specify', 'test']]
     }
