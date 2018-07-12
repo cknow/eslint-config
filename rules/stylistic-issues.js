@@ -110,7 +110,7 @@ module.exports = {
             skipComments: true
         }],
         'max-lines-per-function': ['error', {
-            max: 20,
+            max: 50,
             skipBlankLines: true,
             skipComments: true,
             IIFEs: true
