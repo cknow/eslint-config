@@ -104,7 +104,7 @@
     "eslint": ">=5.1.0"
   },
   "engines": {
-    "node": ">=8",
+    "node": ">=6",
     "npm": ">=3"
   },
   "preferGlobal": false,

@@ -16,6 +16,8 @@ node_js:
   - 10
   - 9
   - 8
+  - 7
+  - 6
 
 install:
   - travis_retry yarn install
