@@ -6,7 +6,7 @@ module.exports = {
     rules: {
         'array-bracket-newline': ['error', 'consistent'],
         'array-bracket-spacing': ['error', 'never'],
-        'array-element-newline': 'off',
+        'array-element-newline': ['error', 'consistent'],
         'block-spacing': ['error', 'always'],
         'brace-style': ['error', '1tbs', {
             allowSingleLine: false
@@ -29,7 +29,9 @@ module.exports = {
         'consistent-this': 'off',
         'eol-last': ['error', 'unix'],
         'func-call-spacing': ['error', 'never'],
-        'func-name-matching': 'error',
+        'func-name-matching': ['error', 'always', {
+            considerPropertyDescriptor: true
+        }],
         'func-names': ['error', 'never'],
         'func-style': 'off',
         'function-paren-newline': ['error', 'multiline'],
@@ -107,13 +109,23 @@ module.exports = {
             skipBlankLines: true,
             skipComments: true
         }],
+        'max-lines-per-function': ['error', {
+            max: 20,
+            skipBlankLines: true,
+            skipComments: true,
+            IIFEs: true
+        }],
         'max-nested-callbacks': ['error', {
             max: 4
         }],
         'max-params': ['error', {
             max: 4
         }],
-        'max-statements': 'off',
+        'max-statements': ['error', {
+            max: 10
+        }, {
+            ignoreTopLevelFunctions: true
+        }],
         'max-statements-per-line': ['error', {
             max: 1
         }],
@@ -239,6 +251,7 @@ module.exports = {
                 next: ['do', 'for', 'function', 'if', 'return', 'switch', 'try', 'while']
             }
         ],
+        'prefer-object-spread': 'error',
         'quote-props': ['error', 'consistent-as-needed', {
             keywords: false
         }],
