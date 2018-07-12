@@ -5,7 +5,6 @@ module.exports = {
     // http://eslint.org/docs/rules/#variables
     rules: {
         'init-declarations': 'off',
-        'no-catch-shadow': 'error',
         'no-delete-var': 'error',
         'no-label-var': 'error',
         'no-restricted-globals': ['error', 'event'],
