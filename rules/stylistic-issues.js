@@ -122,7 +122,7 @@ module.exports = {
             max: 4
         }],
         'max-statements': ['error', {
-            max: 10
+            max: 20
         }, {
             ignoreTopLevelFunctions: true
         }],
