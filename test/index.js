@@ -64,7 +64,7 @@ test('plugin node', t => {
 });
 
 test('plugin ava', t => {
-    const conf = _.extend(require('../'), require('../plugins/ava'));
+    const conf = require('./.eslintrc');
     const result = runESLint(
         'import test from \'ava\';\n\n' +
         'test(t => {\n    t.pass();\n});\n' +
