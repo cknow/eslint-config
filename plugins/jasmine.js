@@ -20,6 +20,7 @@ module.exports = {
         'jasmine/no-expect-in-setup-teardown': ['error', 'expect()'],
         'jasmine/no-focused-tests': 'error',
         'jasmine/no-global-setup': 'error',
+        'jasmine/no-promise-without-done-fail': 'error',
         'jasmine/no-spec-dupes': ['error', 'block'],
         'jasmine/no-suite-callback-args': 'error',
         'jasmine/no-suite-dupes': ['error', 'block'],
