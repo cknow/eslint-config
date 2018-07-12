@@ -27,6 +27,7 @@ module.exports = {
         }],
         'eqeqeq': 'error',
         'guard-for-in': 'error',
+        'max-classes-per-file': ['error', 1],
         'no-alert': 'error',
         'no-caller': 'error',
         'no-case-declarations': 'error',
