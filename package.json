@@ -54,10 +54,7 @@
     "rules"
   ],
   "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/cknow/eslint-config"
-  },
+  "repository": "https://github.com/cknow/eslint-config.git",
   "scripts": {
     "check-coverage": "nyc check-coverage --global 100",
     "commit": "commit",
