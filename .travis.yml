@@ -13,12 +13,9 @@ env:
     - CC_TEST_REPORTER_ID=54632afea2654c05326d460d2088caf3a7189015fd1cff3e7d73fc899e6286e8
 
 node_js:
+  - 10
   - 9
   - 8
-  - 7
-  - 6
-  - 5
-  - 4
 
 install:
   - travis_retry yarn install
