@@ -118,6 +118,7 @@ module.exports = {
         'vue/no-use-v-if-with-v-for': ['error', {
             allowUsingIterationVar: true
         }],
+        'vue/no-v-html': 'error',
         'vue/order-in-components': ['error', {
             order: [
                 'el',
