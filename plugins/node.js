@@ -44,8 +44,12 @@ module.exports = {
             convertPath: {},
             tryExtensions: ['.js', '.json', '.node']
         }],
-        'node/no-unsupported-features': ['error', {
-            version: 4,
+        'node/no-unsupported-features/es-builtins': ['error', {
+            version: '>=6.0.0',
+            ignores: []
+        }],
+        'node/no-unsupported-features/es-syntax': ['error', {
+            version: '>=6.0.0',
             ignores: []
         }],
         'node/process-exit-as-throw': 'error',

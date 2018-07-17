@@ -46,23 +46,6 @@ test('plugin angular', t => {
     t.is(result.messages[0].ruleId, 'angular/angularelement');
 });
 
-test('plugin jquery', t => {
-    const conf = require('../plugins/jquery');
-    const result = runESLint('$.ajax();', conf);
-
-    t.is(1, result.errorCount);
-    t.is(result.messages[0].ruleId, 'jquery/no-ajax');
-});
-
-test('plugin node', t => {
-    const conf = _.extend(require('../'), require('../plugins/node'));
-    const result = runESLint('import foo from \'foo\';\n\nfoo();\n', conf);
-
-    t.is(2, result.errorCount);
-    t.is(result.messages[0].ruleId, 'node/no-unsupported-features');
-    t.is(result.messages[1].ruleId, 'node/no-missing-import');
-});
-
 test('plugin ava', t => {
     const conf = require('./.eslintrc');
     const result = runESLint(
@@ -74,14 +57,6 @@ test('plugin ava', t => {
 
     t.is(1, result.errorCount);
     t.is(result.messages[0].ruleId, 'ava/test-title');
-});
-
-test('plugin mocha', t => {
-    const conf = require('../plugins/mocha');
-    const result = runESLint('describe(\'foo\', function() {});', conf);
-
-    t.is(1, result.errorCount);
-    t.is(result.messages[0].ruleId, 'mocha/valid-suite-description');
 });
 
 test('plugin jasmine', t => {
@@ -99,6 +74,31 @@ test('plugin jest', t => {
 
     t.is(1, result.errorCount);
     t.is(result.messages[0].ruleId, 'jest/valid-describe');
+});
+
+test('plugin jquery', t => {
+    const conf = require('../plugins/jquery');
+    const result = runESLint('$.ajax();', conf);
+
+    t.is(1, result.errorCount);
+    t.is(result.messages[0].ruleId, 'jquery/no-ajax');
+});
+
+test('plugin mocha', t => {
+    const conf = require('../plugins/mocha');
+    const result = runESLint('describe(\'foo\', function() {});', conf);
+
+    t.is(1, result.errorCount);
+    t.is(result.messages[0].ruleId, 'mocha/valid-suite-description');
+});
+
+test('plugin node', t => {
+    const conf = _.extend(require('../'), require('../plugins/node'));
+    const result = runESLint('import foo from \'foo\';\n\nfoo();\n', conf);
+
+    t.is(2, result.errorCount);
+    t.is(result.messages[0].ruleId, 'node/no-unsupported-features/es-syntax');
+    t.is(result.messages[1].ruleId, 'node/no-missing-import');
 });
 
 test('plugin promise', t => {
