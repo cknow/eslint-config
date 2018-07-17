@@ -52,6 +52,7 @@ module.exports = {
             version: '>=6.0.0',
             ignores: []
         }],
+        'node/prefer-global/url': ['error', 'always'],
         'node/process-exit-as-throw': 'error',
         'node/shebang': ['error', {
             convertPath: {}
