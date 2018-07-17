@@ -93,6 +93,14 @@ test('plugin jasmine', t => {
     t.is(result.messages[1].ruleId, 'jasmine/no-unsafe-spy');
 });
 
+test('plugin jest', t => {
+    const conf = require('../plugins/jest');
+    const result = runESLint('describe(\'test\');', conf);
+
+    t.is(1, result.errorCount);
+    t.is(result.messages[0].ruleId, 'jest/valid-describe');
+});
+
 test('plugin promise', t => {
     const conf = require('../plugins/promise');
     const result = runESLint('new Promise.resolve();', conf);
