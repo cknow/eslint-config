@@ -52,6 +52,10 @@ module.exports = {
             version: '>=6.0.0',
             ignores: []
         }],
+        'node/no-unsupported-features/node-builtins': ['error', {
+            version: '>=6.0.0',
+            ignores: []
+        }],
         'node/prefer-global/buffer': ['error', 'always'],
         'node/prefer-global/console': ['error', 'always'],
         'node/prefer-global/process': ['error', 'always'],
