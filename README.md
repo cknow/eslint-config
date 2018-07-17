@@ -125,6 +125,22 @@ module.exports = {
 };
 ```
 
+#### Jest
+
+Install
+
+```bash
+npm install --save-dev eslint-plugin-jest
+```
+
+Usage
+
+```js
+module.exports = {
+    extends: '@cknow/eslint-config/plugins/Jest'
+};
+```
+
 #### Jquery
 
 Install
