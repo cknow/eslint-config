@@ -82,7 +82,7 @@
     "ava": "^0.25.0",
     "babel-eslint": "^8.2.6",
     "coveralls": "^3.0.2",
-    "eslint": "^5.1.0",
+    "eslint": "^5.2.0",
     "eslint-plugin-angular": "^3.3.0",
     "eslint-plugin-ava": "^5.0.0",
     "eslint-plugin-jasmine": "^2.10.1",
@@ -92,22 +92,24 @@
     "eslint-plugin-node": "^7.0.1",
     "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-protractor": "^1.40.0",
-    "eslint-plugin-vue": "^4.7.0",
+    "eslint-plugin-vue": "^4.7.1",
     "husky": "^0.14.3",
     "lodash": "^4.17.10",
     "nodemon": "^1.18.3",
     "nyc": "^12.0.2",
     "rimraf": "^2.6.2",
     "temp-write": "^3.4.0",
-    "vue-eslint-parser": "^3.1.0"
+    "vue-eslint-parser": "^3.2.2"
   },
   "peerDependencies": {
-    "eslint": ">=5.1.0"
+    "eslint": ">=5.2.0"
   },
   "engines": {
     "node": ">=6",
     "npm": ">=3"
   },
-  "preferGlobal": false,
-  "private": false
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  }
 }
