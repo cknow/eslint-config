@@ -126,6 +126,7 @@ module.exports = {
         }],
         'radix': ['error', 'always'],
         'require-await': 'error',
+        'require-unicode-regexp': 'error',
         'vars-on-top': 'off',
         'wrap-iife': ['error', 'inside', {
             functionPrototypeMethods: true
