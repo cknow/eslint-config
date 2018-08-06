@@ -8,6 +8,7 @@ module.exports = {
         'getter-return': ['error', {
             allowImplicit: false
         }],
+        'no-async-promise-executor': 'error',
         'no-await-in-loop': 'error',
         'no-compare-neg-zero': 'error',
         'no-cond-assign': ['error', 'except-parens'],
