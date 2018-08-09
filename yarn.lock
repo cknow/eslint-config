@@ -1769,9 +1769,9 @@ eslint-plugin-angular@^3.3.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-angular/-/eslint-plugin-angular-3.3.0.tgz#ba841ec018c8bc2d70f901ac41a6e7be5f79882b"
 
-eslint-plugin-ava@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-ava/-/eslint-plugin-ava-5.0.0.tgz#fd6369f853047c863f863324d8ab4e38fc47cde0"
+eslint-plugin-ava@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-ava/-/eslint-plugin-ava-5.1.0.tgz#885e6bcd1124c08bb8f3ef721600174e25af40a3"
   dependencies:
     arrify "^1.0.1"
     deep-strict-equal "^0.2.0"
@@ -1799,9 +1799,9 @@ eslint-plugin-jest@^21.18.0:
   version "21.18.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-21.18.0.tgz#d7305969a9c1902f895468791d968fcf08b5c0b7"
 
-eslint-plugin-jquery@^1.3.1:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jquery/-/eslint-plugin-jquery-1.3.1.tgz#166e37a07f78e4fd7c92b77d79f1034c095a4958"
+eslint-plugin-jquery@^1.3.2:
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jquery/-/eslint-plugin-jquery-1.3.2.tgz#5a889da81a4d56880010d585568f37fd351b0079"
 
 eslint-plugin-mocha@^5.1.0:
   version "5.1.0"
@@ -1824,9 +1824,9 @@ eslint-plugin-promise@^3.8.0:
   version "3.8.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-promise/-/eslint-plugin-promise-3.8.0.tgz#65ebf27a845e3c1e9d6f6a5622ddd3801694b621"
 
-eslint-plugin-protractor@^1.40.0:
-  version "1.40.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-protractor/-/eslint-plugin-protractor-1.40.0.tgz#34b9d604bd4516ae02e2f03c7914e56b85bfb2e0"
+eslint-plugin-protractor@^1.40.2:
+  version "1.40.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-protractor/-/eslint-plugin-protractor-1.40.2.tgz#2fb503eec78fdd4797bc3faba0cb54aa965b82b7"
   dependencies:
     css-selector-parser "^1.1.0"
     multimatch "^2.1.0"
