@@ -32,6 +32,7 @@ module.exports = {
             maxSize: 50
         }],
         'jest/no-test-prefixes': 'error',
+        'jest/no-test-return-statement': 'error',
         'jest/prefer-expect-assertions': 'error',
         'jest/prefer-inline-snapshots': 'error',
         'jest/prefer-to-be-null': 'error',
