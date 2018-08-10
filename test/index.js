@@ -70,10 +70,10 @@ test('plugin jasmine', t => {
 
 test('plugin jest', t => {
     const conf = require('../plugins/jest');
-    const result = runESLint('describe(\'test\', function() {});', conf);
+    const result = runESLint('describe(\'test\');', conf);
 
     t.is(1, result.errorCount);
-    t.is(result.messages[0].ruleId, 'jest/expect-expect');
+    t.is(result.messages[0].ruleId, 'jest/valid-describe');
 });
 
 test('plugin jquery', t => {
