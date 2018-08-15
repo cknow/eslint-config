@@ -35,6 +35,7 @@ module.exports = {
         'jest/no-test-return-statement': 'error',
         'jest/prefer-expect-assertions': 'error',
         'jest/prefer-inline-snapshots': 'error',
+        'jest/prefer-strict-equal': 'error',
         'jest/prefer-to-be-null': 'error',
         'jest/prefer-to-be-undefined': 'error',
         'jest/prefer-to-have-length': 'error',
