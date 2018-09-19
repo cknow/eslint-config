@@ -11,7 +11,9 @@ module.exports = {
         'jest/consistent-test-it': ['error', {
             fn: 'test'
         }],
-        'jest/expect-expect': 'error',
+        'jest/expect-expect': ['error', {
+            assertFunctionNames: ['expect']
+        }],
         'jest/lowercase-name': ['error', {
             ignore: []
         }],
