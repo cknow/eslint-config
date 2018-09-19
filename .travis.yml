@@ -18,6 +18,10 @@ node_js:
   - 8
   - 6
 
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/
+
 install:
   - travis_retry npm install
 
@@ -31,17 +35,14 @@ script:
   - npm --version
   - npm test
 
+after_script:
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+
 after_success:
   - npm run report-coverage
-  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 
 jobs:
   include:
     - stage: release
       script:
         - npm install -g semantic-release && semantic-release
-      after_success: skip
-
-branches:
-  except:
-    - /^v\d+\.\d+\.\d+$/
