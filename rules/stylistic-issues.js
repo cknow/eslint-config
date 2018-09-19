@@ -32,7 +32,9 @@ module.exports = {
         'func-name-matching': ['error', 'always', {
             considerPropertyDescriptor: true
         }],
-        'func-names': ['error', 'never'],
+        'func-names': ['error', 'never', {
+            generators: 'never'
+        }],
         'func-style': 'off',
         'function-paren-newline': ['error', 'multiline'],
         'id-blacklist': 'off',
