@@ -42,9 +42,6 @@ jobs:
     - stage: release
       script:
         - npm install -g semantic-release && semantic-release
-      before_script: skip
-      after_script: skip
-      after_success: skip
 
 branches:
   except:
