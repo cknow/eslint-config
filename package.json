@@ -61,17 +61,14 @@
   "scripts": {
     "check-coverage": "nyc check-coverage --global 100",
     "commit": "commit",
-    "commitmsg": "commitlint -e $GIT_PARAMS",
-    "cover": "nyc --reporter lcov --reporter text ava",
+    "coverage": "nyc --reporter lcov --reporter text npm t",
     "lint": "eslint index.js browser.js esnext.js config/ plugins/ rules/ test/",
-    "posttest": "npm run check-coverage",
-    "precommit": "npm run lint",
-    "precover": "rimraf .nyc_output coverage",
-    "prepush": "npm t",
+    "postcoverage": "npm run check-coverage",
+    "precoverage": "rimraf .nyc_output coverage",
     "pretest": "npm run lint",
     "report-coverage": "cat ./coverage/lcov.info | coveralls",
-    "test": "npm run cover",
-    "watch": "nodemon --exec npm t"
+    "test": "ava",
+    "watch": "npm t -- --watch"
   },
   "commitlint": {
     "extends": [
@@ -96,9 +93,8 @@
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-protractor": "^1.41.0",
     "eslint-plugin-vue": "^4.7.1",
-    "husky": "^0.14.3",
+    "husky": "^1.0.0-rc.15",
     "lodash": "^4.17.11",
-    "nodemon": "^1.18.4",
     "nyc": "^13.0.1",
     "rimraf": "^2.6.2",
     "temp-write": "^3.4.0",
@@ -114,5 +110,12 @@
   "private": false,
   "publishConfig": {
     "access": "public"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e $GIT_PARAMS",
+      "pre-commit": "npm t",
+      "pre-push": "npm run coverage"
+    }
   }
 }
