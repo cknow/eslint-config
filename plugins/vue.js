@@ -152,7 +152,7 @@ module.exports = {
             treatUndefinedAsUnspecified: true
         }],
         'vue/script-indent': ['error', 4, {
-            baseIndent: 0,
+            baseIndent: 1,
             switchCase: 1,
             ignores: []
         }],
@@ -173,5 +173,13 @@ module.exports = {
         'vue/valid-v-pre': 'error',
         'vue/valid-v-show': 'error',
         'vue/valid-v-text': 'error'
-    }
+    },
+    overrides: [
+        {
+            files: ['*.vue'],
+            rules: {
+                indent: 'off'
+            }
+        }
+    ]
 };
