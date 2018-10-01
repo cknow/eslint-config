@@ -17,6 +17,7 @@ module.exports = {
         'jest/lowercase-name': ['error', {
             ignore: []
         }],
+        'jest/no-alias-methods': 'error',
         'jest/no-disabled-tests': 'error',
         'jest/no-focused-tests': 'error',
         'jest/no-hooks': ['error', {
