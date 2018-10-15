@@ -165,7 +165,9 @@ module.exports = {
         }],
         'no-restricted-syntax': ['error', 'WithStatement'],
         'no-spaced-func': 'error',
-        'no-tabs': 'error',
+        'no-tabs': ['error', {
+            allowIndentationTabs: false
+        }],
         'no-ternary': 'off',
         'no-trailing-spaces': ['error', {
             skipBlankLines: false,
