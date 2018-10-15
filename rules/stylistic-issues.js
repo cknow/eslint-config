@@ -12,7 +12,9 @@ module.exports = {
             allowSingleLine: false
         }],
         'camelcase': ['error', {
-            properties: 'always'
+            properties: 'always',
+            ignoreDestructuring: false,
+            allow: []
         }],
         'capitalized-comments': ['error', 'always', {
             ignorePattern: 'pragma|ignore',
