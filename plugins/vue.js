@@ -50,7 +50,7 @@ module.exports = {
         }],
         'vue/jsx-uses-vars': 'error',
         'vue/max-attributes-per-line': ['error', {
-            singleline: 3,
+            singleline: 4,
             multiline: {
                 max: 1,
                 allowFirstLine: false
