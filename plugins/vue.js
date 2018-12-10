@@ -115,6 +115,7 @@ module.exports = {
         }],
         'vue/no-shared-component-data': 'error',
         'vue/no-side-effects-in-computed-properties': 'error',
+        'vue/no-spaces-around-equal-signs-in-attribute': 'error',
         'vue/no-template-key': 'error',
         'vue/no-template-shadow': 'error',
         'vue/no-textarea-mustache': 'error',
