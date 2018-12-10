@@ -60,6 +60,7 @@ module.exports = {
             }
         }],
         'vue/multiline-html-element-content-newline': ['error', {
+            ignoreWhenEmpty: true,
             ignores: ['pre', 'textarea']
         }],
         'vue/mustache-interpolation-spacing': ['error', 'always'],
@@ -172,6 +173,7 @@ module.exports = {
         }],
         'vue/singleline-html-element-content-newline': ['error', {
             ignoreWhenNoAttributes: true,
+            ignoreWhenEmpty: true,
             ignores: ['pre', 'textarea']
         }],
         'vue/this-in-template': ['error', 'never'],
