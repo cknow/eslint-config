@@ -185,7 +185,9 @@ module.exports = {
         'vue/valid-v-html': 'error',
         'vue/valid-v-if': 'error',
         'vue/valid-v-model': 'error',
-        'vue/valid-v-on': 'error',
+        'vue/valid-v-on': ['error', {
+            modifiers: []
+        }],
         'vue/valid-v-once': 'error',
         'vue/valid-v-pre': 'error',
         'vue/valid-v-show': 'error',
