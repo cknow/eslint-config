@@ -22,6 +22,9 @@ module.exports = {
             ]
         }],
         'vue/comment-directive': 'error',
+        'vue/component-name-in-template-casing': ['error', 'kebab-case', {
+            ignores: []
+        }],
         'vue/html-closing-bracket-newline': ['error', {
             singleline: 'never',
             multiline: 'always'
