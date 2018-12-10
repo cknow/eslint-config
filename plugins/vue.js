@@ -113,6 +113,7 @@ module.exports = {
         'vue/no-shared-component-data': 'error',
         'vue/no-side-effects-in-computed-properties': 'error',
         'vue/no-template-key': 'error',
+        'vue/no-template-shadow': 'error',
         'vue/no-textarea-mustache': 'error',
         'vue/no-unused-vars': 'error',
         'vue/no-use-v-if-with-v-for': ['error', {
