@@ -265,15 +265,6 @@ module.exports = {
             avoidEscape: false,
             allowTemplateLiterals: true
         }],
-        'require-jsdoc': ['error', {
-            require: {
-                FunctionDeclaration: true,
-                ClassDeclaration: true,
-                MethodDefinition: true,
-                ArrowFunctionExpression: true,
-                FunctionExpression: true
-            }
-        }],
         'semi': ['error', 'always', {
             omitLastInOneLineBlock: true
         }],
