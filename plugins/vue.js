@@ -150,6 +150,7 @@ module.exports = {
         'vue/require-component-is': 'error',
         'vue/require-default-prop': 'error',
         'vue/require-prop-types': 'error',
+        'vue/require-prop-type-constructor': 'error',
         'vue/require-render-return': 'error',
         'vue/require-v-for-key': 'error',
         'vue/require-valid-default-prop': 'error',
