@@ -59,6 +59,9 @@ module.exports = {
                 allowFirstLine: false
             }
         }],
+        'vue/multiline-html-element-content-newline': ['error', {
+            ignores: ['pre', 'textarea']
+        }],
         'vue/mustache-interpolation-spacing': ['error', 'always'],
         'vue/name-property-casing': ['error', 'kebab-case'],
         'vue/no-async-in-computed-properties': 'error',
