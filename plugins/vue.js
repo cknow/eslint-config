@@ -124,7 +124,9 @@ module.exports = {
         'vue/no-template-key': 'error',
         'vue/no-template-shadow': 'error',
         'vue/no-textarea-mustache': 'error',
-        'vue/no-unused-components': 'error',
+        'vue/no-unused-components': ['error', {
+            ignoreWhenBindingPresent: true
+        }],
         'vue/no-unused-vars': 'error',
         'vue/no-use-v-if-with-v-for': ['error', {
             allowUsingIterationVar: true
