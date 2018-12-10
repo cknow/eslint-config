@@ -15,7 +15,8 @@ module.exports = {
                 'RENDER_MODIFIERS',
                 'GLOBAL',
                 'UNIQUE',
-                'BINDING',
+                'TWO_WAY_BINDING',
+                'OTHER_DIRECTIVES',
                 'OTHER_ATTR',
                 'EVENTS',
                 'CONTENT'
