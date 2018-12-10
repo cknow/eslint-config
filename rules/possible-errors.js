@@ -56,14 +56,6 @@ module.exports = {
         'no-unsafe-negation': 'error',
         'require-atomic-updates': 'error',
         'use-isnan': 'error',
-        'valid-jsdoc': ['error', {
-            requireReturn: true,
-            requireParamDescription: true,
-            requireReturnDescription: true,
-            prefer: {
-                returns: 'return'
-            }
-        }],
         'valid-typeof': ['error', {
             requireStringLiterals: true
         }]
