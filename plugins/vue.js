@@ -166,6 +166,10 @@ module.exports = {
             switchCase: 1,
             ignores: []
         }],
+        'vue/singleline-html-element-content-newline': ['error', {
+            ignoreWhenNoAttributes: true,
+            ignores: ['pre', 'textarea']
+        }],
         'vue/this-in-template': ['error', 'never'],
         'vue/v-bind-style': ['error', 'shorthand'],
         'vue/v-on-style': ['error', 'shorthand'],
