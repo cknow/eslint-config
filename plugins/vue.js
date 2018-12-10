@@ -73,7 +73,9 @@ module.exports = {
             allowCoexistClass: true,
             allowCoexistStyle: true
         }],
-        'vue/no-multi-spaces': 'error',
+        'vue/no-multi-spaces': ['error', {
+            ignoreProperties: false
+        }],
         'vue/no-parsing-error': ['error', {
             'abrupt-closing-of-empty-comment': true,
             'absence-of-digits-in-numeric-character-reference': true,
