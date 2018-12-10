@@ -171,6 +171,7 @@ module.exports = {
             ignores: ['pre', 'textarea']
         }],
         'vue/this-in-template': ['error', 'never'],
+        'vue/use-v-on-exact': 'error',
         'vue/v-bind-style': ['error', 'shorthand'],
         'vue/v-on-style': ['error', 'shorthand'],
         'vue/valid-template-root': 'error',
