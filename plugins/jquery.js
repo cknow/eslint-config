@@ -21,6 +21,7 @@ module.exports = {
         'jquery/no-deferred': 'error',
         'jquery/no-delegate': 'error',
         'jquery/no-each': 'error',
+        'jquery/no-extend': 'error',
         'jquery/no-fade': 'error',
         'jquery/no-filter': 'error',
         'jquery/no-find': 'error',
