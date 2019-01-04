@@ -33,6 +33,7 @@ module.exports = {
         'jquery/no-in-array': 'error',
         'jquery/no-is': 'error',
         'jquery/no-is-array': 'error',
+        'jquery/no-is-function': 'error',
         'jquery/no-load': 'error',
         'jquery/no-map': 'error',
         'jquery/no-merge': 'error',
