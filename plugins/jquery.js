@@ -26,6 +26,7 @@ module.exports = {
         'jquery/no-filter': 'error',
         'jquery/no-find': 'error',
         'jquery/no-global-eval': 'error',
+        'jquery/no-grep': 'error',
         'jquery/no-has': 'error',
         'jquery/no-hide': 'error',
         'jquery/no-html': 'error',
