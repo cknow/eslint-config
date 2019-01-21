@@ -2,6 +2,9 @@
 
 module.exports = {
     parser: require.resolve('vue-eslint-parser'),
+    parserOptions: {
+        parser: 'babel-eslint'
+    },
     plugins: [
         'vue'
     ],
