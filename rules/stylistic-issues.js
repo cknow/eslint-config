@@ -188,7 +188,7 @@ module.exports = {
             objectsInObjects: true
         }],
         'object-property-newline': ['error', {
-            allowAllPropertiesOnSameLine: false
+            allowAllPropertiesOnSameLine: true
         }],
         'one-var': ['error', {
             var: 'never',
