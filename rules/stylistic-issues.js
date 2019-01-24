@@ -82,12 +82,14 @@ module.exports = {
             afterBlockComment: false,
             beforeLineComment: true,
             afterLineComment: false,
-            allowBlockStart: false,
+            allowBlockStart: true,
             allowBlockEnd: false,
-            allowObjectStart: false,
+            allowObjectStart: true,
             allowObjectEnd: false,
-            allowArrayStart: false,
-            allowArrayEnd: false
+            allowArrayStart: true,
+            allowArrayEnd: false,
+            allowClassStart: true,
+            allowClassEnd: false
         }],
         'lines-between-class-members': ['error', 'always', {
             exceptAfterSingleLine: false
