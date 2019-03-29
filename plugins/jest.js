@@ -19,6 +19,7 @@ module.exports = {
         }],
         'jest/no-alias-methods': 'error',
         'jest/no-disabled-tests': 'error',
+        'jest/no-empty-title': 'error',
         'jest/no-focused-tests': 'error',
         'jest/no-hooks': ['error', {
             allow: [
@@ -38,6 +39,7 @@ module.exports = {
         'jest/no-test-prefixes': 'error',
         'jest/no-test-return-statement': 'error',
         'jest/no-truthy-falsy': 'error',
+        'jest/prefer-called-with': 'error',
         'jest/prefer-expect-assertions': 'error',
         'jest/prefer-inline-snapshots': 'error',
         'jest/prefer-spy-on': 'error',
