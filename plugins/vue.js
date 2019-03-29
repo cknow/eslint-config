@@ -9,6 +9,11 @@ module.exports = {
         'vue'
     ],
     rules: {
+        'vue/array-bracket-spacing': ['error', 'never'],
+        'vue/arrow-spacing': ['error', {
+            before: true,
+            after: true
+        }],
         'vue/attribute-hyphenation': ['error', 'always'],
         'vue/attributes-order': ['error', {
             order: [
@@ -25,10 +30,22 @@ module.exports = {
                 'CONTENT'
             ]
         }],
+        'vue/block-spacing': ['error', 'always'],
+        'vue/brace-style': ['error', '1tbs', {
+            allowSingleLine: false
+        }],
+        'vue/camelcase': ['error', {
+            properties: 'always',
+            ignoreDestructuring: false,
+            allow: []
+        }],
+        'vue/comma-dangle': ['error', 'never'],
         'vue/comment-directive': 'error',
         'vue/component-name-in-template-casing': ['error', 'kebab-case', {
+            registeredComponentsOnly: true,
             ignores: []
         }],
+        'vue/eqeqeq': 'error',
         'vue/html-closing-bracket-newline': ['error', {
             singleline: 'never',
             multiline: 'always'
@@ -57,6 +74,14 @@ module.exports = {
             math: 'always'
         }],
         'vue/jsx-uses-vars': 'error',
+        'vue/key-spacing': ['error', {
+            beforeColon: false,
+            afterColon: true
+        }],
+        'vue/match-component-file-name': ['error', {
+            extensions: ['js', 'jsx', 'vue'],
+            shouldMatchCase: true
+        }],
         'vue/max-attributes-per-line': ['error', {
             singleline: 4,
             multiline: {
@@ -71,6 +96,7 @@ module.exports = {
         'vue/mustache-interpolation-spacing': ['error', 'always'],
         'vue/name-property-casing': ['error', 'kebab-case'],
         'vue/no-async-in-computed-properties': 'error',
+        'vue/no-boolean-default': ['error', 'no-default'],
         'vue/no-confusing-v-for-v-if': 'error',
         'vue/no-dupe-keys': ['error', {
             groups: []
@@ -124,6 +150,7 @@ module.exports = {
             reserved: [],
             groups: []
         }],
+        'vue/no-restricted-syntax': ['error', 'WithStatement'],
         'vue/no-shared-component-data': 'error',
         'vue/no-side-effects-in-computed-properties': 'error',
         'vue/no-spaces-around-equal-signs-in-attribute': 'error',
@@ -138,6 +165,10 @@ module.exports = {
             allowUsingIterationVar: true
         }],
         'vue/no-v-html': 'error',
+        'vue/object-curly-spacing': ['error', 'always', {
+            arraysInObjects: true,
+            objectsInObjects: true
+        }],
         'vue/order-in-components': ['error', {
             order: [
                 'el',
@@ -163,6 +194,7 @@ module.exports = {
         'vue/prop-name-casing': ['error', 'camelCase'],
         'vue/require-component-is': 'error',
         'vue/require-default-prop': 'error',
+        'vue/require-direct-export': 'error',
         'vue/require-prop-types': 'error',
         'vue/require-prop-type-constructor': 'error',
         'vue/require-render-return': 'error',
@@ -181,9 +213,18 @@ module.exports = {
             ignoreWhenEmpty: true,
             ignores: ['pre', 'textarea']
         }],
+        'vue/space-infix-ops': ['error', {
+            int32Hint: false
+        }],
+        'vue/space-unary-ops': ['error', {
+            words: true,
+            nonwords: false,
+            overrides: {}
+        }],
         'vue/this-in-template': ['error', 'never'],
         'vue/use-v-on-exact': 'error',
         'vue/v-bind-style': ['error', 'shorthand'],
+        'vue/v-on-function-call': ['error', 'never'],
         'vue/v-on-style': ['error', 'shorthand'],
         'vue/valid-template-root': 'error',
         'vue/valid-v-bind': 'error',
