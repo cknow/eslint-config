@@ -82,7 +82,7 @@
     "ava": "^1.4.1",
     "babel-eslint": "^10.0.1",
     "coveralls": "^3.0.3",
-    "eslint": "^5.15.3",
+    "eslint": "^5.16.0",
     "eslint-plugin-angular": "^4.0.0",
     "eslint-plugin-ava": "^6.0.0",
     "eslint-plugin-jasmine": "^2.10.1",
@@ -101,7 +101,7 @@
     "vue-eslint-parser": "^6.0.3"
   },
   "peerDependencies": {
-    "eslint": ">=5.15.3"
+    "eslint": ">=5.16.0"
   },
   "engines": {
     "node": ">=6",
