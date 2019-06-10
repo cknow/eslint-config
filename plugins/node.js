@@ -8,6 +8,7 @@ module.exports = {
         'node/exports-style': ['error', 'module.exports', {
             allowBatchAssign: false
         }],
+        'node/file-extension-in-import': ['error', 'always'],
         'node/no-deprecated-api': ['error', {
             ignoreModuleItems: [],
             ignoreGlobalItems: [],
