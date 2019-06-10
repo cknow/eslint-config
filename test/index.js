@@ -50,13 +50,13 @@ test('plugin ava', t => {
     const conf = require('./.eslintrc');
     const result = runESLint(
         'import test from \'ava\';\n\n' +
-        'test(t => {\n    t.pass();\n});\n' +
-        'test(t => {\n    t.pass();\n});\n',
+        'test(\'foo\', t => {\n    t.pass();\n});\n' +
+        'test(\'foo\', t => {\n    t.pass();\n});\n',
         conf
     );
 
     t.is(1, result.errorCount);
-    t.is(result.messages[0].ruleId, 'ava/test-title');
+    t.is(result.messages[0].ruleId, 'ava/no-identical-title');
 });
 
 test('plugin jasmine', t => {
