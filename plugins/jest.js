@@ -35,6 +35,7 @@ module.exports = {
         'jest/no-large-snapshots': ['error', {
             maxSize: 50
         }],
+        'jest/no-mocks-import': 'error',
         'jest/no-test-callback': 'error',
         'jest/no-test-prefixes': 'error',
         'jest/no-test-return-statement': 'error',
