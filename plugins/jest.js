@@ -40,6 +40,7 @@ module.exports = {
             maxSize: 50
         }],
         'jest/no-mocks-import': 'error',
+        'jest/no-standalone-expect': 'error',
         'jest/no-test-callback': 'error',
         'jest/no-test-prefixes': 'error',
         'jest/no-test-return-statement': 'error',
