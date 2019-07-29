@@ -21,6 +21,7 @@ module.exports = {
         'mocha/no-nested-tests': 'error',
         'mocha/no-pending-tests': 'error',
         'mocha/no-return-and-callback': 'error',
+        'mocha/no-return-from-async': 'error',
         'mocha/no-setup-in-describe': 'error',
         'mocha/no-sibling-hooks': 'error',
         'mocha/no-skipped-tests': 'error',
