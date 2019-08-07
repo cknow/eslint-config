@@ -9,8 +9,8 @@ module.exports = {
         'no-label-var': 'error',
         'no-restricted-globals': ['error', 'event'],
         'no-shadow': ['error', {
-            builtinGlobals: true,
-            hoist: 'functions',
+            builtinGlobals: false,
+            hoist: 'all',
             allow: []
         }],
         'no-shadow-restricted-names': 'error',
