@@ -12,6 +12,7 @@ module.exports = {
         'protractor/bare-element-finders': 'error',
         'protractor/by-css-shortcut': 'error',
         'protractor/correct-chaining': 'error',
+        'protractor/empty-script': 'error',
         'protractor/limit-selector-depth': 'error',
         'protractor/missing-perform': 'error',
         'protractor/missing-wait-message': 'error',
