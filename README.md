@@ -7,7 +7,7 @@
 [![MIT License](https://img.shields.io/npm/l/@cknow/eslint-config.svg)](LICENSE)
 
 [![Build Status](https://travis-ci.org/cknow/eslint-config.svg?branch=master)](https://travis-ci.org/cknow/eslint-config)
-[![Build status](https://ci.appveyor.com/api/projects/status/wn7a9c99eep8ydma/branch/master?svg=true)](https://ci.appveyor.com/project/cknow/eslint-config/branch/master)
+[![Build status](https://ci.appveyor.com/api/projects/status/wn7a9c99eep8ydma/branch/master?svg=true)](https://ci.appveyor.com/project/ricardogobbosouza/eslint-config/branch/master)
 [![Coverage Status](https://coveralls.io/repos/github/cknow/eslint-config/badge.svg?branch=master)](https://coveralls.io/github/cknow/eslint-config?branch=master)
 
 [![Code Climate](https://codeclimate.com/github/cknow/eslint-config/badges/gpa.svg)](https://codeclimate.com/github/cknow/eslint-config)
@@ -37,24 +37,24 @@ Add some ESLint config to your `.eslintrc.js`:
 
 ```js
 module.exports = {
-    extends: '@cknow/eslint-config'
-};
+  extends: '@cknow/eslint-config'
+}
 ```
 
 ESNext
 
 ```js
 module.exports = {
-    extends: '@cknow/eslint-config/esnext'
-};
+  extends: '@cknow/eslint-config/esnext'
+}
 ```
 
 Browser
 
 ```js
 module.exports = {
-    extends: '@cknow/eslint-config/browser'
-};
+  extends: '@cknow/eslint-config/browser'
+}
 ```
 
 ## Usage direct on command line
@@ -73,8 +73,8 @@ To this extend `@cknow/eslint-config` or `@cknow/eslint-config/browser` first.
 
 ```js
 module.exports = {
-    extends: ['@cknow/eslint-config', '@cknow/eslint-config/plugins/PLUGIN_NAME']
-};
+  extends: ['@cknow/eslint-config', '@cknow/eslint-config/plugins/PLUGIN_NAME']
+}
 ```
 
 #### Angular
@@ -89,8 +89,8 @@ Usage
 
 ```js
 module.exports = {
-    extends: '@cknow/eslint-config/plugins/angular'
-};
+  extends: '@cknow/eslint-config/plugins/angular'
+}
 ```
 
 #### AVA
@@ -105,8 +105,8 @@ Usage
 
 ```js
 module.exports = {
-    extends: '@cknow/eslint-config/plugins/ava'
-};
+  extends: '@cknow/eslint-config/plugins/ava'
+}
 ```
 
 #### Jasmine
@@ -121,8 +121,8 @@ Usage
 
 ```js
 module.exports = {
-    extends: '@cknow/eslint-config/plugins/jasmine'
-};
+  extends: '@cknow/eslint-config/plugins/jasmine'
+}
 ```
 
 #### Jest
@@ -137,8 +137,8 @@ Usage
 
 ```js
 module.exports = {
-    extends: '@cknow/eslint-config/plugins/Jest'
-};
+  extends: '@cknow/eslint-config/plugins/Jest'
+}
 ```
 
 #### Jquery
@@ -153,8 +153,8 @@ Usage
 
 ```js
 module.exports = {
-    extends: '@cknow/eslint-config/plugins/jquery'
-};
+  extends: '@cknow/eslint-config/plugins/jquery'
+}
 ```
 
 #### Mocha
@@ -169,8 +169,8 @@ Usage
 
 ```js
 module.exports = {
-    extends: '@cknow/eslint-config/plugins/mocha'
-};
+  extends: '@cknow/eslint-config/plugins/mocha'
+}
 ```
 
 #### Node
@@ -185,8 +185,8 @@ Usage
 
 ```js
 module.exports = {
-    extends: '@cknow/eslint-config/plugins/node'
-};
+  extends: '@cknow/eslint-config/plugins/node'
+}
 ```
 
 #### Promise
@@ -201,8 +201,8 @@ Usage
 
 ```js
 module.exports = {
-    extends: '@cknow/eslint-config/plugins/promise'
-};
+  extends: '@cknow/eslint-config/plugins/promise'
+}
 ```
 
 #### Protractor
@@ -217,8 +217,8 @@ Usage
 
 ```js
 module.exports = {
-    extends: '@cknow/eslint-config/plugins/protractor'
-};
+  extends: '@cknow/eslint-config/plugins/protractor'
+}
 ```
 
 #### Vue
@@ -233,6 +233,6 @@ Usage
 
 ```js
 module.exports = {
-    extends: '@cknow/eslint-config/plugins/vue'
-};
+  extends: '@cknow/eslint-config/plugins/vue'
+}
 ```

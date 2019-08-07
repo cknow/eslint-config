@@ -37,7 +37,7 @@
   "homepage": "https://github.com/cknow/eslint-config",
   "bugs": {
     "url": "https://github.com/cknow/eslint-confi/issues",
-    "email": "ricardo@clicknow.com.br"
+    "email": "ricardogobbosouza@yahoo.com.br"
   },
   "license": "MIT",
   "author": {
@@ -96,7 +96,7 @@
     "vue-eslint-parser": "^6.0.4"
   },
   "peerDependencies": {
-    "eslint": ">=5.16.0"
+    "eslint": ">=5"
   },
   "engines": {
     "node": ">=8"

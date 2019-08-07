@@ -1,8 +1,6 @@
-'use strict';
-
-const path = require('path');
+const path = require('path')
 
 module.exports = {
-    parser: require.resolve('babel-eslint'),
-    extends: path.resolve('./plugins/ava.js')
-};
+  parser: require.resolve('babel-eslint'),
+  extends: path.resolve('./plugins/ava.js')
+}
