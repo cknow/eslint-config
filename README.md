@@ -2,17 +2,11 @@
 
 > ESLint [shareable config](http://eslint.org/docs/developer-guide/shareable-configs.html)
 
-[![NPM Version](https://img.shields.io/npm/v/@datalogix/eslint-config.svg)](https://www.npmjs.com/package/@datalogix/eslint-config)
+[![Version](https://img.shields.io/npm/v/@datalogix/eslint-config.svg)](https://www.npmjs.com/package/@datalogix/eslint-config)
 [![Downloads](https://img.shields.io/npm/dt/@datalogix/eslint-config.svg)](https://www.npmjs.com/package/@datalogix/eslint-config)
-[![MIT License](https://img.shields.io/npm/l/@datalogix/eslint-config.svg)](LICENSE)
-
-[![Build Status](https://travis-ci.org/datalogix/eslint-config.svg?branch=master)](https://travis-ci.org/datalogix/eslint-config)
-[![Build status](https://ci.appveyor.com/api/projects/status/wn7a9c99eep8ydma/branch/master?svg=true)](https://ci.appveyor.com/project/ricardogobbosouza/eslint-config/branch/master)
-[![Coverage Status](https://coveralls.io/repos/github/datalogix/eslint-config/badge.svg?branch=master)](https://coveralls.io/github/datalogix/eslint-config?branch=master)
-
-[![Code Climate](https://codeclimate.com/github/datalogix/eslint-config/badges/gpa.svg)](https://codeclimate.com/github/datalogix/eslint-config)
-[![Test Coverage](https://codeclimate.com/github/datalogix/eslint-config/badges/coverage.svg)](https://codeclimate.com/github/datalogix/eslint-config/coverage)
-[![Issue Count](https://codeclimate.com/github/datalogix/eslint-config/badges/issue_count.svg)](https://codeclimate.com/github/datalogix/eslint-config)
+[![Build Status](https://img.shields.io/travis/datalogix/eslint-config)](https://travis-ci.org/datalogix/eslint-config)
+[![Codecov](https://img.shields.io/codecov/c/github/datalogix/eslint-config)](https://codecov.io/gh/datalogix/eslint-config)
+[![License](https://img.shields.io/npm/l/@datalogix/eslint-config.svg)](LICENSE)
 
 ## Install
 

@@ -66,7 +66,7 @@
     "postcoverage": "npm run check-coverage",
     "precoverage": "rimraf .nyc_output coverage",
     "pretest": "npm run lint",
-    "report-coverage": "cat ./coverage/lcov.info | coveralls",
+    "report-coverage": "codecov",
     "test": "npm run coverage",
     "watch": "ava --watch"
   },
@@ -76,7 +76,7 @@
     "@commitlint/prompt-cli": "^8.1.0",
     "ava": "^2.2.0",
     "babel-eslint": "^10.0.2",
-    "coveralls": "^3.0.6",
+    "codecov": "^3.5.0",
     "eslint": "^6.1.0",
     "eslint-plugin-angular": "^4.0.1",
     "eslint-plugin-ava": "^7.1.0",
