@@ -2,31 +2,22 @@
 
 > ESLint [shareable config](http://eslint.org/docs/developer-guide/shareable-configs.html)
 
-[![NPM Version](https://img.shields.io/npm/v/@cknow/eslint-config.svg)](https://www.npmjs.com/package/@cknow/eslint-config)
-[![Downloads](https://img.shields.io/npm/dt/@cknow/eslint-config.svg)](https://www.npmjs.com/package/@cknow/eslint-config)
-[![MIT License](https://img.shields.io/npm/l/@cknow/eslint-config.svg)](LICENSE)
+[![NPM Version](https://img.shields.io/npm/v/@datalogix/eslint-config.svg)](https://www.npmjs.com/package/@datalogix/eslint-config)
+[![Downloads](https://img.shields.io/npm/dt/@datalogix/eslint-config.svg)](https://www.npmjs.com/package/@datalogix/eslint-config)
+[![MIT License](https://img.shields.io/npm/l/@datalogix/eslint-config.svg)](LICENSE)
 
-[![Build Status](https://travis-ci.org/cknow/eslint-config.svg?branch=master)](https://travis-ci.org/cknow/eslint-config)
+[![Build Status](https://travis-ci.org/datalogix/eslint-config.svg?branch=master)](https://travis-ci.org/datalogix/eslint-config)
 [![Build status](https://ci.appveyor.com/api/projects/status/wn7a9c99eep8ydma/branch/master?svg=true)](https://ci.appveyor.com/project/ricardogobbosouza/eslint-config/branch/master)
-[![Coverage Status](https://coveralls.io/repos/github/cknow/eslint-config/badge.svg?branch=master)](https://coveralls.io/github/cknow/eslint-config?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/datalogix/eslint-config/badge.svg?branch=master)](https://coveralls.io/github/datalogix/eslint-config?branch=master)
 
-[![Code Climate](https://codeclimate.com/github/cknow/eslint-config/badges/gpa.svg)](https://codeclimate.com/github/cknow/eslint-config)
-[![Test Coverage](https://codeclimate.com/github/cknow/eslint-config/badges/coverage.svg)](https://codeclimate.com/github/cknow/eslint-config/coverage)
-[![Issue Count](https://codeclimate.com/github/cknow/eslint-config/badges/issue_count.svg)](https://codeclimate.com/github/cknow/eslint-config)
-
-[![Dependencies Status](https://david-dm.org/cknow/eslint-config/status.svg)](https://david-dm.org/cknow/eslint-config)
-[![devDependencies Status](https://david-dm.org/cknow/eslint-config/dev-status.svg)](https://david-dm.org/cknow/eslint-config?type=dev)
-[![peerDependencies Status](https://david-dm.org/cknow/eslint-config/peer-status.svg)](https://david-dm.org/cknow/eslint-config?type=peer)
-
-[![Semantic Release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
-[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/cknow/eslint-config.svg)](http://isitmaintained.com/project/cknow/eslint-config)
-[![Percentage of issues still open](http://isitmaintained.com/badge/open/cknow/eslint-config.svg)](http://isitmaintained.com/project/cknow/eslint-config)
-[![Gitter](https://badges.gitter.im/cknow/eslint-config.svg)](https://gitter.im/cknow/eslint-config?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Code Climate](https://codeclimate.com/github/datalogix/eslint-config/badges/gpa.svg)](https://codeclimate.com/github/datalogix/eslint-config)
+[![Test Coverage](https://codeclimate.com/github/datalogix/eslint-config/badges/coverage.svg)](https://codeclimate.com/github/datalogix/eslint-config/coverage)
+[![Issue Count](https://codeclimate.com/github/datalogix/eslint-config/badges/issue_count.svg)](https://codeclimate.com/github/datalogix/eslint-config)
 
 ## Install
 
 ```bash
-npm install --save-dev @cknow/eslint-config
+npm install --save-dev @datalogix/eslint-config
 ```
 
 ## Usage
@@ -37,7 +28,7 @@ Add some ESLint config to your `.eslintrc.js`:
 
 ```js
 module.exports = {
-  extends: '@cknow/eslint-config'
+  extends: '@datalogix/eslint-config'
 }
 ```
 
@@ -45,7 +36,7 @@ ESNext
 
 ```js
 module.exports = {
-  extends: '@cknow/eslint-config/esnext'
+  extends: '@datalogix/eslint-config/esnext'
 }
 ```
 
@@ -53,14 +44,14 @@ Browser
 
 ```js
 module.exports = {
-  extends: '@cknow/eslint-config/browser'
+  extends: '@datalogix/eslint-config/browser'
 }
 ```
 
 ## Usage direct on command line
 
 ```bash
-eslint --config ./node_modules/@cknow/eslint-config/index.js
+eslint --config ./node_modules/@datalogix/eslint-config/index.js
 ```
 
 > **Note:** It is not necessary to create the `.eslintrc.js` file.
@@ -69,11 +60,11 @@ eslint --config ./node_modules/@cknow/eslint-config/index.js
 
 **The plugins do not use the default settings.**
 
-To this extend `@cknow/eslint-config` or `@cknow/eslint-config/browser` first.
+To this extend `@datalogix/eslint-config` or `@datalogix/eslint-config/browser` first.
 
 ```js
 module.exports = {
-  extends: ['@cknow/eslint-config', '@cknow/eslint-config/plugins/PLUGIN_NAME']
+  extends: ['@datalogix/eslint-config', '@datalogix/eslint-config/plugins/PLUGIN_NAME']
 }
 ```
 
@@ -89,7 +80,7 @@ Usage
 
 ```js
 module.exports = {
-  extends: '@cknow/eslint-config/plugins/angular'
+  extends: '@datalogix/eslint-config/plugins/angular'
 }
 ```
 
@@ -105,7 +96,7 @@ Usage
 
 ```js
 module.exports = {
-  extends: '@cknow/eslint-config/plugins/ava'
+  extends: '@datalogix/eslint-config/plugins/ava'
 }
 ```
 
@@ -121,7 +112,7 @@ Usage
 
 ```js
 module.exports = {
-  extends: '@cknow/eslint-config/plugins/jasmine'
+  extends: '@datalogix/eslint-config/plugins/jasmine'
 }
 ```
 
@@ -137,7 +128,7 @@ Usage
 
 ```js
 module.exports = {
-  extends: '@cknow/eslint-config/plugins/Jest'
+  extends: '@datalogix/eslint-config/plugins/Jest'
 }
 ```
 
@@ -153,7 +144,7 @@ Usage
 
 ```js
 module.exports = {
-  extends: '@cknow/eslint-config/plugins/jquery'
+  extends: '@datalogix/eslint-config/plugins/jquery'
 }
 ```
 
@@ -169,7 +160,7 @@ Usage
 
 ```js
 module.exports = {
-  extends: '@cknow/eslint-config/plugins/mocha'
+  extends: '@datalogix/eslint-config/plugins/mocha'
 }
 ```
 
@@ -185,7 +176,7 @@ Usage
 
 ```js
 module.exports = {
-  extends: '@cknow/eslint-config/plugins/node'
+  extends: '@datalogix/eslint-config/plugins/node'
 }
 ```
 
@@ -201,7 +192,7 @@ Usage
 
 ```js
 module.exports = {
-  extends: '@cknow/eslint-config/plugins/promise'
+  extends: '@datalogix/eslint-config/plugins/promise'
 }
 ```
 
@@ -217,7 +208,7 @@ Usage
 
 ```js
 module.exports = {
-  extends: '@cknow/eslint-config/plugins/protractor'
+  extends: '@datalogix/eslint-config/plugins/protractor'
 }
 ```
 
@@ -233,6 +224,6 @@ Usage
 
 ```js
 module.exports = {
-  extends: '@cknow/eslint-config/plugins/vue'
+  extends: '@datalogix/eslint-config/plugins/vue'
 }
 ```

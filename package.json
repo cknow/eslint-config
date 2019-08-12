@@ -1,5 +1,5 @@
 {
-  "name": "@cknow/eslint-config",
+  "name": "@datalogix/eslint-config",
   "version": "0.0.0-semantically-released",
   "description": "ESLint shareable config",
   "keywords": [
@@ -34,9 +34,9 @@
     "protractor",
     "vue"
   ],
-  "homepage": "https://github.com/cknow/eslint-config",
+  "homepage": "https://github.com/datalogix/eslint-config",
   "bugs": {
-    "url": "https://github.com/cknow/eslint-confi/issues",
+    "url": "https://github.com/datalogix/eslint-confi/issues",
     "email": "ricardogobbosouza@yahoo.com.br"
   },
   "license": "MIT",
@@ -56,7 +56,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cknow/eslint-config.git"
+    "url": "https://github.com/datalogix/eslint-config.git"
   },
   "scripts": {
     "check-coverage": "nyc check-coverage --global 100",
@@ -88,7 +88,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-protractor": "^2.1.0",
     "eslint-plugin-vue": "^5.2.3",
-    "husky": "^3.0.2",
+    "husky": "^3.0.3",
     "lodash": "^4.17.15",
     "nyc": "^14.1.1",
     "rimraf": "^2.6.3",
