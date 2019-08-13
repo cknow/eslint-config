@@ -1,12 +1,12 @@
 # ESLint Config
 
-> ESLint [shareable config](http://eslint.org/docs/developer-guide/shareable-configs.html)
-
 [![Version](https://img.shields.io/npm/v/@datalogix/eslint-config.svg)](https://www.npmjs.com/package/@datalogix/eslint-config)
 [![Downloads](https://img.shields.io/npm/dt/@datalogix/eslint-config.svg)](https://www.npmjs.com/package/@datalogix/eslint-config)
 [![Build Status](https://img.shields.io/travis/datalogix/eslint-config)](https://travis-ci.org/datalogix/eslint-config)
 [![Codecov](https://img.shields.io/codecov/c/github/datalogix/eslint-config)](https://codecov.io/gh/datalogix/eslint-config)
 [![License](https://img.shields.io/npm/l/@datalogix/eslint-config.svg)](LICENSE)
+
+> ESLint [shareable config](http://eslint.org/docs/developer-guide/shareable-configs.html)
 
 ## Install
 
