@@ -45,15 +45,15 @@ module.exports = {
       tryExtensions: ['.js', '.json', '.node']
     }],
     'node/no-unsupported-features/es-builtins': ['error', {
-      version: '>=6.0.0',
+      version: '>=8.0.0',
       ignores: []
     }],
     'node/no-unsupported-features/es-syntax': ['error', {
-      version: '>=6.0.0',
+      version: '>=8.0.0',
       ignores: []
     }],
     'node/no-unsupported-features/node-builtins': ['error', {
-      version: '>=6.0.0',
+      version: '>=8.0.0',
       ignores: []
     }],
     'node/prefer-global/buffer': ['error', 'always'],
