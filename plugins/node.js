@@ -12,6 +12,7 @@ module.exports = {
       ignoreGlobalItems: [],
       ignoreIndirectDependencies: false
     }],
+    'node/no-exports-assign': 'error',
     'node/no-extraneous-import': ['error', {
       allowModules: [],
       convertPath: {}
