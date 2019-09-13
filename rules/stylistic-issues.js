@@ -36,6 +36,7 @@ module.exports = {
       generators: 'never'
     }],
     'func-style': 'off',
+    'function-call-argument-newline': ['error', 'consistent'],
     'function-paren-newline': ['error', 'multiline'],
     'id-blacklist': 'off',
     'id-length': 'off',
