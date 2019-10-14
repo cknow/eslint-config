@@ -39,7 +39,7 @@ module.exports = {
     }],
     'vue/comma-dangle': ['error', 'never'],
     'vue/comment-directive': 'error',
-    'vue/component-name-in-template-casing': ['error', 'kebab-case', {
+    'vue/component-name-in-template-casing': ['error', 'PascalCase', {
       registeredComponentsOnly: true,
       ignores: []
     }],
@@ -89,10 +89,11 @@ module.exports = {
     }],
     'vue/multiline-html-element-content-newline': ['error', {
       ignoreWhenEmpty: true,
-      ignores: ['pre', 'textarea']
+      ignores: ['pre', 'textarea'],
+      allowEmptyLines: false
     }],
     'vue/mustache-interpolation-spacing': ['error', 'always'],
-    'vue/name-property-casing': ['error', 'kebab-case'],
+    'vue/name-property-casing': ['error', 'PascalCase'],
     'vue/no-async-in-computed-properties': 'error',
     'vue/no-boolean-default': ['error', 'no-default'],
     'vue/no-confusing-v-for-v-if': 'error',
