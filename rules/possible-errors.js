@@ -32,6 +32,7 @@ module.exports = {
     }],
     'no-extra-semi': 'error',
     'no-func-assign': 'error',
+    'no-import-assign': 'error',
     'no-inner-declarations': ['error', 'functions'],
     'no-invalid-regexp': ['error', {
       allowConstructorFlags: []
@@ -53,7 +54,9 @@ module.exports = {
     'no-unsafe-finally': 'error',
     'no-unsafe-negation': 'error',
     'require-atomic-updates': 'error',
-    'use-isnan': 'error',
+    'use-isnan': ['error', {
+      enforceForSwitchCase: true
+    }],
     'valid-typeof': ['error', {
       requireStringLiterals: true
     }]
