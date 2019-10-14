@@ -19,6 +19,7 @@ module.exports = {
     'default-case': ['error', {
       commentPattern: ''
     }],
+    'default-param-last': 'error',
     'dot-location': ['error', 'property'],
     'dot-notation': ['error', {
       allowKeywords: true
