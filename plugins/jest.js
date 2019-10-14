@@ -47,6 +47,7 @@ module.exports = {
     'jest/no-try-expect': 'error',
     'jest/prefer-called-with': 'error',
     'jest/prefer-expect-assertions': 'error',
+    'jest/prefer-hooks-on-top': 'error',
     'jest/prefer-inline-snapshots': 'error',
     'jest/prefer-spy-on': 'error',
     'jest/prefer-strict-equal': 'error',
