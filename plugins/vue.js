@@ -43,6 +43,7 @@ module.exports = {
       registeredComponentsOnly: true,
       ignores: []
     }],
+    'vue/dot-location': ['error', 'property'],
     'vue/eqeqeq': 'error',
     'vue/html-closing-bracket-newline': ['error', {
       singleline: 'never',
@@ -76,6 +77,11 @@ module.exports = {
       beforeColon: false,
       afterColon: true
     }],
+    'vue/keyword-spacing': ['error', {
+      before: true,
+      after: true,
+      overrides: {}
+    }],
     'vue/match-component-file-name': ['error', {
       extensions: ['jsx'],
       shouldMatchCase: false
@@ -97,6 +103,7 @@ module.exports = {
     'vue/no-async-in-computed-properties': 'error',
     'vue/no-boolean-default': ['error', 'no-default'],
     'vue/no-confusing-v-for-v-if': 'error',
+    'vue/no-deprecated-scope-attribute': 'error',
     'vue/no-dupe-keys': ['error', {
       groups: []
     }],
@@ -104,6 +111,7 @@ module.exports = {
       allowCoexistClass: true,
       allowCoexistStyle: true
     }],
+    'vue/no-empty-pattern': 'error',
     'vue/no-multi-spaces': ['error', {
       ignoreProperties: false
     }],
@@ -181,11 +189,14 @@ module.exports = {
         'inheritAttrs',
         'model',
         ['props', 'propsData'],
+        'fetch',
+        'asyncData',
         'data',
         'computed',
         'watch',
         'LIFECYCLE_HOOKS',
         'methods',
+        'head',
         ['template', 'render'],
         'renderError'
       ]
@@ -225,6 +236,11 @@ module.exports = {
     'vue/v-bind-style': ['error', 'shorthand'],
     'vue/v-on-function-call': ['error', 'never'],
     'vue/v-on-style': ['error', 'shorthand'],
+    'vue/v-slot-style': ['error', {
+      atComponent: 'v-slot',
+      default: 'shorthand',
+      named: 'shorthand'
+    }],
     'vue/valid-template-root': 'error',
     'vue/valid-v-bind': 'error',
     'vue/valid-v-cloak': 'error',
@@ -240,6 +256,7 @@ module.exports = {
     'vue/valid-v-once': 'error',
     'vue/valid-v-pre': 'error',
     'vue/valid-v-show': 'error',
+    'vue/valid-v-slot': 'error',
     'vue/valid-v-text': 'error'
   },
   overrides: [
