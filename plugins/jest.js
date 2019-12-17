@@ -19,7 +19,6 @@ module.exports = {
     'jest/no-commented-out-tests': 'error',
     'jest/no-disabled-tests': 'error',
     'jest/no-duplicate-hooks': 'error',
-    'jest/no-empty-title': 'error',
     'jest/no-expect-resolves': 'error',
     'jest/no-export': 'error',
     'jest/no-focused-tests': 'error',
@@ -55,10 +54,13 @@ module.exports = {
     'jest/prefer-to-be-undefined': 'error',
     'jest/prefer-to-contain': 'error',
     'jest/prefer-to-have-length': 'error',
+    'jest/require-to-throw-message': 'error',
     'jest/require-top-level-describe': 'error',
-    'jest/require-tothrow-message': 'error',
     'jest/valid-describe': 'error',
     'jest/valid-expect-in-promise': 'error',
-    'jest/valid-expect': 'error'
+    'jest/valid-expect': 'error',
+    'jest/valid-title': ['error', {
+      ignoreTypeOfDescribeName: false
+    }]
   }
 }
