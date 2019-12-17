@@ -15,6 +15,7 @@ module.exports = {
     'no-control-regex': 'error',
     'no-debugger': 'error',
     'no-dupe-args': 'error',
+    'no-dupe-else-if': 'error',
     'no-dupe-keys': 'error',
     'no-duplicate-case': 'error',
     'no-empty': ['error', {
@@ -28,7 +29,9 @@ module.exports = {
       returnAssign: false,
       nestedBinaryExpressions: false,
       ignoreJSX: 'multi-line',
-      enforceForArrowConditionals: false
+      enforceForArrowConditionals: false,
+      enforceForSequenceExpressions: false,
+      enforceForNewInMemberExpressions: false
     }],
     'no-extra-semi': 'error',
     'no-func-assign': 'error',
@@ -47,15 +50,19 @@ module.exports = {
     'no-obj-calls': 'error',
     'no-prototype-builtins': 'error',
     'no-regex-spaces': 'error',
+    'no-setter-return': 'error',
     'no-sparse-arrays': 'error',
     'no-template-curly-in-string': 'error',
     'no-unexpected-multiline': 'error',
     'no-unreachable': 'error',
     'no-unsafe-finally': 'error',
-    'no-unsafe-negation': 'error',
+    'no-unsafe-negation': ['error', {
+      enforceForOrderingRelations: false
+    }],
     'require-atomic-updates': 'error',
     'use-isnan': ['error', {
-      enforceForSwitchCase: true
+      enforceForSwitchCase: false,
+      enforceForIndexOf: false
     }],
     'valid-typeof': ['error', {
       requireStringLiterals: true

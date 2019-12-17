@@ -12,6 +12,7 @@ module.exports = {
     'camelcase': ['error', {
       properties: 'always',
       ignoreDestructuring: false,
+      ignoreImports: false,
       allow: []
     }],
     'capitalized-comments': ['error', 'always', {
@@ -168,13 +169,14 @@ module.exports = {
     'no-ternary': 'off',
     'no-trailing-spaces': ['error', {
       skipBlankLines: false,
-      ignoreComments: true
+      ignoreComments: false
     }],
     'no-underscore-dangle': ['error', {
       allow: [],
       allowAfterThis: true,
       allowAfterSuper: true,
-      enforceInMethodNames: true
+      allowAfterThisConstructor: true,
+      enforceInMethodNames: false
     }],
     'no-unneeded-ternary': ['error', {
       defaultAssignment: false
@@ -254,6 +256,7 @@ module.exports = {
         next: ['do', 'for', 'function', 'if', 'return', 'switch', 'try', 'while']
       }
     ],
+    'prefer-exponentiation-operator': 'error',
     'prefer-object-spread': 'error',
     'quote-props': ['error', 'consistent-as-needed', {
       keywords: false

@@ -25,7 +25,9 @@ module.exports = {
     'no-new-symbol': 'error',
     'no-restricted-imports': 'off',
     'no-this-before-super': 'error',
-    'no-useless-computed-key': 'error',
+    'no-useless-computed-key': ['error', {
+      enforceForClassMembers: false
+    }],
     'no-useless-constructor': 'error',
     'no-useless-rename': ['error', {
       ignoreDestructuring: false,

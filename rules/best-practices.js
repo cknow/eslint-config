@@ -25,11 +25,13 @@ module.exports = {
       allowKeywords: true
     }],
     'eqeqeq': 'error',
+    'grouped-accessor-pairs': ['error', 'getBeforeSet'],
     'guard-for-in': 'error',
     'max-classes-per-file': ['error', 1],
     'no-alert': 'error',
     'no-caller': 'error',
     'no-case-declarations': 'error',
+    'no-constructor-return': 'error',
     'no-div-regex': 'error',
     'no-else-return': ['error', {
       allowElseIf: true
@@ -60,9 +62,13 @@ module.exports = {
       string: true,
       allow: []
     }],
-    'no-implicit-globals': 'error',
+    'no-implicit-globals': ['error', {
+      lexicalBindings: false
+    }],
     'no-implied-eval': 'error',
-    'no-invalid-this': 'off',
+    'no-invalid-this': ['error', {
+      capIsConstructor: true
+    }],
     'no-iterator': 'error',
     'no-labels': ['error', {
       allowLoop: false,
